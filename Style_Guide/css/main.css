@@ -1,0 +1,644 @@
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: "Open Sans";
+  margin: 0;
+  font-size: 14px;
+}
+
+#wrapper{
+  width: 1100px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+/* -------------------- */
+/*   Header Styleguide  */
+/* -------------------- */
+
+#header{
+  background: #E5842C;  
+  height: 45rem;
+  padding: 1em 0;
+  border-top: 0.4em solid #CC7227;
+}
+
+.header-wrap{
+  text-align: center;
+  margin: 9rem auto;
+  width: 800px;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+.header-wrap h1{
+  color: #FFF;
+  font-size: 68px;
+  line-height: 115%;
+  margin-bottom: 25px;
+}
+
+.header-wrap p{
+  color: #FFF;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  width: 600px;
+  margin: 0 auto;
+  line-height: 175%;
+}
+
+
+/* ------------------- */
+/*   Header Citations  */
+/* ------------------- */
+
+#header-citations{
+  background: #F6B710;  
+  height: 23rem;
+  padding: 1em 0;
+}
+
+.header-citations-wrap{
+  text-align: center;
+  margin: 4rem auto;
+  width: 800px;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+.header-citations-wrap h1{
+  color: #FFF;
+  font-size: 68px;
+  line-height: 115%;
+  margin-bottom: 10px;
+}
+
+.header-citations-wrap p{
+  color: #FFF;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  width: 600px;
+  margin: 0 auto;
+  line-height: 175%;
+}
+
+.grid-col{
+  display: inline-block;
+  text-align: left;
+  margin-right: 5em;
+}
+
+#tako{
+  padding: 0em;
+  margin-bottom: -3em;
+}
+
+/* ------------------- */
+/*       Sections      */
+/* ------------------- */
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 2em 0;
+  border-bottom: 0.15em dotted #DEDEDE;
+}
+
+
+section h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+section h3 {
+  margin-bottom: 0;
+}
+
+section p {
+  margin-top: 0;
+}
+
+
+/* ---------------- */
+/*   Navigation     */
+/* ---------------- */
+
+nav {
+  margin: 0 auto; 
+  text-align: center;
+  padding: 2em 0;
+  border-bottom: 0.4em solid #DDDDDD;
+  border-top: 0.4em solid #333;
+  background-color: #444; 
+  margin-bottom: 3em;
+}
+
+nav ul{
+  padding: 0;
+  line-height: 170%;
+  list-style-type: none;
+  color: #FFF;
+}
+
+nav a{
+  font-weight: 400;
+  color: #EEE;
+  font-size: 14px;
+  transition: color 0.2s ease;
+    text-decoration: none;
+   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+  color: orange;
+}
+
+nav li span{
+  position: relative;
+  left: -0.9em;
+}
+
+nav p{
+  color: #FFF;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 14px;
+   -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+
+
+/* ---------------- */
+/*       Code       */
+/* ---------------- */
+
+section code {
+  background-color: #EEE;
+  padding: 1em 2em;
+  display: block;
+  font-size: 12px;
+}
+
+/* ---------------- */
+/*    Citations     */
+/* ---------------- */
+
+ul.citations {
+  margin-left: 0.25em;
+  padding-left: 0.25em;
+}
+
+ul.citations li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 1em;
+}
+
+ul.citations li strong {
+  font-weight: normal;
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
+
+/* ---------------- */
+/* Fadein Animation */
+/* ---------------- */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* =============================== */
+/*             COLORS              */
+/* =============================== */
+
+.color-example{
+    padding: 5px;
+    width: 85%;
+    text-indent: 86%;
+    white-space: nowrap;
+    margin: 10px 0 15px 0;
+}
+
+.ketchup-red{
+  background-color: #cf1b41;
+  color: #cf1b41;
+}
+
+.zesty-orange{
+  background-color: #CC7227;
+  color: #CC7227;
+}
+
+.mustard-yellow{
+  background-color: #F6B710;
+  color: #F6B710;
+}
+
+.charcoal-1{
+  background-color: #999;
+}
+
+.charcoal-2{
+  background-color: #777;
+}
+
+.charcoal-3{
+  background-color: #555;
+}
+
+.charcoal-4{
+  background-color: #333;
+}
+
+.charcoal-5{
+  background-color: #111;
+}
+
+/* =============================== */
+/*              GRIDS              */
+/* =============================== */
+
+.grid-1-2{
+  float: left;
+  text-align: center;
+  padding: 1.5em;
+  width: 50%;
+  color: #FFF;
+  background-color: #A8A8A8;
+  height: 4em;
+}
+
+.grid-1-3{
+  float: left;
+  text-align: center;
+  padding: 1.5em;
+  width: 33.33%;
+  color: #FFF;
+  background-color: #A8A8A8;
+  height: 4em;
+}
+
+.grid-1-4{
+  float: left;
+  text-align: center;
+  padding: 1.5em;
+  width: 25%;
+  color: #FFF;
+  background-color: #A8A8A8;
+  height: 4em;
+}
+
+.grid-group::after{
+  content: " "; 
+  display: block; 
+  clear: both;
+}
+
+/* =============================== */
+/*       INTERACTIVE ELEMENTS      */
+/* =============================== */
+
+/* ------------- */
+/* In-text Links */
+/* ------------- */
+a{
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-decoration: none;
+  color: #E5842C;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+/* ----------------- */
+/* Navigation button */
+/* ----------------- */
+
+a.button-nav{
+  display: inline-block;
+  padding: 0.6em 0.8em;
+  border-bottom: 0.3em solid #FFF;
+  color: #333;
+/*  background-color: #333;*/  
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+}
+
+a.button-nav:hover, a.button-nav:focus {
+  border-bottom: 0.3em solid #333;
+/*  background-color: #999;
+*/}
+
+/* =============================== */
+/*             BUTTONS             */
+/* =============================== */
+
+/* ----------------- */
+/*  Default buttons  */
+/* ----------------- */
+
+button{
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.8em 2em;
+  background-color: #333;
+  border: 0.1em solid #333;
+  border-radius: 0.25em;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+button:hover{
+  background-color: #FFF;
+  color: #333;
+  border: 0.1em solid #333;
+  text-decoration: none;
+}
+
+.button{
+  display: inline-block;
+  padding: 0.8em 2em;
+  color: #FFF;
+  background-color: #333;
+  border: 0.1em solid #FFF;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+.button:hover{
+  background-color: #FFF;
+  color: #333;
+  border: 0.1em solid #333;
+  text-decoration: none;
+}
+
+input[type=button]{
+  display: inline-block;
+  margin: 0em;
+  padding: 0.8em 2em;
+  background-color: #333;
+  border: 0.1em solid #333;
+  border-radius: 0.25em;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+input[type=button]:hover{
+  background-color: #FFF;
+  color: #333;
+  border: 0.1em solid #333;
+  text-decoration: none;
+}
+
+input[type=submit]{
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.8em 2em;
+  background-color: #333;
+  border: 0.1em solid #333;
+  border-radius: 0.25em;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+input[type=submit]:hover{
+  background-color: #FFF;
+  color: #333;
+  border: 0.1em solid #333;
+  text-decoration: none;
+}
+
+/* ----------------- */
+/*  Colored buttons  */
+/* ----------------- */
+
+.button-red{
+  display: inline-block;
+  padding: 0.8em 2em;
+  color: #FFF;
+  background-color: #cf1b41;
+  border: 0.1em solid #FFF;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+.button-red:hover{
+  background-color: #FFF;
+  color: #cf1b41;
+  border: 0.1em solid #cf1b41;
+  text-decoration: none;
+}
+
+.button-orange{
+  display: inline-block;
+  padding: 0.8em 2em;
+  color: #FFF;
+  background-color: #CC7227;
+  border: 0.1em solid #FFF;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+.button-orange:hover{
+  background-color: #FFF;
+  color: #CC7227;
+  border: 0.1em solid #CC7227;
+  text-decoration: none;
+}
+
+.button-yellow{
+  display: inline-block;
+  padding: 0.8em 2em;
+  color: #FFF;
+  background-color: #F6B710;
+  border: 0.1em solid #FFF;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+.button-yellow:hover{
+  background-color: #FFF;
+  color: #F6B710;
+  border: 0.1em solid #F6B710;
+  text-decoration: none;
+}
+
+/* =============================== */
+/*          TEXT ELEMENTS          */
+/* =============================== */
+
+p{
+  line-height: 175%;
+  font-family: "Open Sans";
+}
+
+h1{
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 0%;
+}
+
+h2,h3,h4,h5,h6{
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+ul{
+  line-height: 150%;
+  list-style-type: circle;
+  padding-left: 2em;
+}
+
+li { 
+    font-family: "Open Sans";
+    padding-left: 1em; 
+    text-indent: 0em;
+}
+
+form p{
+  font-weight: 700;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 0.3em solid #DDD;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+    -webkit-transition: border 0.2s ease-out;
+    transition: border 0.2s ease-out;
+}
+
+input[type=text]:focus{
+    border: 0.3em solid #555;  
+}
+
+/* =============================== */
+/*        COMBINED ELEMENTS        */
+/* =============================== */
+
+/* ---------------- */
+/*       Slabs      */
+/* ---------------- */
+
+.slab-gray{
+  padding: 2em;
+  background-color: #555;
+  color: #FFF;
+}
+
+.slab-ketchup-red{
+  padding: 2em;
+  background-color: #cf1b41;
+  color: #FFF;
+}
+
+.item {
+    float: left;
+    vertical-align: top;
+    text-align: center;
+    width: 33%;
+}
+
+
+/* ---------------- */
+/*   Product List   */
+/* ---------------- */
+
+.row::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.item img{
+    width: 95%;
+    height: 12em;
+    background-color: #DDD;
+    border: none;
+    -webkit-transition: background-color 0.1s ease-out;
+    transition: background-color 0.1s ease-out;
+}
+
+.item img:hover{
+    background-color: #555;
+}
+
+.caption {
+    display: block;
+}
