@@ -283,6 +283,14 @@ cite {
   color: #F6B710;
 }
 
+.rice-white{
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #d5d5d5; 
+  border-width: 0.2em;
+
+}
+
 .charcoal-1{
   background-color: #999;
 }
@@ -620,13 +628,13 @@ input[type=text]:focus{
 /*   Product List   */
 /* ---------------- */
 
-.row::after{
+.row::after {
     content: " ";
     display: block;
     clear: both;
 }
 
-.item img{
+.item img {
     width: 95%;
     height: 12em;
     background-color: #DDD;
@@ -635,10 +643,35 @@ input[type=text]:focus{
     transition: background-color 0.1s ease-out;
 }
 
-.item img:hover{
+.item img:hover {
     background-color: #555;
 }
 
 .caption {
     display: block;
+}
+
+.button-addToCart{
+    display: inline-block;
+    padding: 0.5em;
+    height: 2.5em;
+    width: 95%;
+    color: #FFF;
+    background-color: #d5d5d5;
+    border: 0.1em solid #FFF;
+    border-radius: 0.25em;
+    text-decoration: none;
+    -webkit-transition: background-color 0.1s ease-out;
+    transition: background-color 0.1s ease-out; 
+}
+
+.button-addToCart:hover{
+    background-color: #FFF;
+    color: #878787;
+    border: 0.1em solid #878787;
+    text-decoration: none;
+}
+
+.caption p{
+  margin-bottom: 0;
 }
