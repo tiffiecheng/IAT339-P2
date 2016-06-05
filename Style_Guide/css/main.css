@@ -11,7 +11,7 @@ body {
 }
 
 #wrapper{
-  width:90%;
+  width: 90%;
   margin: 20px auto;
   text-align: left;
 }
@@ -22,7 +22,7 @@ body {
 
 #header{
   background: #E5842C;  
-  height: 45rem;
+  height: 50%;
   padding: 1em 0;
   border-top: 0.4em solid #CC7227;
 }
@@ -30,7 +30,7 @@ body {
 .header-wrap{
   text-align: center;
   margin: 9rem auto;
-  width: 800px;
+  width: 50%;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
@@ -50,7 +50,7 @@ body {
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 16px;
-  width: 600px;
+  width: 75%;
   margin: 0 auto;
   line-height: 175%;
 }
