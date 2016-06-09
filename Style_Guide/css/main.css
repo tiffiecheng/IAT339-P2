@@ -1,3 +1,15 @@
+@font-face{
+	font-family: "Aquino-demo";
+	font-weight: normal;
+	font-style: normal;
+	src: url('fonts/Aquino-demo.eot');
+	src: url('fonts/Aquino-demo.eot#iefix') format('embedded-opentype'), 
+		url('fonts/Aquino-demo.woff2') format('woff2'),
+		url('fonts/Aquino-demo.woff') format('woff'),
+		url('fonts/Aquino-demo.ttf') format('truetype'); 	/* for older versions of IE, woff2 = most compressed woff = compressed, trutype = least compressed */
+}
+
+
 *, *::after, *::before{
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -43,6 +55,7 @@ body {
   font-size: 68px;
   line-height: 115%;
   margin-bottom: 25px;
+
 }
 
 .header-wrap p{
@@ -110,7 +123,7 @@ body {
 /* ------------------- */
 
 section:not([id]) {
-  margin: 1em 0;
+  margin: 2em 0;
   padding: 0.5em 0 2em 0;
   border-bottom: 0.15em dotted #DEDEDE;
 }
@@ -272,6 +285,7 @@ cite {
 .mustard-yellow{
   background-color: #F6B710;
   color: #F6B710;
+  margin-bottom: 3em;
 }
 
 .rice-white{
@@ -550,22 +564,51 @@ p{
   font-family: "Open Sans";
 }
 
+.headings h1{
+	text-align: left;
+}
+
+.headings h2{
+	text-align: left;
+}
+
+.headings h3{
+	text-align: left;
+}
+
+.headings h4{
+	text-align: left;
+}
+
+.headings h5{
+	text-align: left;
+}
+
+.headings h6{
+	text-align: left;
+}
+
 h1,h2,h3,h4,h5,h6{
-  font-family: "Open Sans";
+  font-family: "Aquino-demo", "Candal", "Lilita One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   font-weight: 700;
+  text-align: center;
 }
 
 h1{
-  font-size: 28px;
+  font-size: 3.5em;
   margin: 1.5rem 0;
 }
 
 h2 {
+  font-size: 1.75em;
   margin: 1rem 0em;
 }
 
 h3 {
-  margin: 1rem 0 0 0;
+  font-size: 1.25em;
+  margin: 1.5rem 0 1rem 0;
 }
 
 h4,h5,h6 {
