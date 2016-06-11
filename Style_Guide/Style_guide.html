@@ -18,8 +18,8 @@
     <!--         HEADER        -->
     <!-- ===================== -->
 
-  <div id="header">
-    <div class="header-wrap">
+  <div id="header-styleguide">
+    <div class="header-styleguide-wrap">
         <img src="img/Tako.png" id="tako">
 
       <h1>The Stunnin Style Guide for BentoGo</h1>
@@ -31,7 +31,7 @@
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
-  <nav>      
+  <nav id="nav-styleGuide">      
         <div class="grid-col">
           <p>On this page:</p>
           <ul>
@@ -167,7 +167,7 @@
 
       <section>
         <h2>BUTTONS</h2>
-        <h3>button, a.button, button[type=submit], input[type=button], input[type=submit]</h3>
+        <h4>button, a.button, button[type=submit], input[type=button], input[type=submit]</h4>
         <code>
         &lt;button&gt;Button&lt;/button&gt;
         <br>
@@ -192,7 +192,7 @@
 
       <section>
       <h2>COLORED BUTTONS</h2>
-      <h3>.button-red, .button-orange, .button-yellow</h3>
+      <h4>.button-red, .button-orange, .button-yellow</h4>
         <code>
         &lt;button class="button-red"&gt;Red Button&lt;/button&gt;
         <br>
@@ -211,7 +211,7 @@
 
       <section>
         <h2>NAVIGATION BUTTON</h2>
-        <h3>.button-nav</h3>
+        <h4>.button-nav</h4>
         <code>&lt;a href="#" class="button"&gt;Nav Button&lt;/a&gt;</code>
         <a class="button-nav" href="#"> Nav Button</a>
       </section>
@@ -223,7 +223,7 @@
       <section>
         <h2>IN-TEXT LINK</h2>
 
-        <h3>a</h3>
+        <h4>a</h4>
         <code>&lt;a href="#"&gt;In-text link&lt;/a&gt;</code>
         <p> This is an <a href="#">In-text link</a><p>
       </section>
@@ -234,11 +234,11 @@
 
       <section>
         <h2>TEXT INPUT FIELD</h2>
-        <h3>input</h3>
+        <h4>input</h4>
         <code>&lt;form&gt; COMMENT: &lt;input type="text" placeholder="Leave a comment"&gt; &lt;/form&gt;</code>
 
         <form>
-          COMMENT:
+          <h5>COMMENT:</h5>
           <input type="text" placeholder="Leave a comment">
         </form>
       </section>
@@ -251,7 +251,7 @@
 
     <section>
       <h2>DROPDOWN LIST</h2>
-      <h3>select</h3>
+      <h4>select</h4>
       
       <code> 
       &lt;select&gt;
@@ -271,6 +271,49 @@
 
     </section>
 
+
+    <!-- ===================== -->
+    <!--       Checkboxes      -->
+    <!-- ===================== -->
+
+    <section>
+      <h2>CHECKBOXES</h2>
+      <h4>.checkbox</h4>
+      
+      <code>
+      &lt;div class="checkbox"&gt;<br>
+        &lt;input id="option1" type="checkbox"  class="checkbox"&gt;<br>
+        &lt;label for="option1"&gt;Option1&lt;/label&gt;<br>
+      &lt;/div&gt;<br>
+
+      &lt;div class="checkbox"&gt;<br>
+        &lt;input id="option2" type="checkbox"  class="checkbox"&gt;<br>
+        &lt;label for="option2"&gt;Option2&lt;/label&gt;<br>
+      &lt;/div&gt;<br>
+
+      &lt;div class="checkbox"&gt;<br>
+        &lt;input id="option3" type="checkbox"  class="checkbox"&gt;<br>
+        &lt;label for="option3"&gt;Option3&lt;/label&gt;<br>
+      &lt;/div&gt;<br>
+      </code>
+    
+      <div class="checkbox">
+        <input id="option1" type="checkbox" name="field" value="option">
+        <label for="option1">Option 1</label>
+      </div>
+
+      <div class="checkbox">
+        <input id="option2" type="checkbox" name="field" value="option">
+        <label for="option2">Option 2</label>
+      </div>
+
+      <div class="checkbox">
+        <input id="option3" type="checkbox" name="field" value="option">
+        <label for="option3">Option 3</label>
+      </div>
+
+    </section>
+
     <!-- ================================= -->
     <!--       TEXT ELEMENTS SECTION       -->
     <!-- ================================= -->
@@ -283,7 +326,7 @@
 
       <section>
         <h2>HEADINGS</h2>
-        <h3>h1, h2, h3, h4, h5, h6</h3>
+        <h4>h1, h2, h3, h4, h5, h6</h4>
         <div class="headings">
         <code>
         &lt;h1&gt;Fresh and elaborately arranged lunches&lt;/h1&gt;<br>
@@ -308,7 +351,7 @@
 
       <section>
         <h2>PARAGRAPHS</h2>
-        <h3>p</h3>
+        <h4>p</h4>
         <code>
         &lt;p&gt;
         BentoGo delivers fresh and elaborately arranged boxed lunches that fit to your taste.
@@ -326,7 +369,7 @@
 
       <section>
         <h2>BULLETED LISTS</h2>
-        <h3>ul</h3>
+        <h4>ul</h4>
         <code>
           &lt;ul&gt;
           &lt;li&gt; Pikachu Bento &lt;/li&gt;
@@ -348,7 +391,7 @@
       <section>
         <h2>NUMBERED LISTS</h2>
 
-        <h3>ol</h3>
+        <h4>ol</h4>
         <code>
           &lt;ol&gt;
           &lt;li&gt; Pikachu Bento &lt;/li&gt;
@@ -379,7 +422,7 @@
      <section>
         <h2>SLABS</h2>
 
-        <h3>.slab-gray</h3>
+        <h4>.slab-gray</h4>
         <code>&lt;div class="slab-gray"&gt;This is one sentence in a gray slab.&lt;/div&gt;</code>
 
         <div class="slab-gray">
@@ -395,7 +438,7 @@
     <!--    Slab Color    -->
     <!-- ================ -->
 
-        <h3>.slab-ketchup-red</h3>
+        <h4>.slab-ketchup-red</h4>
         <code>&lt;div class="slab-ketchup-red"&gt;This is one sentence in a ketchup red slab.&lt;/div&gt;</code>
       
         <div class="slab-ketchup-red">
@@ -415,7 +458,7 @@
       <section>
         <h2>MAIN NAVIGATION</h2>
 
-        <h3>nav</h3>
+        <h4>nav</h4>
         <code>
         &lt;nav&gt;
         &lt;a class="button-nav" href=" "&gt;Menu&lt;/a&gt;   
@@ -436,7 +479,7 @@
       <section>
         <h2>HORIZONTAL MENU</h2>
 
-        <h3>.menu-horizontal</h3>
+        <h4>.menu-horizontal</h4>
         <code>
         &lt;div class="menu-horizontal"&gt;<br>
         &lt;ul&gt;<br>
@@ -469,7 +512,7 @@
       <section>
         <h2>PRODUCT LISTING</h2>
 
-        <h3>.item</h3>
+        <h4>.item</h4>
         <code>
         &lt;div class="row"&gt;
           &lt;div class="item"&gt;
@@ -525,7 +568,7 @@
       
         <h2>PRODUCT TABLE</h2>
 
-        <h3>.table</h3>
+        <h4>.table</h4>
         <code>
         </code>
 
@@ -534,13 +577,13 @@
           <!-- Row 1 -->
           <div class="row">
             <div class="grid-1-2">
-              <p>Items</p>
+              <h4>Items</h4>
             </div>
             <div class="grid-1-4">
-              <p>Quantity</p>
+              <h4>Quantity</h4>
             </div>
             <div class="grid-1-4">
-              <p>Price</p>
+              <h4>Price</h4>
             </div>
           </div>
      
