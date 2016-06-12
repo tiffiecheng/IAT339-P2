@@ -484,22 +484,6 @@ li {
   padding-left: 1em; 
   text-indent: 0em;
 }
- 
-/* ----------- */
-/*    Forms    */
-/* ----------- */
-
-
-#subscribe form, #subscribe label{
-	display: inline-block;
-	margin-bottom: 0;
-	vertical-align: middle;
-}
-
-form h5{
-	margin-bottom: 0em;
-	display: inline-block;
-}
 
 
 /* ---------------- */
@@ -507,7 +491,7 @@ form h5{
 /* ---------------- */
 
 input[type=text] {
-  width: 100%;
+  width: 90%;
   padding: 12px 20px;
   margin: 8px 0;
   border: 0.3em solid #DDD;
@@ -666,6 +650,7 @@ input[type=text]:focus{
 .grid-1-2 #social-media{
 	text-align: left;
 	left: 1rem;
+	margin-left: 1rem;
 }
 
  #footer img{
@@ -680,27 +665,25 @@ input[type=text]:focus{
 	right: 5rem;
 }*/
 
-#footer::after{
+/*#footer::after{
 	content: "";
 	display: block;
 	clear: both;
-}
-/*#footer-wrap{
-	display: inline-block;
-	float: left;
-}*/
-/*#facebook img:first-child {
-	display: inline-block;
 }*/
 
-/*#facebook img:last-child {
-	display: none;
+/* ----------- */
+/*    Forms    */
+/* ----------- */
+
+
+#subscribe form, #subscribe label{
+	/*display: inline-block;*/
+	margin-bottom: 0;
+	vertical-align: middle;
+	margin-right: 6rem;
 }
 
-#facebook:hover img:first-child {
-	display: none;
+form h5{
+	margin-bottom: 0em;
+	/*display: inline-block;*/
 }
-
-#facebook:hover img:last-child {
-	display: inline-block;
-}*/
