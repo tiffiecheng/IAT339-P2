@@ -561,6 +561,13 @@ input[type=text]:focus{
 /*   Horizontal Menu   */
 /* ------------------- */
 
+.menu-horizontal img {
+  width: 100%;
+  height: 25em;
+  background-color: #DDD;
+  border: 0.1em solid #FFF;
+}
+
 .menu-horizontal ul {
     list-style-type: none;
     margin: 0;
