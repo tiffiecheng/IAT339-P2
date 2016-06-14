@@ -2,11 +2,13 @@
 	font-family: "Aquino-demo";
 	font-weight: normal;
 	font-style: normal;
-	src: url('fonts/Aquino-demo.eot');
+  src: url('fonts/Aquino-Demo.ttf');
+	/*src: url('fonts/Aquino-demo.eot');
 	src: url('fonts/Aquino-demo.eot#iefix') format('embedded-opentype'), 
 		url('fonts/Aquino-demo.woff2') format('woff2'),
 		url('fonts/Aquino-demo.woff') format('woff'),
-		url('fonts/Aquino-demo.ttf') format('truetype'); 	/* for older versions of IE, woff2 = most compressed woff = compressed, trutype = least compressed */
+		url('fonts/Aquino-demo.ttf') format('truetype'); 	*/
+    /* for older versions of IE, woff2 = most compressed woff = compressed, trutype = least compressed */
 }
 
 *, *::after, *::before{
@@ -27,7 +29,7 @@ body {
   text-align: left;
 }
 /* ============ */
-/*    HEADER    */
+/*    HEADER*/
 /* ============ */
 
 .header-wrap{
@@ -80,7 +82,7 @@ body {
 /*   Main Navigation Bar  */
 /* ---------------------- */
 
-.nav-main-bg{
+.nav-main{
 	background: #f5f5f5;
  	border-bottom: 0.25em solid #FFF;
   	border-top: 0.25em solid #ddd;
@@ -98,7 +100,10 @@ body {
 section:not([id]) {
   margin: 2em 0;
   padding: 2em 0 4em 0;
-  /*border-bottom: 0.15em dotted #AAA;*/
+}
+
+.sections-styleGuide{ 
+  border-bottom: 0.15em dotted #AAA;
 }
 
 section p {
@@ -300,6 +305,27 @@ a.button-nav:hover, a.button-nav:focus {
 	margin-bottom: 0;
 	vertical-align: middle;
 	line-height: 200%;
+}
+
+/* --------------- */
+/*   Breadcrumbs   */
+/* --------------- */
+.breadcrumb-item{
+  float: left;
+  margin-right: 0.5em;
+  font-size: 0.75rem;
+  font-weight: normal;
+  color: #ddd;
+}
+
+.breadcrumb-item:hover{
+  color: #E5842C;
+}
+
+.breadcrumb::after{
+  content: "";
+  display: block;
+  clear: both; 
 }
 
 /* =============================== */
