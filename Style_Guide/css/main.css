@@ -2,13 +2,12 @@
 	font-family: "Aquino-demo";
 	font-weight: normal;
 	font-style: normal;
-  src: url('fonts/Aquino-Demo.ttf');
-	/*src: url('fonts/Aquino-demo.eot');
+	src: url('fonts/Aquino-demo.eot');
 	src: url('fonts/Aquino-demo.eot#iefix') format('embedded-opentype'), 
 		url('fonts/Aquino-demo.woff2') format('woff2'),
 		url('fonts/Aquino-demo.woff') format('woff'),
-		url('fonts/Aquino-demo.ttf') format('truetype'); 	*/
-    /* for older versions of IE, woff2 = most compressed woff = compressed, trutype = least compressed */
+		url('fonts/Aquino-demo.ttf') format('truetype'); 	
+    /*for older versions of IE, woff2 = most compressed woff = compressed, trutype = least compressed */
 }
 
 *, *::after, *::before{
@@ -537,9 +536,9 @@ li {
 /* ---------------- */
 
 input[type=text] {
-  width: 90%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.5rem 0;
   border: 0.3em solid #DDD;
   border-radius: 0.25em;
   box-sizing: border-box;
@@ -551,6 +550,28 @@ input[type=text]:focus{
   border: 0.3em solid #555;  
 }
 
+/* ---------------- */
+/*    Text Input    */
+/* ---------------- */
+
+input[type=search] {
+  width: 30%;
+  padding: 0.5rem 1.25rem;
+  margin: 0.5rem 0;
+  border: 0.1em solid #DDD;
+  border-radius: 1.25rem;
+  box-sizing: border-box;
+  -webkit-transition: border 0.2s ease-out;
+  transition: border 0.2s ease-out;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+input[type=search]:focus{
+  border: 0.2em solid #777;  
+  width: 100%;
+  outline: none;
+}
 /* =============================== */
 /*        COMBINED ELEMENTS        */
 /* =============================== */
