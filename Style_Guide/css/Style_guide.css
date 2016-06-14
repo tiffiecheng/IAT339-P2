@@ -39,7 +39,6 @@
   line-height: 175%;
 }
 
-
 /* ------------------- */
 /*   Header Citations  */
 /* ------------------- */
@@ -143,6 +142,14 @@
         -ms-animation: fadein 1.5s; /* Internet Explorer */
          -o-animation: fadein 1.5s; /* Opera < 12.1 */
             animation: fadein 1.5s;
+}
+
+/* ------------------- */
+/*       Sections      */
+/* ------------------- */
+
+.sections-styleGuide{ 
+  border-bottom: 0.15em dotted #AAA;
 }
 
 /* =============================== */
