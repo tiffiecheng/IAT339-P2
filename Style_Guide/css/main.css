@@ -541,6 +541,11 @@ li {
   text-indent: 0em;
 }
 
+.leftAlign{
+  text-align: left;
+  /*margin: 0;*/
+}
+
 /* ---------------- */
 /*    Text Input    */
 /* ---------------- */
@@ -840,9 +845,7 @@ form h5{
 /* ---------------------- */
 /*    Product Details     */
 /* ---------------------- */
-
-#shop-section1 h2{
-  text-align: left;
+#shop-section1 .leftAlign{
   margin: 0;
 }
 
@@ -874,4 +877,6 @@ form h5{
   height: 25rem;
 }
 
-
+/* ---------------------- */
+/*     Menu Selection     */
+/* ---------------------- */

@@ -1,0 +1,40 @@
+#wrapper, #scrollArea, html, body {
+    height: 98%;
+}
+#scrollLeft-1-2 {
+    float: left;
+    width: 70%;
+    padding: 1rem;
+    padding-right: 2rem;
+    height: 100%;
+    overflow: scroll;
+}
+#scrollRight-1-2 {
+    float: left;
+    width: 30%;
+    padding: 1rem;
+    height: 100%;
+    overflow: scroll;
+}
+#content, html, body {
+    height: 98%;
+}
+#left {
+    float: left;
+    width: 50%;
+    background: red;
+    height: 100%;
+    overflow: scroll;
+}
+#right {
+    float: left;
+    width: 50%;
+    background: blue;
+    height: 100%;
+    overflow: scroll;
+}
+
+/*#wrapper-scrollable{
+  width: 90%;
+  margin: 1rem, auto;
+}*/
