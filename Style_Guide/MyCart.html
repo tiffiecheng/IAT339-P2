@@ -26,14 +26,14 @@
         <h2 id="logo">BentoGo</h2>
       </a>
         <img id="icon-cart" src="img/icon-cart.png">
-        <a id="myCart" href="#">My Cart</a>
+        <a id="myCart" href="MyCart.html">My Cart</a>
     </div>
 
     <!-- ===================== -->
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
-    <div class="nav-main-bg">
+    <div class="nav-main">
       <nav class="nav-main-wrap">      
         <a class="button-nav" href="Menu.html">Menu</a>
         <a class="button-nav" href="About.html">About</a>
@@ -48,16 +48,18 @@
     <!-- ======================================== -->
 
   <section id="wrapper">
+    
+      <div class="pageTitle">
+        <h2>My Cart</h2>
+      </div>
 
-    <section>
-      
-      <h2>My Cart</h2>
+      <div class="myCart">
 
-<div class="table">
+        <div class="table">
 
           <!-- Row 1 -->
           <div class="row">
-            <div class="grid-1-2">
+            <div class="grid-1-2-withHeading">
               <h4>Items</h4>
             </div>
             <div class="grid-1-4">
@@ -70,9 +72,16 @@
      
           <!-- Row 2 -->
           <div class="row">
-            <div class="grid-1-2">
-              <p>Pikachu Bento</p>
+            
+            <div class="grid-1-8">
+              <img src=""/>
             </div>
+            
+            <div class="grid-3-8">
+              <p><strong>Pikachu Bento</strong></p>
+              <a href="#">Delete</a>
+            </div>
+
             <div class="grid-1-4">
                <select>
                   <option value="1">1</option>
@@ -82,15 +91,22 @@
                 </select>
             </div>
             <div class="grid-1-4">
-              <p>$9.99</p>
+              <p>$9.95</p>
             </div>
           </div>
 
           <!-- Row 3 -->
           <div class="row">
-            <div class="grid-1-2">
-              <p>Jigglypuff Bento</p>
+            
+           <div class="grid-1-8">
+              <img src=""/>
             </div>
+            
+            <div class="grid-3-8">
+              <p><strong>Custom Jigglypuff Bento</strong></p>
+              <a href="#">Delete</a>
+            </div>
+
             <div class="grid-1-4">
                <select>
                   <option value="1">1</option>
@@ -100,13 +116,30 @@
                 </select>
             </div>
             <div class="grid-1-4">
-              <p>$9.99</p>
+              <p>$9.95</p>
             </div>
           </div>
 
-        </div> 
+          <!-- Row 4 -->
+          <div class="row">
+            
+            <div class="pageTitle">
+              <p></p>
+            </div>
 
-    </section>
+            <div class="grid-1-2">
+            <p> </p>
+            </div>
+            
+            <div class="grid-1-2">
+            <h3>Subtotal</h3>
+            <p class="zesty-orange-text">$19.90</p>
+            </div>
+
+          </div>
+
+        </div> <!-- table closing tag--> 
+      </div>  
 
   </section>  <!-- Wrapper closing tag -->
   

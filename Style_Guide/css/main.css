@@ -28,7 +28,7 @@ body {
   text-align: left;
 }
 /* ============ */
-/*    HEADER*/
+/*    HEADER    */
 /* ============ */
 
 .header-wrap{
@@ -155,15 +155,27 @@ section p {
   color: #cf1b41;
 }
 
+.ketchup-red-text{
+  color: #cf1b41;
+}
+
 .zesty-orange{
   background-color: #CC7227;
   color: #CC7227;
+}
+
+.zesty-orange-text{
+  color: #CC7227;	
 }
 
 .mustard-yellow{
   background-color: #F6B710;
   color: #F6B710;
   margin-bottom: 3em;
+}
+
+.mustard-yellow-text{
+  color: #F6B710;	
 }
 
 .rice-white{
@@ -198,11 +210,11 @@ section p {
 /* =============================== */
 
 /*[class^='grid-1-2'], [class^='grid-1-3'], [class^='grid-1-']{*/
-.grid-1-2, .grid-1-3, .grid-1-4, .grid-1-4-uneven, .grid-1-5-withButton, .grid-3-4{
+.grid-1-2, .grid-1-3, .grid-1-4, .grid-1-4-uneven, .grid-1-5-withButton, .grid-3-4, .grid-1-8, .grid-3-8, .grid-1-2-withHeading{
   float: left;
   text-align: center;
   width: 100%;
-  /*padding-right: 20px;*/
+  /*padding-right: 1.5em;*/
 }
 
 .grid-1-2:last-of-type, .grid-1-3:last-of-type, .grid-1-4:last-of-type, .grid-1-4-uneven:last-of-type, .grid-1-5-withButton:last-of-type{
@@ -229,7 +241,8 @@ section p {
 }
 
 .grid-1-3 p{
-	width: 100%;
+	/*width: 100%;*/
+	width: 90%;
 }
 
 .grid-button{
@@ -251,39 +264,79 @@ section p {
 }
 
 @media (min-width: 38.5em) {
-  .grid-1-2 {
-    width: 50%
-  }
+	.grid-1-2 {
+		width: 50%;
+	}
+	.grid-1-3 {
+		width: 33.33%;
+	}
 }
 
+@media (min-width: 45em) {
+	.grid-1-4 {
+		width: 25%;
+	}
+	.grid-1-2-withHeading {
+		width: 50%;
+		text-align: left;
+	}
+	.grid-1-5-withButton {
+		width: 23%;
+	}
+	.grid-1-8 {
+		width: 12.5%;
+	}
+	.grid-3-8 {
+		width: 37.5%;
+		text-align: left;
+	}
+}
+
+@media (min-width: 62em) {
+	.grid-1-4-uneven {
+		width: 25%;
+	}
+	.grid-3-4{
+		width: 75%;
+	}
+}
+
+/*
 @media (min-width: 38.75em) {
   .grid-1-3 {
     width: 33.33%;
   }
 }
+*/
 
-@media (min-width: 45em) {
-  .grid-1-4 {
-    width: 25%;
-  }
-}
-
-@media (min-width: 62em) {
-  .grid-1-4-uneven {
-    width: 25%;
-  }
-}
-
+/*
 @media (min-width: 62em) {
   .grid-3-4 {
     width: 75%;
   }
 }
+*/
+
+/*
 @media (min-width: 45em) {
   .grid-1-5-withButton {
     width: 23%;
   }
 }
+
+@media (min-width: 45em) {
+  .grid-1-8 {
+    width: 12.5%;
+  }
+}
+
+@media (min-width: 45em) {
+  .grid-3-8 {
+    width: 37.5%;
+    text-align: left;
+  }
+}
+*/
 
 /*grid images*/
 .grid-1-2 img{
@@ -296,9 +349,9 @@ section p {
 /*       INTERACTIVE ELEMENTS      */
 /* =============================== */
 
-/* ------------- */
-/* In-text Links */
-/* ------------- */
+/* ---------------- */
+/*   In-text Links  */
+/* ---------------- */
 
 a{
   font-family: "Open Sans";
@@ -666,6 +719,7 @@ input[type=search]:focus{
   height: 25em;
   background-color: #DDD;
   border: 0.1em solid #FFF;
+  margin-top: 2em;
 }
 
 .menu-horizontal ul {
@@ -699,6 +753,7 @@ input[type=search]:focus{
 
 .grid-1-3 img {
   width: 90%;
+  /*width: 100%;*/
   height: 12em;
   background-color: #DDD;
   border: 0.1em solid #FFF;
@@ -723,6 +778,7 @@ input[type=search]:focus{
   padding: 0.5em;
   height: 2.5em;
   width: 90%;
+  /*width: 100%;*/
   font-weight: normal;
   color: #FFF;
   background-color: #d5d5d5;
@@ -869,6 +925,7 @@ form h5{
 /* ---------------------- */
 /*    Product Details     */
 /* ---------------------- */
+
 #shop-section1 .leftAlign{
   margin: 0;
 }
@@ -1017,5 +1074,30 @@ input[type=address]:focus{
 
 #reviewForm input[type=submit]{
   display: inline-block;
+}
+
+/* --------------------- */
+/*        My Cart        */
+/* --------------------- */
+
+.myCart .row{
+	padding: 1.5em 0;
+}
+
+.myCart img{
+  width: 5rem;
+  height: 5rem;
+  background-color: #ddd;
+  border: 0.2rem solid #FFF;
+}
+
+.myCart::after{
+	content: "";
+  	display: block;
+  	clear: both; 
+}
+
+.myCart img:hover{
+  	border: 0.2rem solid #aaa;
 }
 
