@@ -156,6 +156,9 @@ section p {
   text-indent: 86%;
   white-space: nowrap;
   margin: 10px 0 15px 0;
+/*float: left;
+  height: 2rem;
+  vertical-align: middle;*/
 }
 
 .ketchup-red{
@@ -574,7 +577,7 @@ input[type=button]:hover{
 
 input[type=submit]{
   display: inline-block;
-  margin: 0 1em 1em 0;
+  /*margin: 0 1em 1em 0;*/
   padding: 0.8em 2em;
   background-color: #333;
   border: 0.1em solid #333;
@@ -780,12 +783,12 @@ input[type=search]:focus{
   margin-bottom: 1em;
 }
 
-.item {
+/*.item {
   float: left;
   vertical-align: top;
   text-align: center;
   width: 33%;
-}
+}*/
 
 /* ------------------- */
 /*   Horizontal Menu   */
@@ -860,13 +863,13 @@ input[type=search]:focus{
 }
 
 .grid-1-3 img:hover {
-  border: 0.1em solid #555;
+  border: 0.1em solid #aaa;
 }
 */
 
-.caption {
-  display: block;
-}
+/*.caption {*/
+  /*display: block;*/
+/*}*/
 
 .button-addToCart{
   display: inline-block;
@@ -1099,7 +1102,7 @@ form h5{
   margin-top: 0;
 }
 
-input[type=address] {
+#addressSearch input[type=text] {
   width: 90%;
   padding: 0.75rem 1.25rem;
   margin: 0.5rem 0;
