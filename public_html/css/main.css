@@ -34,6 +34,7 @@ body {
 .header-wrap{
 	width: 90%;
 	margin: 1rem auto;
+  position: relative;
 }
 
 #header{
@@ -64,7 +65,7 @@ body {
 #icon-cart{
 	position: absolute;
 	/*text-align: right;*/
-	top: 1.65rem;
+	top: 0.2rem;
 	right: 6rem;
 	height: 1rem;
 }
@@ -73,7 +74,7 @@ body {
 	position: absolute;
 	/*text-align: right;*/
 	color: white;
-	top: 1.55rem;
+	top: 0.2rem;
 	right: 2rem;
 }
 
