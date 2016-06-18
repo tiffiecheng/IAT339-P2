@@ -34,11 +34,15 @@ body {
 .header-wrap{
 	width: 90%;
 	margin: 1rem auto;
+  position: relative;
 }
 
 #header{
-  background: #E5842C;  
-  border-top: 0.25em solid #CC7227;
+  /*background: #E5842C;
+  border-top: 0.2em solid #CC7227;  
+  */
+  background: #423831; /* deep brown color*/
+  border-top: 0.2em solid #423831;  
 }
 
 #header #tako{
@@ -50,30 +54,28 @@ body {
 
 #header::after{
 	content: "";
-  	display: block;
-  	clear: both; 
+  display: block;
+  clear: both; 
 }
 
 #logo{
 	text-align: left;
 	padding-top: 0em;
 	padding-left: 0.5em;
-	color: #FFF;
+	color: #E29127;
 }
 
 #icon-cart{
 	position: absolute;
-	/*text-align: right;*/
-	top: 1.65rem;
+	top: 0.4rem;
 	right: 6rem;
 	height: 1rem;
 }
 
 #myCart{
 	position: absolute;
-	/*text-align: right;*/
 	color: white;
-	top: 1.55rem;
+	top: 0.4rem;
 	right: 2rem;
 }
 
@@ -83,8 +85,16 @@ body {
 
 .nav-main{
 	background: #423831;
- 	border-bottom: 0.25em solid #ddd;
-  	border-top: 0.25em solid #000;
+  border-top: 0.4em solid #423831;
+ 	border-bottom: 0.4em solid #423831;
+}
+
+nav #tako{
+  float: left;
+  /*margin-bottom: 0.5rem;*/
+  margin-right: 1rem;
+  width: 4rem;
+  padding: 0 0.8rem;
 }
 
 /*
@@ -98,6 +108,7 @@ body {
 .nav-main-wrap{
 	width: 90%;
 	margin: 0rem auto;
+  position: relative;
 }
 
 /* ------------------- */
@@ -157,6 +168,9 @@ section p {
   text-indent: 86%;
   white-space: nowrap;
   margin: 10px 0 15px 0;
+/*float: left;
+  height: 2rem;
+  vertical-align: middle;*/
 }
 
 .ketchup-red{
@@ -267,7 +281,7 @@ section p {
 }
 
 .row::after {
-  content: " ";
+  content: "";
   display: block;
   clear: both;
 }
@@ -348,6 +362,7 @@ section p {
 */
 
 /*grid images*/
+
 .grid-1-2 img{
   background-color: #ddd;
   height: 20rem;
@@ -575,7 +590,7 @@ input[type=button]:hover{
 
 input[type=submit]{
   display: inline-block;
-  margin: 0 1em 1em 0;
+  /*margin: 0 1em 1em 0;*/
   padding: 0.8em 2em;
   background-color: #333;
   border: 0.1em solid #333;
@@ -782,12 +797,12 @@ input[type=search]:focus{
   margin-bottom: 1em;
 }
 
-.item {
+/*.item {
   float: left;
   vertical-align: top;
   text-align: center;
   width: 33%;
-}
+}*/
 
 /* ------------------- */
 /*   Horizontal Menu   */
@@ -851,31 +866,15 @@ input[type=search]:focus{
 
 }
 
-/*
-.grid-1-3 img {
-  width: 90%;
-  height: 12em;
-  background-color: #DDD;
-  border: 0.1em solid #FFF;
-  -webkit-transition: background-color 0.1s ease-out;
-  transition: background-color 0.1s ease-out;
-}
-
-.grid-1-3 img:hover {
-  border: 0.1em solid #555;
-}
-*/
-
-.caption {
-  display: block;
-}
+/*.caption {*/
+  /*display: block;*/
+/*}*/
 
 .button-addToCart{
   display: inline-block;
   padding: 0.5em;
   height: 2.5em;
   width: 90%;
-  /*width: 100%;*/
   font-weight: normal;
   color: #FFF;
   background-color: #d5d5d5;
@@ -908,9 +907,9 @@ input[type=search]:focus{
 	text-align: left;
 }
 
-/* ---------- */
-/*   FOOTER   */
-/* ---------- */
+/* ============== */
+/*     FOOTER     */
+/* ============== */
 
 #footer{
 	position: absolute;
@@ -953,7 +952,6 @@ input[type=search]:focus{
 /*    Forms    */
 /* ----------- */
 
-
 #subscribe form, #subscribe label{
 	/*display: inline-block;*/
 	margin-bottom: 0;
@@ -966,49 +964,196 @@ form h5{
 	/*display: inline-block;*/
 }
 
-/* ---------- */
-/*    Home    */
-/* ---------- */
+/* ================================== */
+/*                PAGES               */
+/* ================================== */
+
+/* ====================== */
+/*        HOME PAGE       */
+/* ====================== */
+
+/* ------- */
+/* Figures */
+/* ------- */
+
+figure{
+  position: relative;  
+  z-index: 10;
+  width: 100%;
+}
+
+figcaption{
+  position: absolute; 
+  bottom: 1em;
+  left: 1em;
+  color: white;
+  font-size: 1.3em;
+}
+
+/* ------------ */
+/*  Full Promo  */
+/* ------------ */
 
 .full-promo{
+  background-image: url("../img/hero-2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat, repeat;
+  background-color: #E5842C;
   width: 100%;
-  height: 17rem;
-  background-color: #dcdcdc;
+  /*height: 60%;*/
+  padding: 7em 0;
   border-style: none;
-  margin-bottom: 3rem;
+  /*margin-bottom: 3rem;*/
+}
+
+.full-promo-wrap{
+  text-align: center;
+  margin: 9rem auto;
+  width: 45%;
+  color: #FFF;
+}
+
+.full-promo-wrap #tako{
+  margin-top: -3rem;
+}
+
+.full-promo-wrap p{
+  font-size: 1rem;
+}
+
+.full-promo-wrap h2{
+  margin-top: -1em;
 }
 
 [id^='home-section'] {
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 
-#home-section2{
-  padding: 2rem 3.5%;
-  background-color: #ddd; 
+#home-section1 h2, #home-section2 h2, #home-section3 h2, #home-section4 h2{
+  margin-bottom: 2em;
 }
 
-#home-section2-item {
+/* --------------- */
+/*  Home Section1  */
+/* --------------- */
+
+/* --------------- */
+/*  Home Section2  */
+/* --------------- */
+
+#home-section2 img{
+  border-style: none;
+  height: auto;
+  width: 100%;
+  /*background-color: #ccc;*/
+  background-size: cover;
+  background-position: center center;
+}
+
+.tint{
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.tint:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(232,113,104, 0.6);
+}
+
+.tint:hover {
+  background: rgba(232,113,104, 0);
+}
+
+#home-section2 .grid-1-2{
+  padding-right: 0.3rem;
+  position: relative;
+}
+
+#home-section2 .grid-1-2:last-of-type{
+  padding-right: 0;
+}
+
+.imgTitle{
+  position: absolute;
+  top: 1em;
+  left: 2em;
+  color: #FFF;
+  font-size: 1.7em;
+
+  /*visibility: hidden;*/
+  /*opacity: 0;*/
+}
+
+#home-section2 img:hover .imgDescription {
+  visibility: visible;
+  /*opacity: 1;*/
+}
+
+.imgSubtitle{
+  position: absolute;
+  top: 4.2em;
+  left: 3.2em;
+  color: #FFF;
+  font-size: 1.1em;
+
+  /*visibility: hidden;*/
+  /*opacity: 0;*/
+}
+
+/* --------------- */
+/*  Home Section3  */
+/* --------------- */
+
+#home-section3{
+  padding: 6rem 3.5%;
+  background-color: #333; 
+  width: 100%;
+}
+
+#home-section3-item {
   display: inline-block;
   background-color: #fff;
+  border-radius: 0.5em;
   width: 90%;
   margin:0;
 }
 
-#home-section2 p{
+#home-section3 h2{
+  color: #FFF;
+}
+
+#home-section3 p{
   color: #333;
   margin: 0;
+  margin-bottom: 1em;
   padding: 1rem;
+  line-height: 195%;
 }
 
-#home-section3 img{
-  width: 100%;
-  border-style: none;
-  height: 20rem;
+/* --------------- */
+/*  Home Section4  */
+/* --------------- */
+
+#home-section4 img{
+  width: 10em;
+  margin-bottom: -1em;
 }
 
-/* ---------------------- */
-/*    Premade Products    */
-/* ---------------------- */
+#home-section4 h3{
+  margin-bottom: 2em;
+}
+
+/* ====================== */
+/*   PREMADE PRODUCTS     */
+/* ====================== */
 
 .pageTitle{
   margin-top: 2em;
@@ -1021,9 +1166,9 @@ form h5{
   margin-top: 1rem
 }
 
-/* ---------------------- */
-/*    Product Details     */
-/* ---------------------- */
+/* ====================== */
+/*    PRODUCT DETAILS     */
+/* ====================== */
 
 #shop-section1 .leftAlign{
   margin: 0;
@@ -1050,9 +1195,9 @@ form h5{
   text-align: left;
 }
 
-/* ---------------------- */
-/*     Menu Selection     */
-/* ---------------------- */
+/* ---------------- */
+/*  Menu Selection  */
+/* ---------------- */
 
 #menu-selection img{
   width: 100%;
@@ -1063,29 +1208,29 @@ form h5{
   border: 0.2rem solid #aaa;
 }
 
-/* ---------------------- */
-/*          About         */
-/* ---------------------- */
+/* ====================== */
+/*          ABOUT         */
+/* ====================== */
 
-.about-img img{
+/*.about-img img{
 	width: 100%;
 }
 
 .about h3{
 	margin-bottom: 2em;
-}
+}*/
 
-/* ----------------------- */
-/*         Contact         */
-/* ----------------------- */
+/* ====================== */
+/*        CONTACT         */
+/* ====================== */
 
 .contact h4{
 	margin-bottom: 0.5em;
 }
 
-/* ----------------------- */
-/*     Store Loctaions     */
-/* ----------------------- */
+/* ====================== */
+/*    STORE LOCATIONS     */
+/* ====================== */
 
 #addressSearch{
   background-color: #efefef;
@@ -1102,7 +1247,7 @@ form h5{
   margin-top: 0;
 }
 
-input[type=address] {
+#addressSearch input[type=text] {
   width: 90%;
   padding: 0.75rem 1.25rem;
   margin: 0.5rem 0;
@@ -1143,9 +1288,9 @@ input[type=address]:focus{
   border: 0.1em solid #ddd;
 }
 
-/* --------------------- */
-/*     Testimonials      */
-/* --------------------- */
+/* ====================== */
+/*      TESTIMONIALS      */
+/* ====================== */
 
 #testimonials{
   margin-top: 2.5rem;
@@ -1198,9 +1343,9 @@ input[type=address]:focus{
   display: inline-block;
 }
 
-/* --------------------- */
-/*        My Cart        */
-/* --------------------- */
+/* ====================== */
+/*        MY CART         */
+/* ====================== */
 
 .myCart .row{
 	padding: 1.5em 0;
@@ -1223,9 +1368,9 @@ input[type=address]:focus{
   	border: 0.2rem solid #aaa;
 }
 
-/* --------------------- */
-/*       Check Out       */
-/* --------------------- */
+/* ====================== */
+/*        CHECK OUT       */
+/* ====================== */
 
 .checkOut h4{
 	margin-bottom: 1em;
