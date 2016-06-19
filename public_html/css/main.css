@@ -38,10 +38,9 @@ body {
 }
 
 #header{
-  /*background: #E5842C;
-  border-top: 0.2em solid #CC7227;  
-  */
-  background: #423831; /* deep brown color*/
+  background: #E5842C;
+  /*border-top: 0.2em solid #CC7227;  */
+  /*background: #423831;  deep brown color*/
   border-top: 0.2em solid #423831;  
 }
 
@@ -62,7 +61,7 @@ body {
 	text-align: left;
 	padding-top: 0em;
 	padding-left: 0.5em;
-	color: #E29127;
+	color: #fff;
 }
 
 #icon-cart{
@@ -846,7 +845,7 @@ input[type=search]:focus{
 /* ---------------- */
 
 .shopPremade img{
-  width: 80%;
+  width: 90%;
   height: 12em;
   background-color: #DDD;
   border: 0.1em solid #FFF;
@@ -867,7 +866,7 @@ input[type=search]:focus{
   display: inline-block;
   padding: 0.5em;
   height: 2.5em;
-  width: 80%;
+  width: 90%;
   /*width: 100%;*/
   font-weight: normal;
   color: #FFF;
@@ -1319,7 +1318,7 @@ input[type=address]:focus{
 
 /*#testimonials .grid-1-4-uneven*/
 #testimonials .grid-1-2{
-  padding: 1rem 4rem;
+  padding: 1rem 2.5rem;
 }
 
 #testimonials p{
