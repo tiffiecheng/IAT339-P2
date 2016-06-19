@@ -173,9 +173,9 @@ section p {
   color: #CC7227;
 }
 
-.zesty-orange-text{
-  color: #CC7227;	
-}
+/*.zesty-orange-text{
+  color: #CC7227;
+}*/
 
 .mustard-yellow{
   background-color: #F6B710;
@@ -266,7 +266,7 @@ section p {
   clear: both; 
 }
 
-.row::after {
+[class^='row']::after {
   content: " ";
   display: block;
   clear: both;
@@ -482,7 +482,7 @@ a.button-nav:hover, a.button-nav:focus {
   margin-right: 0.5em;
   font-size: 0.75rem;
   font-weight: normal;
-  color: #ddd;
+  color: #888;
   margin-top: 1rem
 }
 
@@ -491,7 +491,7 @@ a.button-nav:hover, a.button-nav:focus {
 }
 
 .shopTopBar{
-  margin-left: 1rem;
+  margin-left: 3.5%;
 }
 
 .shopTopBar::after{
@@ -719,7 +719,7 @@ li {
 /*    Text Input    */
 /* ---------------- */
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
   width: 100%;
   max-width: 100%;
   padding: 0.75rem 1.25rem;
@@ -838,7 +838,7 @@ input[type=search]:focus{
 /* ---------------- */
 
 .shopPremade img{
-  width: 90%;
+  width: 80%;
   height: 12em;
   background-color: #DDD;
   border: 0.1em solid #FFF;
@@ -874,11 +874,11 @@ input[type=search]:focus{
   display: inline-block;
   padding: 0.5em;
   height: 2.5em;
-  width: 90%;
+  width: 80%;
   /*width: 100%;*/
   font-weight: normal;
   color: #FFF;
-  background-color: #d5d5d5;
+  background-color: #CC7227;
   border: 0.1em solid #FFF;
   border-radius: 0.25em;
   text-decoration: none;
@@ -891,8 +891,8 @@ input[type=search]:focus{
 
 .button-addToCart:hover{
   background-color: #FFF;
-  color: #878787;
-  border: 0.1em solid #878787;
+  color: #CC7227;
+  border: 0.1em solid #CC7227;
   text-decoration: none;
 }
 
@@ -1017,7 +1017,7 @@ form h5{
 
 .sort{
   position: absolute;
-  right: 6.75%;
+  right: 8.15%;
   margin-top: 1rem
 }
 
@@ -1081,6 +1081,15 @@ form h5{
 
 .contact h4{
 	margin-bottom: 0.5em;
+  text-align: left;
+  color: #CC7227;
+}
+
+#contactForm{
+  /*background-color: #efefef;*/
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 0.15rem dotted #AAA;
 }
 
 /* ----------------------- */
@@ -1151,14 +1160,14 @@ input[type=address]:focus{
   margin-top: 2.5rem;
   background: #FFF;
 }
-
+/*
 #testimonials h3, #testimonials .grid-3-4{
   text-align: left;
-}
+}*/
 
-#testimonials h3{
+/*#testimonials h3{
   margin-top: 0.5rem;
-}
+}*/
 
 #testimonials img{
   background-color: #ccc;
@@ -1166,8 +1175,15 @@ input[type=address]:focus{
   width: 100%
 }
 
-#testimonials .grid-1-4-uneven{
-  padding-right: 2rem;
+/*#testimonials .grid-1-4-uneven*/
+#testimonials .grid-1-2{
+  padding: 1rem 4rem;
+}
+
+#testimonials p{
+  /*text-align: left;*/
+  padding-bottom: 2rem;
+  border-bottom: 0.15rem dotted #AAA;
 }
 
 #testimonials .row{
@@ -1194,16 +1210,20 @@ input[type=address]:focus{
   text-align: right;
 }
 
-#reviewForm input[type=submit]{
-  display: inline-block;
-}
-
 /* --------------------- */
 /*        My Cart        */
 /* --------------------- */
 
-.myCart .row{
-	padding: 1.5em 0;
+/*.myCart [class^='row']{*/
+	/*padding: 2rem 0;*/
+/*}*/
+
+.myCart [class^='row-product']{
+  padding: 3rem 0;
+}
+
+.row-product{
+  border-bottom: 0.15rem dotted #AAA;
 }
 
 .myCart img{
@@ -1214,13 +1234,13 @@ input[type=address]:focus{
 }
 
 .myCart::after{
-	content: "";
-  	display: block;
-  	clear: both; 
+  content: "";
+	display: block;
+	clear: both; 
 }
 
 .myCart img:hover{
-  	border: 0.2rem solid #aaa;
+  border: 0.2rem solid #aaa;
 }
 
 /* --------------------- */
