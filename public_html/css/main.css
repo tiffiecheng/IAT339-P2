@@ -84,12 +84,20 @@ body {
 /* ---------------------- */
 
 .nav-main{
-  background: #e5842c;
-    border-top: 0.4em solid #e5842c;
+  background: rgba(229,132,44,0.9);
+  border-top: 0.4em solid #e5842c;
   border-bottom: 0.4em solid #e5842c;
 /*	background: #423831;
   border-top: 0.4em solid #423831;
  	border-bottom: 0.4em solid #423831;*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+nav{
+
 }
 
 nav #tako{
@@ -850,17 +858,20 @@ input[type=search]:focus{
 /* ---------------- */
 
 .shopPremade img{
-  width: 90%;
-  height: 12em;
-  background-color: #DDD;
+  /*width: 90%;*/
+  /*height: 12em;*/
+    /*border-style: none;*/
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
   border: 0.1em solid #FFF;
+    padding: 1em;
   -webkit-transition: background-color 0.1s ease-out;
   transition: background-color 0.1s ease-out;
 }
 
 .shopPremade img:hover{
   border: 0.1em solid #555;
-
 }
 
 /*.caption {*/
