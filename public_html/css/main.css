@@ -1356,6 +1356,7 @@ input[type=address]:focus{
   /*background-color: #ddd;*/
   width: 100%;
   height: auto;
+    border: 0.1em solid #777;
 }
 
 #locationResults .grid-1-4{
