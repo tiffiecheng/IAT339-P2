@@ -19,7 +19,7 @@
 body {
   font-family: "Open Sans";
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #wrapper{
@@ -99,8 +99,15 @@ body {
   z-index: 99999;
 }
 
-nav{
-
+.nav-main-white{
+  background: #FFF;
+  border-top: 0.1em solid #eee;
+  border-bottom: 0.1em solid #ccc;
+  height: 3.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999; 
 }
 
 nav #tako{
@@ -112,7 +119,7 @@ nav #tako{
 }
 
 .nav-main-wrap{
-	width: 85%;
+	width: 95%;
 	margin: 0rem auto;
   position: relative;
 }
@@ -399,12 +406,12 @@ a:hover{
 /* Navigation button */
 /* ----------------- */
 
+/* nav-main orange */
+
 a.button-nav{
   display: inline-block;
   padding: 0.4em .7em;
   color: #FFF;
-/*  background-color: #423831; 
-  border-bottom: 0.3em solid #423831;*/
   background-color: #e5842c;
   border-bottom: 0.3em solid #e5842c;
   text-decoration: none;
@@ -417,24 +424,23 @@ a.button-nav:hover, a.button-nav:focus {
   border-bottom: 0.3em solid #FFF;
 }
 
+/* nav-main white */
 
-/*
-a.button-nav{
+.nav-main-white a.button-nav{
   display: inline-block;
   padding: 0.4em .7em;
-  border-bottom: 0.3em solid #f5f5f5;
   color: #333;
-  background-color: #f5f5f5; 
+  background-color: #FFF;
+  border-bottom: 0.3em solid #FFF;
   text-decoration: none;
   font-size: 14px;
   -webkit-transition: background-color 0.1s ease-out;
   transition: background-color 0.1s ease-out;
 }
 
-a.button-nav:hover, a.button-nav:focus {
-  border-bottom: 0.3em solid #333;
+.nav-main-white a.button-nav:hover, .nav-main-white a.button-nav:focus {
+  border-bottom: 0.3em solid #e5842c;
 }
-*/
 
 /* ------------------- */
 /*   Dropdown Button   */
@@ -622,6 +628,25 @@ input[type=submit]:hover{
 /* ----------------- */
 /*  Colored buttons  */
 /* ----------------- */
+
+.button-white{
+  display: inline-block;
+  padding: 0.8em 2em;
+  color: #333;
+  background-color: #FFF;
+  border: 0.1em solid #bbb;
+  border-radius: 0.25em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+.button-white:hover{
+  background-color: #333;
+  color: #fff;
+  border: 0.1em solid #ddd;
+  text-decoration: none;
+}
 
 .button-red{
   display: inline-block;
@@ -954,25 +979,38 @@ input[type=search]:focus{
 	position: absolute;
 	/*only works if body tag is relative otherwise */
 	background-color: #f5f5f5;
-	right: 0;
-	left: 0;
-	bottom: 0;
-	padding: 1rem;
-	/*width: 100%;*/
+  padding: 5rem 0;
+	width: 100%;
 	/*height: 5rem;*/
-	/*float: left;*/
+}
+
+#footer .home-wrapper{
+  margin-top: -4em;
 }
 
 .grid-1-2 #social-media{
-	text-align: left;
+	text-align: center;
 	left: 1rem;
 	margin-left: 1rem;
 }
 
+#footer input{
+  width: 25%;
+}
+
+#footer h3{
+  color: #333;
+}
+
  #footer img{
-/*	width: 10%; 	*/	
+	/*width: 10%;*/
   padding-left: 0.5rem;
-	padding-top: 2.5rem;
+	padding-top: 2em;
+}
+
+#footer hr{
+  border: 0.1em solid #ddd;
+  margin: 2.3em 0;
 }
 
 /*#subscribe{
@@ -1268,19 +1306,21 @@ figcaption{
 /* ====================== */
 
 .customize .grid-3-4{
-  background-color: #ccc;
+  background-color: #eee;
   /*width: 100%;*/
-  height: 50em;
+  /*height: auto;*/
 }
 
 .customize .grid-1-2{
-   background-color: #FFF;
-  /*width: 100%;*/
+  background-color: #FFF;
   height: 50em; 
 }
 
 .customize .grid-1-4{
+  position: relative;
   padding: 1em;
+  margin: 1rem auto;
+  background-color: #FFF;
 }
 
 .customize .grid-1-4 .thumbnail{
@@ -1288,11 +1328,82 @@ figcaption{
   width: 5em;
   height: 5em;
   margin: 0.3em;
+  /*margin: 0 auto;*/
 }
 
 .customize .grid-1-4 .thumbnail:hover{
   background-color: #000;
 }
+
+.customize-wrapper{
+  width: 85%;
+  margin: 1rem auto;
+  margin-top: 5em;
+  text-align: left;
+}
+
+.customize hr{
+  border: 0.1rem solid #ededed;
+}
+
+#custom-1 ul{
+  background-color: #E2E2E2;
+}
+
+#custom-box{
+  width: 100%;
+  height: auto;
+} 
+
+.customize h4{
+  margin-top: 0;
+}
+
+.customize .row{
+  border-bottom: 0.1em solid #CCC;
+}
+
+.customize .thumbnnail-group{
+  text-align: center;
+}
+
+/* ------------- */
+/* menu vertical */
+/* ------------- */
+
+.menu-vertical{
+  position: absolute;
+  left: -3.5em;
+  top: 35%;
+}
+
+.menu-vertical ul {
+  list-style-type: none;
+  margin: 0;
+  border-radius: 0.3em;
+  border: 0.1em solid #ccc;
+  /*margin-top: 1em;*/
+  padding-left: 0em;
+  overflow: hidden;
+  background-color: #E2E2E2;
+}
+
+.menu-vertical li {
+  padding: 0;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: #bbb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-vertical li a:hover {
+    background-color: #fff;
+}
+
 /* ====================== */
 /*          ABOUT         */
 /* ====================== */
@@ -1372,12 +1483,16 @@ input[type=address]:focus{
   margin: 2rem 0;
 }
 
-#locationMap img{
+#locationMap{
+  margin-top: 0em;
+}
+
+/*#locationMap img{
   width:100%;
   height: 20rem;
   background-color: #ddd;
 }
-
+*/
 #locationResults .grid-1-3{
   border: 0.1em solid #ddd;
 }
@@ -1396,14 +1511,14 @@ input[type=address]:focus{
 #locationResults p{
   text-align: left;
   margin-bottom: 0;
-  font-size: 0.9em;
+  /*font-size: 0.9em;*/
 }
 
 #locationResults .grid-1-4 a{
   display: block;
   text-align: left;
   margin-bottom: 0.5em;
-    font-size: 0.9em;
+  /*font-size: 0.9em;*/
 }
 
 
@@ -1450,7 +1565,7 @@ input[type=address]:focus{
 }
 
 #reviewForm{
-  background-color: #efefef;
+  /*background-color: #efefef;*/
   padding: 1rem 2rem;
   margin-top: 3rem;
 }
