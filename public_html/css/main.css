@@ -795,6 +795,7 @@ li {
 /* ---------------- */
 
 input[type=text], input[type=email], textarea {
+  /*display: inline-block;*/
   width: 100%;
   max-width: 100%;
   padding: 0.75rem 1.25rem;
@@ -1431,10 +1432,12 @@ figcaption{
 /* ====================== */
 
 #contactForm{
-  /*background-color: #efefef;*/
+  /*display: inline-block;*/
+  width: 100%
+  background-color: #efefef;
   padding: 1rem 0;
   margin-top: 2rem;
-  border-top: 0.15rem dotted #AAA;
+  /*border-top: 0.15rem dotted #AAA;*/
 }
 
 /* ====================== */
