@@ -1416,15 +1416,19 @@ figcaption{
 	margin-bottom: 2em;
 }*/
 
-/* ====================== */
-/*        CONTACT         */
-/* ====================== */
+/* ================== */
+/*        FAQ         */
+/* ================== */
 
-.contact h4{
+.faq h3, .faq h4{
 	margin-bottom: 0.5em;
   text-align: left;
   color: #CC7227;
 }
+
+/* ====================== */
+/*        CONTACT         */
+/* ====================== */
 
 #contactForm{
   /*background-color: #efefef;*/
