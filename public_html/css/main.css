@@ -1682,9 +1682,6 @@ input[type=address]:focus{
   background-color: #ddd;
 }
 */
-#locationResults .grid-1-3{
-  border: 0.1em solid #ddd;
-}
 
 #locationResults img{
   /*background-color: #ddd;*/
@@ -1698,7 +1695,8 @@ input[type=address]:focus{
 }
 
 #locationResults p{
-  text-align: left;
+  /*text-align: left;*/
+  text-align: center;
   margin-bottom: 0;
   /*font-size: 0.9em;*/
 }
@@ -1714,6 +1712,21 @@ input[type=address]:focus{
 #locationResults .row{
   padding-bottom: 2em;
 }
+
+.resultLinks{
+  margin-top: 0.5rem;
+}
+
+/*TEMP STUFF DELETE AFTER*/
+#locationResults .grid-1-3{
+  border: 0.1em solid #ddd;
+  padding: 2rem;
+}
+
+#locationResults .row{
+  padding-bottom: 0;
+}
+/*TEMPT STUFF DELETE AFTER*/
 
 /* ====================== */
 /*      TESTIMONIALS      */
