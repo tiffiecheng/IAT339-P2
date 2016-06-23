@@ -7,7 +7,6 @@
 		url('fonts/Aquino-demo.woff2') format('woff2'),
 		url('fonts/Aquino-demo.woff') format('woff'),
 		url('fonts/Aquino-demo.ttf') format('truetype'); 	
-    /*for older versions of IE, woff2 = most compressed woff = compressed, trutype = least compressed */
 }
 
 *, *::after, *::before{
@@ -246,11 +245,10 @@ section p {
 /*              GRIDS              */
 /* =============================== */
 
-.grid-1-1, .grid-1-2, .grid-1-3, .grid-1-4, .grid-1-5, .grid-1-4-uneven, .grid-1-5-withButton, .grid-3-4, .grid-1-8, .grid-3-8, .grid-1-2-withHeading{
+.grid-1-1, .grid-1-2, .grid-1-3, .grid-1-4, .grid-1-4-uneven, .grid-1-5, .grid-1-5-withButton, .grid-3-4, .grid-1-8, .grid-3-8, .grid-1-2-withHeading{
   float: left;
   text-align: center;
   width: 100%;
-  /*padding-right: 1.2em;*/
 }
 
 .grid-1-2:last-of-type, .grid-1-3:last-of-type, .grid-1-4:last-of-type, .grid-1-4-uneven:last-of-type, .grid-1-5-withButton:last-of-type{
@@ -378,8 +376,6 @@ section p {
   }
 }
 */
-
-/*grid images*/
 
 .grid-1-2 img{
   background-color: #ddd;
@@ -529,7 +525,7 @@ a.button-nav:hover, a.button-nav:focus {
 }
 
 .shopTopBar{
-  margin-left: 1.5%;
+  /*margin-left: 1.5%;*/
 }
 
 .shopTopBar::after{
@@ -817,7 +813,8 @@ input[type=text], input[type=email], textarea {
 }
 
 input[type=text]:focus{
-  border: 0.3em solid #555;  
+  border: 0.3em solid #CC7227;  
+  outline: none;
 }
 
 /* ---------------- */
@@ -1359,21 +1356,22 @@ figcaption{
 
 .customize .grid-1-4{
   position: relative;
-  /*padding-top: 3em;*/
-  /*margin: 1rem auto;*/
   background-color: #FFF;
 }
 
-.customize .grid-1-4 .thumbnail{
+.customize .grid-1-4 .character{
   background-color: #ccc;
   width: 5em;
   height: 5em;
   margin: 0.3em;
 }
 
-/*.customize .grid-1-4 .thumbnail:hover{
-  background-color: #000;
-}*/
+.customize .grid-1-4 .filling{
+  background-color: #ccc;
+  width: 10em;
+  height: 10em;
+  margin: 0.3em;
+}
 
 .customize-wrapper{
   width: 85%;
@@ -1389,6 +1387,17 @@ figcaption{
 }
 
 .customize .grid-1-4 img:hover{
+  border: 0.2rem solid #CC7227;
+}
+
+
+.customize .grid-1-2 img{
+  width: 100%;
+  height: auto;
+  border: 0.2rem solid #ddd;
+}
+
+.customize .grid-1-2 img:hover{
   border: 0.2rem solid #CC7227;
 }
 
@@ -1539,6 +1548,7 @@ figcaption{
 
 input[type=address]:focus{
   border: 0.3em solid #555;  
+  outline: none;
 }
 
 #addressSearch{
@@ -1671,18 +1681,23 @@ input[type=address]:focus{
 /*}*/
 
 .myCart [class^='row-product']{
-  padding: 3rem 0;
+  padding: 2rem 0;
+  border-bottom: 0.11rem dotted #AAA;
 }
 
 .row-product{
-  border-bottom: 0.15rem dotted #AAA;
+  border-bottom: 0.11rem dotted #AAA;
+}
+
+.myCart p{
+  font-size: 1.3em;
 }
 
 .myCart img{
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   background-color: #ddd;
-  border: 0.2rem solid #FFF;
+  border: 0.15rem solid #ddd;
 }
 
 .myCart::after{
@@ -1692,7 +1707,11 @@ input[type=address]:focus{
 }
 
 .myCart img:hover{
-  border: 0.2rem solid #aaa;
+  border: 0.15rem solid #aaa;
+}
+
+.subtotal{
+  font-size: 2em;
 }
 
 /* ====================== */
@@ -1709,7 +1728,64 @@ input[type=address]:focus{
 	text-align: left;
 }
 
-.checkOut input[type=button]{
-	margin-top: 1.5em;
-	text-align: left;
+.checkOut .button{
+  margin-top: 1.5em;
+  margin-bottom: 5em;
+  text-align: left;
 }
+
+.checkOut .row{
+  margin: 3em 0;
+}
+
+.checkOut .grid-1-1, .checkOut .grid-1-2, .checkOut .grid-1-3, .checkOut .grid-3-4{
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding-right: 1.5em;
+}
+
+.checkOut .grid-1-1:last-of-type, .checkOut .grid-1-2:last-of-type, .checkOut .grid-1-3:last-of-type, .checkOut .grid-3-4:last-of-type{
+  padding-right: 0;
+}
+
+@media (min-width: 38.5em){
+  .checkOut .grid-1-2{
+    width: 50%;
+  }
+  .checkOut .grid-1-3{
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 62em){
+  .checkOut .grid-3-4{
+    width: 75%;
+}
+
+/* ====================== */
+/*        COMPLETE        */
+/* ====================== */
+
+.thankYou{
+  margin: 14em 0;
+}
+
+#takoComplete{
+  width: 13em;
+  height: 13em;
+}
+
+.complete #footer{
+  position: absolute;
+  bottom: 0;
+}
+
+.complete #thankYouHeading{
+  font-size: 3em;
+  font-style: bold;
+}
+
+/*.complete p{
+  font-size: 1.2em;
+}*/
