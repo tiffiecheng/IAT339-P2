@@ -8,7 +8,7 @@
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/Style_guide.css" rel="stylesheet">
-    <link href="css/scrollable.css" rel="stylesheet">
+    <!-- <link href="css/scrollable.css" rel="stylesheet"> -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Candal|Lilita+One' rel='stylesheet' type='text/css'>
 
@@ -88,63 +88,62 @@
     <!--    NSERT CONTENT IN THE WRAPPER :)       -->
     <!-- ======================================== -->
   <section id="wrapper">
-      <div class="pageTitle">
-        <h2>We love hearing any of your feedback!</h2>
-      </div>
+    <div class="pageTitle">
+      <h2>Contact Information</h2>
+    </div>
 
-    <!--  <div class="contact">
-       
-        <h4>Phone Number</h4>
-        <p>(778) 782-3111</p>
-        <h4>Address</h4>
-        <p>250 - 13450 – 102nd Avenue, </br>
-        Surrey, BC V3T 0A3</p>
-        <section id="contactForm">
-          <h2 class="leftAlign">Send us a comment:</h2>
+    <section id="contact">
+      <div class="grid-1-1">
+        <h3>We'd love to hear from you!</br>
+        Give us a call at <strong>(604) 555-5555</strong> or drop us an email at <strong>info@bentogo.com</strong></br></h3>
+        <h3>You're also welcome to use the form below!</h3>
+          <!-- <div id="form-contact"> -->
+          
+        <div id="contactForm">
           <form method="contact" action="#">
 
-          <label for="form-name"><h4>Name:</h4></label>
+          <!-- <label for="form-name"><h4>Name:</h4></label> -->
+          <input type="text" id="form-name" placeholder="Your Name">
 
-          <input type="text" id="form-name" placeholder="Jane Doe">
-
-          <label for="form-email"><h4>Email</h4></label>
-          <input type="email" id="form-email" placeholder="Please enter your email here">
+          <!-- <label for="form-bento"><h4>Bento Box:</h4></label> -->
+          <input type="email" id="form-email" placeholder="Title of Comment">
           
-          <label for="form-comment"><h4>Comment:</h4></label>
-     
-          <textarea id="form-comment" placeholder="Please write comment here">
-          </textarea>
-          
-          <input type="submit" value="Submit">
-        </form>
-        </section>     
-    </div> -->
-    <section id="contactForm">
-        <h3>We love to hear from you!</h3>
-        <form method="contact" action="#">
-
-        <!-- <label for="form-name"><h4>Name:</h4></label> -->
-        <input type="text" id="form-name" placeholder="Your Name">
-
-        <!-- <label for="form-bento"><h4>Bento Box:</h4></label> -->
-        <input type="email" id="form-email" placeholder="Title of Comment">
-        
-        <!-- <label for="form-review"><h4>Review:</h4></label> -->
-        <textarea id="form-review" placeholder="Leave any comments, concerns, and/or confessions of love here!"></textarea>
-        </form>
-        <div class ="rightAlign">
-          <input type="submit" value="Submit Review">
+          <!-- <label for="form-review"><h4>Review:</h4></label> -->
+          <textarea id="form-comment" placeholder="Leave any comments, concerns, and/or confessions of love here!"></textarea>
+          </form>
+          <div class ="centerAlign">
+            <input type="submit" value="Submit">
+          </div>
         </div>
+      </div>
+      <div id="headquarters">
+        <h3>Come say Hello at the Bentogo Headquarters</h3>
+        <div class="row">
+         <div class="grid-1-4-uneven">
+            <h4>Phone Number</h4>
+            <p>(778) 782-3111</p>
+            <h4>Address</h4>
+            <p>250 - 13450 – 102nd Avenue, </br>
+            Surrey, BC V3T 0A3</p>
+          </div>
+          <div class="grid-3-4">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:100%;'><div id='gmap_canvas' style='height:440px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(49.18869406637891,-122.85470085507814),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.18869406637891,-122.85470085507814)});infowindow = new google.maps.InfoWindow({content:'<strong>BentoGo Headquarters</strong><br>Surrey Central<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+          </div>
+          </div>
+
+        </div>
+      </div>
       <!-- </section> -->
 
+
     </section>  
-</section>
+  </section>
   
       <!-- ===================== -->
     <!--        FOOTER         -->
     <!-- ===================== -->
 
-  <section id="footer">
+  <!-- <section id="footer">
     <section class="home-wrapper">
 
     <div class="grid-1-1">
@@ -166,7 +165,7 @@
     </div>
 
     </section>
-  </section>
+  </section> -->
 
 </body>
 
