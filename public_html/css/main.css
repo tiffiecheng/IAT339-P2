@@ -944,6 +944,10 @@ input[type=search]:focus{
   border: 0.1em solid #555;
 }
 
+.hover img:hover{
+  border: 0.1em solid #555;  
+}
+
 /*.caption {*/
   /*display: block;*/
 /*}*/
@@ -1154,13 +1158,19 @@ figcaption{
 }
 
 #home-section2 img{
-  border-style: none;
+  /*border-style: none;*/
+  border: 0.1em solid #FFF;  
   height: auto;
   width: 100%;
   background-color: #FFF;
   background-size: cover;
   background-position: center center;
   padding: 0.5em;
+}
+
+#home-section2 img:hover{
+  /*border-style: none;*/
+  border: 0.1em solid #555;  
 }
 
 .tint{
@@ -1276,6 +1286,7 @@ figcaption{
 }
 
 .newArrivals img{
+    border: 0.1em solid #FFF;  
   width: 100%;
   height: auto;
   padding: 1em;
@@ -1354,7 +1365,7 @@ figcaption{
   margin-bottom: 0;
 }
 
-#productDetails .button-addToCart{
+#pr foductDetails .button-addToCart{
   margin: 0.5rem 0 1rem 2rem;
   width: 12rem;
 }
