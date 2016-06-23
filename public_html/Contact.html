@@ -4,11 +4,11 @@
   <head>
 
     <meta charset="utf-8">
-    <title>BentoGo - Contact Us</title>
+    <title>BentoGo - Contact us!</title>
 
     <link href="css/main.css" rel="stylesheet">
     <link href="css/Style_guide.css" rel="stylesheet">
-    <link href="css/scrollable.css" rel="stylesheet">
+    <!-- <link href="css/scrollable.css" rel="stylesheet"> -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Candal|Lilita+One' rel='stylesheet' type='text/css'>
 
@@ -20,38 +20,47 @@
     <!--   HEADER    -->
     <!-- =========== -->
 
-  <div id="header">
+<!--   <div id="header">
     <div class="header-wrap">
       <a href="Home.html">
-        <img id="tako" src="img/Tako.png">
-        <h2 id="logo">BentoGo</h2>
+        <div class = "logoName">
+          <img id="tako" src="img/Tako.png">
+          <h2 id="logo">BentoGo</h2>
+        </div>
       </a>
         <img id="icon-cart" src="img/icon-cart.png">
         <a id="myCart" href="MyCart.html">My Cart</a>
-    </div>
+    </div> -->
 
     <!-- ===================== -->
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
     <div class="nav-main">
-      <nav class="nav-main-wrap">  
+      <nav class="nav-main-wrap"> 
+
+      <a href="Home.html">
+        <img id="tako" src="img/Tako.png"> 
+      </a>
 
       <div class="dropdown">
-        <a class="button-nav" href="#">Menu</a>
+        <a class="button-nav" href="#">Shop</a>
           <div class="dropdown-content">        
-            <a href="ShopPremade.html">Shop</a>
+            <a href="ShopPremade.html">Bentos</a>
             <a href="Customize.html">Custom</a>
           </div>
       </div>  
 
-        <a class="button-nav" href="About.html">About</a>
+        <a class="button-nav" href="StoreLocations.html">Locations</a>
         <a class="button-nav" href="Testimonials.html">Testimonials</a>
+        <a class="button-nav" href="FAQ.html">FAQ</a>
         <a class="button-nav" href="Contact.html">Contact</a>
+
+        <img id="icon-cart" src="img/icon-cart.png">
+        <a id="myCart" href="MyCart.html">My Cart</a>
       </nav>
     </div>
   </div>
-
     <!-- ===================== -->
     <!--        FOOTER         -->
     <!-- ===================== -->
@@ -79,83 +88,85 @@
     <!--    NSERT CONTENT IN THE WRAPPER :)       -->
     <!-- ======================================== -->
   <section id="wrapper">
+    <div class="pageTitle">
+      <h2>Contact Information</h2>
+    </div>
 
-  <div class="contact"
-    <div id="scrollArea">
-      <div id="scrollLeft-1-2">
-        <h2 class="leftAlign">Frequently Asked Questions</h2>
-        <!-- <form id ="search-FAQ">
-          <input type="search" placeholder="Search">
-        </form> -->
-
-        <strong><h4>What is BentoGo?</h4></strong> 
-        <p>
-        BentoGo was created from a love of food and all things cute. We sought out to create the most convenient yet beautiful bentos in the market. We've taken each of your favourite characters from classic cartoons, anime, and general media, and made them into little parcel of deliciousness. Each bento is made with a great deal of love, and designed to delight the hearts of all.
-        </p>
-
-        <strong><h4>Where are you located?</h4></strong> 
-        <p>
-        We have a number of locations throughout the Greater Vancouver Area. Our main store is located near Surrey Central, however feel free to click <a href="StoreLocations.html">here</a> to find the closest location to you!
-        </p>
-
-        <strong><h4>How are your bentos made?</h4></strong> 
-        <p>
-        We believe in using the most sustainable and organic ingredients. We get all our product and items from local suppliers and farms. 
-        </p>
-
-        <strong><h4>What is your shipping policy?</h4></strong> 
-        <p>
-        We have a flat rate of $2.50 because we understand the pains of paying for shipping, but we still need to feed our delivery men.
-        </p>
-
-        <strong><h4>How do custom orders work?</h4></strong> 
-        <p>
-        The minute your customized order is processesed, we begin to build it from scratch so that you can get your perfect bento fresh and hot! 
-        </p>
-
-        <strong><h4>How are you so amazing?</h4></strong> 
-        <p>
-        It's just a natural thing we were born with.
-        </p>
-
-        <strong><h4>Can I steal your company?</h4></strong> 
-        <p>
-        We would greatly appreciate if you did not steal our company. However, you're more than welcome to send your any applications to apply to careers@bentogo.com. We're always looking for great people to join our team.
-        </p>
-      </div>
-
-      <div id="scrollRight-1-2">
-        <h2 class="leftAlign">Contact Us</h2>
-        <h4>Phone Number</h4>
-        <p>(778) 782-3111</p>
-        <h4>Address</h4>
-        <p>250 - 13450 – 102nd Avenue, </br>
-        Surrey, BC V3T 0A3</p>
-        <section id="contactForm">
-          <h2 class="leftAlign">Send us a comment:</h2>
+    <section id="contact">
+      <div class="grid-1-1">
+        <h3>We'd love to hear from you!</br>
+        Give us a call at <strong>(604) 555-5555</strong> or drop us an email at <strong>info@bentogo.com</strong></br></h3>
+        <h3>You're also welcome to use the form below!</h3>
+          <!-- <div id="form-contact"> -->
+          
+        <div id="contactForm">
           <form method="contact" action="#">
 
-          <label for="form-name"><h4>Name:</h4></label>
+          <!-- <label for="form-name"><h4>Name:</h4></label> -->
+          <input type="text" id="form-name" placeholder="Your Name">
 
-          <input type="text" id="form-name" placeholder="Jane Doe">
-
-          <label for="form-email"><h4>Email</h4></label>
-          <input type="email" id="form-email" placeholder="Please enter your email here">
+          <!-- <label for="form-bento"><h4>Bento Box:</h4></label> -->
+          <input type="email" id="form-email" placeholder="Title of Comment">
           
-          <label for="form-comment"><h4>Comment:</h4></label>
-     
-          <textarea id="form-comment" placeholder="Please write comment here"></textarea>
+          <!-- <label for="form-review"><h4>Review:</h4></label> -->
+          <textarea id="form-comment" placeholder="Leave any comments, concerns, and/or confessions of love here!"></textarea>
           </form>
-          <input type="submit" value="Submit">
-        
-        </section>
+          <div class ="centerAlign">
+            <input type="submit" value="Submit">
+          </div>
+        </div>
+      </div>
+      <div id="headquarters">
+        <h3>Come say Hello at the Bentogo Headquarters</h3>
+        <div class="row">
+         <div class="grid-1-4-uneven">
+            <h4>Phone Number</h4>
+            <p>(778) 782-3111</p>
+            <h4>Address</h4>
+            <p>250 - 13450 – 102nd Avenue, </br>
+            Surrey, BC V3T 0A3</p>
+          </div>
+          <div class="grid-3-4">
+            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:100%;'><div id='gmap_canvas' style='height:440px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy example</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(49.18869406637891,-122.85470085507814),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.18869406637891,-122.85470085507814)});infowindow = new google.maps.InfoWindow({content:'<strong>BentoGo Headquarters</strong><br>Surrey Central<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+          </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- </section> -->
 
 
+    </section>  
+  </section>
+  
+      <!-- ===================== -->
+    <!--        FOOTER         -->
+    <!-- ===================== -->
+
+  <!-- <section id="footer">
+    <section class="home-wrapper">
+
+    <div class="grid-1-1">
+      <form id="subscribe">
+        <h2>Subscribe to our mailing list</h2>
+        <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p>
+        <input type="text" placeholder="Enter your email address">
+            <a class="button button-orange" href="#">Sign Up</a>
+      </form>
+    </div>
+
+    <div class="grid-1-1">
+      <div id="social-media">
+        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png"></a>
+        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png"></a>
+        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png"></a>
+        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png"></a>
       </div>
     </div>
-    </div>
-</section>
-  
+
+    </section>
+  </section> -->
+
 </body>
 
 </html>

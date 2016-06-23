@@ -19,7 +19,7 @@
     <!--   HEADER    -->
     <!-- =========== -->
 
-    <div id="header">
+<!--     <div id="header">
       <div class="header-wrap">
         <a href="Home.html">
           <img id="tako" src="img/Tako.png">
@@ -27,52 +27,37 @@
         </a>
           <img id="icon-cart" src="img/icon-cart.png">
           <a id="myCart" href="MyCart.html">My Cart</a>
-      </div>
+      </div> -->
 
       <!-- ===================== -->
       <!--        NAV BAR        -->
       <!-- ===================== -->
-
+      
     <div class="nav-main">
-      <nav class="nav-main-wrap">  
+      <nav class="nav-main-wrap"> 
+
+      <a href="Home.html">
+        <img id="tako" src="img/Tako.png"> 
+      </a>
 
       <div class="dropdown">
-        <a class="button-nav" href="#">Menu</a>
+        <a class="button-nav" href="#">Shop</a>
           <div class="dropdown-content">        
-            <a href="ShopPremade.html">Shop</a>
+            <a href="ShopPremade.html">Bentos</a>
             <a href="Customize.html">Custom</a>
           </div>
       </div>  
 
-        <a class="button-nav" href="About.html">About</a>
+        <a class="button-nav" href="StoreLocations.html">Locations</a>
         <a class="button-nav" href="Testimonials.html">Testimonials</a>
+        <a class="button-nav" href="FAQ.html">FAQ</a>
         <a class="button-nav" href="Contact.html">Contact</a>
+
+        <img id="icon-cart" src="img/icon-cart.png">
+        <a id="myCart" href="MyCart.html">My Cart</a>
       </nav>
     </div>
   </div>
-
-    <!-- ===================== -->
-    <!--        FOOTER         -->
-    <!-- ===================== -->
-
-    <!-- <div id="footer">
-      <div class="grid-1-2">
-        <div id="social-media">
-            <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png"></a>
-            <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png"></a>
-            <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png"></a>
-            <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png"></a>
-        </div>
-      </div>
-
-      <div class="grid-1-2">
-        <form id="subscribe">
-            <h5>Subscribe to our mailing list:</h5>
-            <input type="text" placeholder="leave your email!">
-        </form>
-      </div>
-
-    </div> -->
 
     <!-- ======================================== -->
     <!--    NSERT CONTENT IN THE WRAPPER :)       -->
@@ -107,7 +92,7 @@
           <div class="grid-1-2">
             <h3>"To die for!!!"</h3>
             <p>
-            I still can't get over how cute this is. I would order these every day but my mom would kill me if she found out I liked these better than her cooking!
+            I still can't get over how cute this is. I would order these every day but my mom would kill me if she found out I liked these better than her cooking! I anticipate her vacations so I can order them everyday all day!
             </p>
           </div>
         
@@ -142,16 +127,14 @@
         <h3>Tell us about your experience with BentoGo!</h3>
         <form method="review" action="#">
 
-        <label for="form-name"><h4>Name:</h4></label>
+        <!-- <label for="form-name"><h4>Name:</h4></label> -->
+        <input type="text" id="form-name" placeholder="Your Name">
 
-        <input type="text" id="form-name" placeholder="Jane Doe">
-
-        <label for="form-bento"><h4>Bento Box:</h4></label>
-        <input type="text" id="form-bento" placeholder="Bento Box you purchased">
+        <!-- <label for="form-bento"><h4>Bento Box:</h4></label> -->
+        <input type="text" id="form-bento" placeholder="Title of Comment">
         
-        <label for="form-review"><h4>Review:</h4></label>
-   
-        <textarea id="form-review" placeholder="Please write review here"></textarea>
+        <!-- <label for="form-review"><h4>Review:</h4></label> -->
+        <textarea id="form-review" placeholder="Your Review"></textarea>
         </form>
         <div class ="rightAlign">
           <input type="submit" value="Submit Review">
@@ -160,6 +143,36 @@
 
     </section>  
     <!-- Wrapper closing tag -->
+
+
+    <!-- ===================== -->
+    <!--        FOOTER         -->
+    <!-- ===================== -->
+
+  <section id="footer">
+    <section class="home-wrapper">
+
+    <div class="grid-1-1">
+      <form id="subscribe">
+        <h3>Subscribe to our mailing list</h3>
+        <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p>
+        <input type="text" placeholder="Enter your email address">
+            <a class="button button-orange" href="#">Sign Up</a>
+      </form>
+    </div>
+
+    <div class="grid-1-1">
+      <div id="social-media">
+        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png"></a>
+        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png"></a>
+        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png"></a>
+        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png"></a>
+      </div>
+    </div>
+
+    </section>
+  </section>
+
   </body>
 
 </html>

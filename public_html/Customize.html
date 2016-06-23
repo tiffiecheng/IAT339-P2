@@ -19,7 +19,7 @@
     <!--   HEADER    -->
     <!-- =========== -->
 
-  <div id="header">
+<!--   <div id="header">
     <div class="header-wrap">
       <a href="Home.html">
         <img id="tako" src="img/Tako.png">
@@ -27,26 +27,34 @@
       </a>
         <img id="icon-cart" src="img/icon-cart.png">
         <a id="myCart" href="MyCart.html">My Cart</a>
-    </div>
+    </div> -->
 
     <!-- ===================== -->
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
     <div class="nav-main">
-      <nav class="nav-main-wrap">  
+      <nav class="nav-main-wrap"> 
+
+      <a href="Home.html">
+        <img id="tako" src="img/Tako.png"> 
+      </a>
 
       <div class="dropdown">
-        <a class="button-nav" href="#">Menu</a>
+        <a class="button-nav" href="#">Shop</a>
           <div class="dropdown-content">        
-            <a href="ShopPremade.html">Shop</a>
+            <a href="ShopPremade.html">Bentos</a>
             <a href="Customize.html">Custom</a>
           </div>
       </div>  
 
-        <a class="button-nav" href="About.html">About</a>
+        <a class="button-nav" href="StoreLocations.html">Locations</a>
         <a class="button-nav" href="Testimonials.html">Testimonials</a>
+        <a class="button-nav" href="FAQ.html">FAQ</a>
         <a class="button-nav" href="Contact.html">Contact</a>
+
+        <img id="icon-cart" src="img/icon-cart.png">
+        <a id="myCart" href="MyCart.html">My Cart</a>
       </nav>
     </div>
   </div>
@@ -55,33 +63,167 @@
     <!--    NSERT  CONTENT IN THE WRAPPER :)      -->
     <!-- ======================================== -->
 
-  <section id="wrapper">
-      
+  <!-- <section id="wrapper"> -->
+    <div class="customize">
       <div class="pageTitle">
-      <h2>Customize</h2>
+      <h2>Customize Your Bento</h2>
       </div>
 
-      <div class="menu-horizontal">
+      <div class="row">
+          <div class="grid-3-4">
+            <img id="custom-box" src="img/custom-box1.jpg">
+          </div>
+
+          <div class="grid-1-4">
+
+              <div class="menu-vertical">
+                <ul class>
+                  <li id="custom-1"> <a href="#Character">1</a></li>
+                  <li> <a href="#Filling">2</a></li>
+                  <li> <a href="#Sides">3</a></li>
+                  <li> <a href="#Rice">4</a></li>
+                  <li> <a href="#Sauces">5</a></li>
+                  <li> <a href="#Confirm">6</a></li>
+                <ul>
+              </div>
+
+            <h4>Custom Bento</h4>
+                <a class="button button-white" href="#">&lt;  Prev</a>
+                <a class="button button-white" href="Customize1.html">Next  &gt;</a>
+            <hr>
+
+            <!-- <h4>Character</h4> -->
+            <h5>Choose a character</h5>
+            <!-- <div class="row"> -->
+              <div class="thumbnail-group">
+              <div class="grid-1-4 character">
+                <a href="Customize1.html"><img src="img/custom-img4.jpg"></a>
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img2.jpg">
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img3.jpg">              
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img1.jpg">
+              </div>
+            <!-- </div> -->
+
+           <!-- <div class="row"> -->
+              <div class="grid-1-4 character">
+                <img src="img/custom-img5.jpg">
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img6.jpg">
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img7.jpg">              
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img8.jpg">
+              </div>
+            <!-- </div> -->
+
+            <!-- <div class="row"> -->
+              <div class="grid-1-4 character">
+                <img src="img/custom-img9.jpg">
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img10.jpg">
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img11.jpg">              
+              </div>
+              <div class="grid-1-4 character">
+                <img src="img/custom-img12.jpg">
+              </div>
+            <!-- </div> -->
+              </div>
+
+              <div class="addAndShare">
+                <a class="button button-orange" href="#">Add to cart</a>
+                <a class="button button-white" href="#">Share</a>
+              </div>
+          </div>
+
+        </div>
+      </div>
       
-        <img src=""/>
+  <!-- ADDING 3 column grid -->
+    <section>
 
-        <ul class>
-        <li> <a href="#Character">1. Character</a></li>
-        <li> <a href="#Filling">2. Filling</a></li>
-        <li> <a href="#Sides">3. Sides</a></li>
-        <li> <a href="#Rice">4. Rice</a></li>
-        <li> <a href="#Sauces">5. Sauces</a></li>
-        <li> <a href="#Confirm">6. Confirm</a></li>
-        <ul>
+    <section class="customize-wrapper">
+      <div class="row">
+        <!-- <div class="grid-1-3"> -->
+        <h2>The original made your way</h2>
 
-      </div>     
+        <div class="grid-1-3">
+          <div id="home-section3-item">
+            <h3>Select your ingrediants</h3>
+            <p>
+            We offer a wide variety of ingrediants at BentoGo - from fresh fish to beef teriyaki, we've got you covered. And don't worry, if you're vegetarian, there's plenty of options for you too. 
+            <!-- <h3>New Ingredients</h3>
+            <p>
+            We are constantly testing out new ingredients so that we can keep offering our customers new and unique Bentos! You can access these ingredients first, even before they are implemented in any of our premade Bento boxes! -->
+            </p>
+          </div>
+        </div>
 
-      <div class="carousel">
-          <img src=""/>
+        <div class="grid-1-3">
+          <div id="home-section3-item">
+            <h3>Make it Personal</h3>
+            <p>
+            We want to give you options. You can choose from a wide variety of designs and patterns so your bento can be special and one of a kind. Go ahead and try it out! We can't wait to see what you come up with. 
+            <!-- We understand that everyone has their own personal preferences. To avoid any ingredients that you may hate and pack in ingredients that you love, create a customized bento to create the perfect bento for you. 
+ -->
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-1-3">
+          <div id="home-section3-item">
+            <h3>We love you</h3>
+            <p>
+            Once your custom bento arrives at your door, you can happily marvel at the intricately designed boxes before you chow down. Take a couple pics, share them on instagram, and you'll be guaranteed to get tons of likes.
+            <!-- We love our customers and we love it when you guys love your bentos. With every bento box, we attach a short little card handwritten by our very own BentoGo employees. Enjoy eating your meal and reading our heartfelt thanks. -->
+            </p>
+          </div>
+        </div>
       </div>
 
-  </section>  <!-- Wrapper closing tag -->
-  
+    </section>
+
+  </section> 
+
+    <!-- ===================== -->
+    <!--        FOOTER         -->
+    <!-- ===================== -->
+
+  <section id="footer">
+    <section class="home-wrapper">
+
+    <div class="grid-1-1">
+      <form id="subscribe">
+        <h3>Subscribe to our mailing list</h3>
+        <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p>
+        <input type="text" placeholder="Enter your email address">
+            <a class="button button-orange" href="#">Sign Up</a>
+      </form>
+    </div>
+
+    <div class="grid-1-1">
+      <div id="social-media">
+        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png"></a>
+        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png"></a>
+        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png"></a>
+        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png"></a>
+      </div>
+    </div>
+
+    </section>
+  </section>
+
   </body>
   
 </html>

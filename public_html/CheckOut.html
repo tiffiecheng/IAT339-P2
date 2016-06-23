@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
 
@@ -19,7 +19,7 @@
     <!--   HEADER    -->
     <!-- =========== -->
 
-  <div id="header">
+<!--   <div id="header">
     <div class="header-wrap">
       <a href="Home.html">
         <img id="tako" src="img/Tako.png">
@@ -27,26 +27,34 @@
       </a>
         <img id="icon-cart" src="img/icon-cart.png">
         <a id="myCart" href="MyCart.html">My Cart</a>
-    </div>
+    </div> -->
 
     <!-- ===================== -->
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
     <div class="nav-main">
-      <nav class="nav-main-wrap">  
+      <nav class="nav-main-wrap"> 
+
+      <a href="Home.html">
+        <img id="tako" src="img/Tako.png"> 
+      </a>
 
       <div class="dropdown">
-        <a class="button-nav" href="#">Menu</a>
+        <a class="button-nav" href="#">Shop</a>
           <div class="dropdown-content">        
-            <a href="ShopPremade.html">Shop</a>
+            <a href="ShopPremade.html">Bentos</a>
             <a href="Customize.html">Custom</a>
           </div>
       </div>  
 
-        <a class="button-nav" href="About.html">About</a>
+        <a class="button-nav" href="StoreLocations.html">Locations</a>
         <a class="button-nav" href="Testimonials.html">Testimonials</a>
+        <a class="button-nav" href="FAQ.html">FAQ</a>
         <a class="button-nav" href="Contact.html">Contact</a>
+
+        <img id="icon-cart" src="img/icon-cart.png">
+        <a id="myCart" href="MyCart.html">My Cart</a>
       </nav>
     </div>
   </div>
@@ -56,29 +64,44 @@
     <!-- ======================================== -->
 
   <section id="wrapper">
-    
+
       <div class="pageTitle">
         <h2>Checkout</h2>
       </div>
 
+      <div class="shopTopBar">
+        <a class="breadcrumb-item" href="MyCart.html">Cart </a>
+        <p class="breadcrumb-item">/</p>
+        <a class="breadcrumb-item" href="CheckOut.html">Checkout </a>
+      </div>
+
       <div class="checkOut">
 
+      <div class="row row-product">
         <div class="grid-1-4">
           <!-- <div class="grid-1-2 leftAlign"> -->
-            <h4 class="leftAlign zesty-orange-text">Use Existing Address</h4>
+            <h3 class="leftAlign zesty-orange-text">Use Existing Address</h3>
             <span><strong><p>Daria Morgendorffer</p></strong></span>
             <span><p>4532 Jane Lane</span>
             <span><p>Lawndale, Ontario A1B 2C3</p></span>
             <span><p>Canada</p></span>          
             
             <div class="leftAlign">
-              <input type="button" value="Continue">
+              <a class="button button-orange" href="Payment.html">Ship to this address</a>
+              <!-- <input type="button" value="Ship to this address"> -->
             </div>
           </div>
 
         <div class="grid-3-4">
+          &nbsp;
+        </div>
+      </div>
+    <!-- </div> -->
+
+      <div class="row">
+        <div class="grid-3-4">
         <!-- <div class="grid-1-2"> -->
-          <h4 class="leftAlign zesty-orange-text">Add a new Address</h4>
+          <h3 class="leftAlign zesty-orange-text">Add a new Address</h3>
 
             <form method="review" action="#">
               
@@ -113,10 +136,14 @@
               </div>
 
               <div class="leftAlign">
-                <input type="button" value="Continue">
+                <a class="button button-orange" href="Payment.html">Ship to this address</a>
               </div>
 
             </form>
+          </div>
+
+          <div class="grid-1-4">
+          &nbsp;
           </div>
         </div>  
 
@@ -124,6 +151,34 @@
 
   </section>  <!-- Wrapper closing tag -->
   
+      <!-- ===================== -->
+    <!--        FOOTER         -->
+    <!-- ===================== -->
+
+  <section id="footer">
+    <section class="home-wrapper">
+
+    <div class="grid-1-1">
+      <form id="subscribe">
+        <h3>Subscribe to our mailing list</h3>
+        <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p>
+        <input type="text" placeholder="Enter your email address">
+            <a class="button button-orange" href="#">Sign Up</a>
+      </form>
+    </div>
+
+    <div class="grid-1-1">
+      <div id="social-media">
+        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png"></a>
+        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png"></a>
+        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png"></a>
+        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png"></a>
+      </div>
+    </div>
+
+    </section>
+  </section>
+
   </body>
   
 </html>
