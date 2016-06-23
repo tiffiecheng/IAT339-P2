@@ -1375,7 +1375,14 @@ figcaption{
   width: 100%;
   height: auto;
   padding: 1em;
+  border: 0.1em solid #fff;
+
 }
+
+#similarProducts img:hover{
+  border: 0.1em solid #555;
+}
+
 
 /* ---------------- */
 /*  Menu Selection  */
