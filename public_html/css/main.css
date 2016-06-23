@@ -829,6 +829,7 @@ input[type=text]:focus{
 /* ---------------- */
 
 input[type=search] {
+  -webkit-appearance: textfield;
   width: 30%;
   padding: 0.5rem 1.25rem;
   margin: 0.5rem 0;
@@ -993,20 +994,24 @@ input[type=search]:focus{
 	position: absolute;
 	/*only works if body tag is relative otherwise */
 	background-color: #f5f5f5;
-  padding: 5rem 0;
+  /*padding: 5rem 0;*/
 	width: 100%;
   border-top: 0.1em solid #ccc;
 	/*height: 5rem;*/
 }
 
 #footer .home-wrapper{
-  margin-top: -4em;
+  /*margin-top: -4em;*/
 }
 
 .grid-1-2 #social-media{
 	text-align: center;
 	left: 1rem;
 	margin-left: 1rem;
+}
+
+#social-media{
+  margin-bottom: 2rem;
 }
 
 #footer input{
@@ -1340,7 +1345,7 @@ figcaption{
   margin-left: 6%;
 }
 
-#productDetails h3{
+#shop-section1 h3{
   text-align: left;
   margin: 0.5rem 0;
 }
@@ -1356,6 +1361,20 @@ figcaption{
 
 #shop-section1 .grid-1-2{
   text-align: left;
+}
+
+#similarProducts{
+  /*margin-top: 2.5rem;*/
+  padding: 1rem 0;
+}
+
+.newArrivals img{
+}
+
+#similarProducts img{
+  width: 100%;
+  height: auto;
+  padding: 1em;
 }
 
 /* ---------------- */
@@ -1529,11 +1548,20 @@ figcaption{
 /*        FAQ         */
 /* ================== */
 
-.faq h3, .faq h4{
+#faq h3, #faq h4{
 	margin-bottom: 0.5em;
   text-align: left;
   color: #CC7227;
 }
+
+#faq{
+  margin-bottom: 3rem;
+}
+
+/*#faq input[type=text] {
+  width: 90%;
+}*/
+
 
 /* ====================== */
 /*        CONTACT         */
@@ -1565,12 +1593,20 @@ figcaption{
   color: #CC7227;
 }
 
-#headquarters .grid-3-4{
-  /*display: inline-block;*/
-  background-color: #ccc;
-  /*height: 20rem;*/
-  /*width: 100%;*/
+#headquarters .grid-1-4-uneven{
+  text-align: left;
+  padding-left: 2rem; 
 }
+
+#headquarters .grid-3-4{
+  text-align: right; 
+}
+
+#headquarters h4{
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
 
 #headquarters img{
     height: 10rem;
