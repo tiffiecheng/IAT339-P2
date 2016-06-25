@@ -1276,12 +1276,15 @@ figcaption{
 }
 
 .newArrivals img{
-    border: 0.1em solid #FFF;  
+  border: 0.1em solid #FFF;  
   width: 100%;
   height: auto;
   padding: 1em;
 }
 
+.newArrivals img:hover{
+  border: 0.1em solid #555;  
+}
 /* --------------- */
 /*  Home Section4  */
 /* --------------- */
