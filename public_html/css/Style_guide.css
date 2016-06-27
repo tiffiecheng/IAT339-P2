@@ -153,6 +153,21 @@
 }
 
 /* =============================== */
+/*             COLORS              */
+/* =============================== */
+
+.color-example{
+  padding: 5px;
+  width: 85%;
+  text-indent: 86%;
+  white-space: nowrap;
+  margin: 10px 0 15px 0;
+/*float: left;
+  height: 2rem;
+  vertical-align: middle;*/
+}
+
+/* =============================== */
 /*          TEXT ELEMENTS          */
 /* =============================== */
 
