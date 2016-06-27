@@ -9,7 +9,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/Style_guide.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Candal|Lilita+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Candal%7CLilita+One' rel='stylesheet' type='text/css'>
 
   </head>
 
@@ -21,7 +21,7 @@
 
     <div id="header-styleGuide">
       <div class="header-styleGuide-wrap">
-          <img src="img/Tako.png" id="tako">
+          <img src="img/Tako.png" id="tako" alt="tako">
 
         <h1>The Stunnin Style Guide for BentoGo</h1>
         <p>BentoGo delivers fresh and elaborately arranged boxed lunches that fit to your taste. Our lunches come in a variety of different designs, including characters from popular cartoons, movies, and video games.  </p>
@@ -214,10 +214,10 @@
         <h2>BUTTONS</h2>
         <h4>button, a.button, button[type=submit], input[type=button], input[type=submit]</h4>
         <code>
-          &lt;button&gt;Button&lt;/button&gt;</br>
-          &lt;a class="button" href="#"&gt;Link button&lt;/a&gt;</br>
-          &lt;button type="submit"&gt;Submit Submit&lt;/a&gt;</br>
-          &lt;input type="button" value="Input button"&gt;</br>
+          &lt;button&gt;Button&lt;/button&gt;<br>
+          &lt;a class="button" href="#"&gt;Link button&lt;/a&gt;<br>
+          &lt;button type="submit"&gt;Submit Submit&lt;/a&gt;<br>
+          &lt;input type="button" value="Input button"&gt;<br>
           &lt;input type="submit" value="Input submit button"&gt;
         </code>
         <button>Button</button>
@@ -333,20 +333,23 @@
         <h4>select</h4>
         
         <code> 
-          &lt;select&gt;</br>
-          &lt;option value="pokemon"&gt;Pokemon&lt;/option&gt;</br>
-          &lt;option value="mario"&gt;mario&lt;/option&gt;</br>
-          &lt;option value="sanrio"&gt;sanrio&lt;/option&gt;</br>
-          &lt;option value="cardcaptors"&gt;cardcaptors&lt;/option&gt;</br>
+          &lt;select&gt;<br>
+          &lt;option value="pokemon"&gt;Pokemon&lt;/option&gt;<br>
+          &lt;option value="mario"&gt;mario&lt;/option&gt;<br>
+          &lt;option value="sanrio"&gt;sanrio&lt;/option&gt;<br>
+          &lt;option value="cardcaptors"&gt;cardcaptors&lt;/option&gt;<br>
           &lt;/select&gt;      
         </code>
 
-        <select>
-          <option value="pokemon">Pokemon</option>
-          <option value="mario">Mario</option>
-          <option value="sanrio">Sanrio</option>
-          <option value="cardcaptors">Cardcaptors</option>
-        </select>  
+        <div class=" select-style">
+          <select>
+            <option value="pokemon">Pokemon</option>
+            <option value="mario">Mario</option>
+            <option value="sanrio">Sanrio</option>
+            <option value="cardcaptors">Cardcaptors</option>
+          </select>  
+        </div>
+
       </section>
 
     <!-- ===================== -->
@@ -448,10 +451,10 @@
         <h2>BULLETED LISTS</h2>
         <h4>ul</h4>
         <code>
-          &lt;ul&gt;</br>
-          &lt;li&gt;Pikachu Bento&lt;/li&gt;</br>
-          &lt;li&gt;Jigglypuff Bento&lt;/li&gt;</br>
-          &lt;li&gt;Mewtwo Bento&lt;/li&gt;</br>
+          &lt;ul&gt;<br>
+          &lt;li&gt;Pikachu Bento&lt;/li&gt;<br>
+          &lt;li&gt;Jigglypuff Bento&lt;/li&gt;<br>
+          &lt;li&gt;Mewtwo Bento&lt;/li&gt;<br>
           &lt;/ul&gt;
         </code>
         <ul>
@@ -470,10 +473,10 @@
 
         <h4>ol</h4>
         <code>
-          &lt;ol&gt;</br>
-          &lt;li&gt;Pikachu Bento&lt;/li&gt;</br>
-          &lt;li&gt;Jigglypuff Bento&lt;/li&gt;</br>
-          &lt;li&gt;Mewtwo Bento&lt;/li&gt;</br>
+          &lt;ol&gt;<br>
+          &lt;li&gt;Pikachu Bento&lt;/li&gt;<br>
+          &lt;li&gt;Jigglypuff Bento&lt;/li&gt;<br>
+          &lt;li&gt;Mewtwo Bento&lt;/li&gt;<br>
           &lt;/ol&gt;
         </code>
         <ol>
@@ -537,14 +540,14 @@
 
         <h4>nav</h4>
         <code>
-          &lt;nav&gt;</br>
-          &lt;a class="button-nav" href=" "&gt;Menu&lt;/a&gt;</br>
-          &lt;a class="button-nav" href=" "&gt;About&lt;/a&gt;</br>
-          &lt;a class="button-nav" href=" "&gt;Testimonials&lt;/a&gt;</br>
-          &lt;a class="button-nav" href=" "&gt;Contact&lt;/a&gt;</br>
+          &lt;nav&gt;<br>
+          &lt;a class="button-nav" href=" "&gt;Menu&lt;/a&gt;<br>
+          &lt;a class="button-nav" href=" "&gt;About&lt;/a&gt;<br>
+          &lt;a class="button-nav" href=" "&gt;Testimonials&lt;/a&gt;<br>
+          &lt;a class="button-nav" href=" "&gt;Contact&lt;/a&gt;<br>
           &lt;/nav&gt;
         </code>
-        <div class="nav-main">
+        <div class="nav-main-styleGuide">
           <a class="button-nav" href=" ">Menu</a>
           <a class="button-nav" href=" ">About</a>
           <a class="button-nav" href=" ">Testimonials</a>
@@ -594,54 +597,61 @@
 
         <h4>.grid-1-3</h4>
         <code>
-          &lt;div class="row"&gt;</br>
-            &lt;div class="grid-1-3"&gt;</br>
-              &lt;img src=""/&gt;</br>
-              &lt;span class="caption"&gt;</br>
-                &lt;a href="#"&gt;Pikachu Box &lt;/a&gt;</br>
-                &lt;p&gt;$9.95&lt;/p&gt;</br>
-                &lt;a class="button-addToCart" href=" "&gt;Add to Cart&lt;/a&gt;</br>
-              &lt;/span&gt;</br>
-            &lt;/div&gt;</br>
+          &lt;div class="row"&gt;<br>
+            &lt;div class="grid-1-3"&gt;<br>
+              &lt;img src=""/&gt;<br>
+              &lt;span class="caption"&gt;<br>
+                &lt;a href="#"&gt;Pikachu Box &lt;/a&gt;<br>
+                &lt;p&gt;$9.95&lt;/p&gt;<br>
+                &lt;a class="button-addToCart" href=" "&gt;Add to Cart&lt;/a&gt;<br>
+              &lt;/span&gt;<br>
+            &lt;/div&gt;<br>
           &lt;/div&gt;
         </code>
 
-        <div class="row">
-          <!-- <div class="grid-1-3"> -->
-          <div class="grid-1-3">
-            <img src=""/>
-            <!-- <span class="caption"> -->
-              <a href="#">Pikachu Box</a>
-              <p>$9.95</p>
-              <a class="button-addToCart" href=" ">Add to Cart</a>
-            <!-- </span> -->
-          </div>
-          <!-- </div> -->
+    <div class='shopPremade'>
 
-        <!-- <div class="grid-1-3"> -->
-          <div class="grid-1-3">
-              <img src=""/>
-              <!-- <span class="caption"> -->
-                <a href="#">Jigglypuff Box</a>
-                <p>$9.95</p>
-                <a class="button-addToCart" href=" ">Add to Cart</a>
-              <!-- </span> -->
-          </div>
-        <!-- </div> -->
-
-        <!-- <div class="grid-1-3"> -->
-          <div class="grid-1-3">
-              <img src=""/>
-              <!-- <span class="caption"> -->
-                <a href="#">Mewtwo Box</a>
-                <p>$9.95</p>
-                <a class="button-addToCart" href=" ">Add to Cart</a>
-              <!-- </span> -->
-          </div>
-        <!-- </div> -->
-
+    <div class="row">
+      <div class="grid-1-4">
+        <img src="img/Bento-B1.jpg" alt="Rilakkuma"/>
+        <div class="caption">
+          <a href="ProductDetail.html">Rilakkuma Box</a>
+          <p>$9.95</p>
+          <a class="button-addToCart" href=" ">Add to Cart</a>
         </div>
-      </section>
+      </div>
+
+      <div class="grid-1-4">
+          <img src="img/Bento-B2.jpg" alt="Superman"/>
+          <div class="caption">
+            <a href="#">Superman Box</a>
+            <p>$9.95</p>
+            <a class="button-addToCart" href=" ">Add to Cart</a>
+          </div>
+      </div>
+
+      <div class="grid-1-4">
+          <img src="img/Bento-B3.jpg" alt="Yoo and Kang"/>
+          <div class="caption">
+            <a href="#">Yoo and Kang Box</a>
+            <p>$9.95</p>
+            <a class="button-addToCart" href=" ">Add to Cart</a>
+          </div>
+      </div>
+
+         <div class="grid-1-4">
+          <img src="img/Bento-B4.jpg" alt="Storm Trooper"/>
+          <div class="caption">
+            <a href="#">Storm Trooper Box</a>
+            <p>$9.95</p>
+            <a class="button-addToCart" href=" ">Add to Cart</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    </section>
 
     <!-- ===================== -->
     <!--     Product Table     -->
@@ -710,56 +720,6 @@
 
       </section>
 
-    <!-- =========================== -->
-    <!--     Address Search Form     -->
-    <!-- =========================== -->
-
-      <section class="sections-styleGuide">
-        <h2>ADDRESS SEARCH FORM</h2>
-        <h4>#addressSearch</h4>
-        <code>
-          &lt;div class="row"&gt;</br>
-            &lt;div class="grid-1-5-withButton"&gt;</br>
-              &lt;h4&gt;Address:&lt;/h4&gt;</br>
-              &lt;input type="address"&gt;</br>
-            &lt;/div&gt;</br> 
-            &lt;div class="grid-button"&gt;</br>
-              &lt;img src="img/icon-search.png" alt="Search Button"&gt;</br>
-            &lt;/div&gt;</br>
-          &lt;/div&gt;
-        </code>
-
-        <section id = "addressSearch">
-          <div class="row">
-
-            <div class="grid-1-5-withButton">
-              <h4>Address:</h4>
-              <input type="text">
-            </div>
-
-            <div class="grid-1-5-withButton">
-              <h4>City:</h4>
-              <input type="text">
-            </div>
-
-            <div class="grid-1-5-withButton">
-              <h4>Province:</h4>
-              <input type="text">
-            </div>
-
-            <div class="grid-1-5-withButton">
-              <h4>Postal Code:</h4>
-              <input type="text">
-            </div>
-
-            <div class="grid-button">
-              <img src="img/icon-search.png" alt="Search Button">
-            </div>
-
-          </div>
-        </section>
-      </section>
-
     <!-- ============ -->
     <!--     Form     -->
     <!-- ============ -->
@@ -768,37 +728,34 @@
         <h2>FORM</h2>
         <h4>.reviewForm</h4>
         <code>
-          &lt;section id="reviewForm"&gt;</br>
-            &lt;h3&gt;Tell us about your experience with BentoGo!&lt;/h3&gt;</br>
-            &lt;form method="review" action="#"&gt;</br>
+          &lt;section id="reviewForm"&gt;<br>
+            &lt;h3&gt;Tell us about your experience with BentoGo!&lt;/h3&gt;<br>
+            &lt;form method="review" action="#"&gt;<br>
 
-              &lt;label for="form-name"&gt;&lt;h4&gt;Name:&lt;/h4&gt;&lt;/label&gt;</br>
-              &lt;input type="text" id="form-name" placeholder="Jane Doe"&gt;</br> 
+              &lt;label for="form-name"&gt;&lt;h4&gt;Name:&lt;/h4&gt;&lt;/label&gt;<br>
+              &lt;input type="text" id="form-name" placeholder="Jane Doe"&gt;<br> 
               
-              &lt;label for="form-bento"&gt;&lt;h4&gt;Bento Box:&lt;/h4&gt;&lt;/label&gt;</br>
-              &lt;input type="text" id="form-bento" placeholder="Bento Box you purchased"&gt;</br> 
+              &lt;label for="form-bento"&gt;&lt;h4&gt;Bento Box:&lt;/h4&gt;&lt;/label&gt;<br>
+              &lt;input type="text" id="form-bento" placeholder="Bento Box you purchased"&gt;<br> 
 
-              &lt;label for="form-review"&gt;&lt;h4&gt;Review:&lt;/h4&gt;&lt;/label&gt;</br>
-              &lt;input type="text" id="form-review" placeholder="Please write review here"&gt;</br> 
-            &lt;/form&gt;</br>
+              &lt;label for="form-review"&gt;&lt;h4&gt;Review:&lt;/h4&gt;&lt;/label&gt;<br>
+              &lt;input type="text" id="form-review" placeholder="Please write review here"&gt;<br> 
+            &lt;/form&gt;<br>
 
-            &lt;div class ="rightAlign"&gt;</br>
-              &lt;input type="submit" value="Submit Review"&gt;</br>
-            &lt;/div&gt;</br>
+            &lt;div class ="rightAlign"&gt;<br>
+              &lt;input type="submit" value="Submit Review"&gt;<br>
+            &lt;/div&gt;<br>
           &lt;/section&gt;
 
         </code>
         <section id="reviewForm">
           <h3>Tell us about your experience with BentoGo!</h3>
-          <form method="review" action="#">
+          <form method="post" action="#">
 
-          <label for="form-name"><h4>Name:</h4></label>
           <input type="text" id="form-name" placeholder="Jane Doe">
 
-          <label for="form-bento"><h4>Bento Box:</h4></label>
           <input type="text" id="form-bento" placeholder="Bento Box you purchased">
           
-          <label for="form-review"><h4>Review:</h4></label>
           <textarea id="form-review" placeholder="Please write review here"></textarea>
           </form>
 
