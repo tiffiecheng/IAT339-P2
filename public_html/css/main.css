@@ -86,25 +86,20 @@ body {
 /* ---------------------- */
 
 .nav-main{
-/*  background: rgba(229,132,44,1);
-  border-top: 0.4em solid #e5842c;
-  border-bottom: 0.4em solid #e5842c;*/
   background-color: rgba(255,255,255,0.95);
   border-top: 0.4em solid rgba(255,255,255,0);
  	border-bottom: 0.1em solid #ccc;
-  /*height: 2.8em;*/
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99999;
 }
 
-.nav-main-black{
-  background: #333;
-  border-top: 0.1em solid #333;
-  border-bottom: 0.1em solid #333;
-  height: 3.5em;
-  position: fixed;
+.nav-main-styleGuide{
+   background-color: rgba(255,255,255,0.95);
+  border-top: 0.4em solid rgba(255,255,255,0);
+  border-bottom: 0.1em solid #ccc;
+  /*position: fixed;*/
   top: 0;
   width: 100%;
   z-index: 99999; 
