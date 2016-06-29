@@ -697,6 +697,27 @@ input[type=submit]:hover{
   text-decoration: none;
 }
 
+.button-cartItem{
+  display: inline-block;
+  padding: 0.5em;
+  width: 10rem;
+  color: #FFF;
+  background-color: #CC7227;
+  border: 0.1em solid #FFF;
+  border-radius: 0.25em;
+  margin-top: 1rem;
+  text-decoration: none;
+  -webkit-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;  
+}
+
+.button-cartItem:hover{
+  background-color: #FFF;
+  color: #CC7227;
+  border: 0.1em solid #CC7227;
+  text-decoration: none;
+}
+
 /* ----------------- */
 /*  Dropdown Select  */
 /* ----------------- */
@@ -1849,7 +1870,7 @@ input[type=address]:focus{
 	/*padding: 2rem 0;*/
 /*}*/
 
-.myCart [class^='row-product']{
+/*.myCart [class^='row-product']{
   padding: 2rem 0;
   border-bottom: 0.11rem dotted #AAA;
 }
@@ -1867,21 +1888,73 @@ input[type=address]:focus{
   height: 6rem;
   background-color: #ddd;
   border: 0.15rem solid #ddd;
+}*/
+/*
+#myCart{
+  display: inline-block;
 }
+*/
 
-.myCart::after{
+#cart-item::after{
   content: "";
 	display: block;
 	clear: both; 
 }
 
-.myCart img:hover{
+.tableHeader{
+  margin-top: 6em;
+  background-color: #f5f5f5;
+  padding: 0.25em;
+}
+
+.grid-3-4 .tableHeader{
+  margin-right: 2rem;
+}
+
+#table-myCart p{
+  margin: 0;
+}
+
+.cart-item{
+  display: inline-block;
+  margin-right: 2rem;
+  padding: 1rem;
+  position: relative;
+  border: 0.15rem solid #f5f5f5;
+}
+
+.cart-item img{
+  width: 15%;
+  height: auto;
+  border: 0.15rem solid #ddd;
+  float: left;
+  margin: 0 1rem;
+}
+
+#table-myCart .grid-3-4{
+  text-align: left;
+}
+
+.cart-item-right{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+/*#table-myCart [class^='grid-']{
+  border: 0.15rem solid #f5f5f5;
+}*/
+
+/*.myCart img:hover{
   border: 0.15rem solid #aaa;
 }
 
 .subtotal{
   font-size: 2em;
 }
+
+
 
 /* ====================== */
 /*        CHECK OUT       */
