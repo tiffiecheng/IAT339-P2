@@ -26,6 +26,8 @@
         <img id="tako" src="img/Tako.png" alt="tako"> 
       </a>
 
+       <a href="#top" class="nav-toggle hidden"><img src="img/icon-hamburger.png"></a>
+
       <div class="dropdown">
         <a class="button-nav" href="#">Shop</a>
           <div class="dropdown-content">        
@@ -34,18 +36,18 @@
           </div>
       </div>  
 
-        <a class="button-nav" href="StoreLocations.html">Locations</a>
-        <a class="button-nav" href="Testimonials.html">Testimonials</a>
-        <a class="button-nav" href="FAQ.html">FAQ</a>
-        <a class="button-nav" href="Contact.html">Contact</a>
-
-        <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
-        <a id="myCart" href="MyCart.html">My Cart</a>
+      <a class="button-nav" href="StoreLocations.html">Locations</a>
+      <a class="button-nav" href="Testimonials.html">Testimonials</a>
+      <a class="button-nav" href="FAQ.html">FAQ</a>
+      <a class="button-nav" href="Contact.html">Contact</a>
+      <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
+      <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+        
       </nav>
     </div>
 
     <!-- ======================================== -->
-    <!--    NSERT CONTENT IN THE WRAPPER :)       -->
+    <!--    INSERT CONTENT IN THE WRAPPER :)      -->
     <!-- ======================================== -->
 
     <section id="wrapper">
@@ -63,12 +65,12 @@
         <div class="row">
           <div class="grid-1-2">
             <div class="grid-1-6">
-              <a href="#"><img src="img/Bento-B1-1.jpg"/></a>
-              <a href="#"><img src="img/Bento-B1-2.jpg"/></a>
-              <a href="#"><img src="img/Bento-B1-3.jpg"/></a>
+              <a href="img/Bento-B1.jpg" class="image-swap"><img src="img/Bento-B1.jpg"/></a>
+              <a href="img/Bento-B1-1.jpg" class="image-swap"><img src="img/Bento-B1-1.jpg"/></a>
+              <a href="img/Bento-B1-3.jpg" class="image-swap"><img src="img/Bento-B1-3.jpg"/></a>
             </div>
-            <div class="grid-3-4">
-              <img src="img/Bento-B1.jpg"/>
+            <div class="grid-5-6">
+              <img class="image-swap-area" src="img/Bento-B1.jpg"/>
             </div>
           </div>
           <div class="grid-1-2">
@@ -84,7 +86,7 @@
                 <option value="4">4</option>
               </select>
               </div>
-              <a class="button-addToCart" href=" ">Add to Cart</a>
+              <a class="button-addToCart" id="cartButton"href="img/icon-cart-full.png" >Add to Cart</a>
               <p>
               Rilakkuma is a bear known for his relaxing presence and adorable appearance. Staying true to this beloved Sanrio character, the Rilakkuma Box comes packed full of the best things in the world- eggs, rice, and a sleeping bear almost too cute to eat. What else could be better than that? (Hint: the answer is nothing)
               </p>
@@ -156,7 +158,10 @@
       </div>
 
     </section>
-  
+
+    <script src="js/zepto.js"></script>
+    <script src="js/dynamic.js"></script>
+
   </body>
 
 </html>
