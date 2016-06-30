@@ -651,10 +651,10 @@ input[type=submit]:hover{
 .button-cartItem{
   display: inline-block;
   padding: 0.5em;
-  width: 10rem;
-  color: #FFF;
-  background-color: #CC7227;
-  border: 0.1em solid #FFF;
+  width: 9rem;
+  color: #333;
+  background-color: #FFF;
+  border: 0.1em solid #bbb;
   border-radius: 0.25em;
   margin-top: 1rem;
   text-decoration: none;
@@ -663,9 +663,9 @@ input[type=submit]:hover{
 }
 
 .button-cartItem:hover{
-  background-color: #FFF;
-  color: #CC7227;
-  border: 0.1em solid #CC7227;
+  background-color: #333;
+  color: #fff;
+  border: 0.1em solid #ddd;
   text-decoration: none;
 }
 
@@ -1827,7 +1827,11 @@ input[type=address]:focus{
   padding-right: 1em;
 }
 
-
+.total{
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 0.1rem solid #bbb;
+}
 /*#table-myCart [class^='grid-']{
   border: 0.15rem solid #f5f5f5;
 }*/
