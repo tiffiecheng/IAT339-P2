@@ -39,6 +39,17 @@
   line-height: 175%;
 }
 
+.styleguide h1, .styleguide h2, .styleguide h3, 
+.styleguide h4, .styleguide h5, .styleguide h6{
+  font-family: "Open Sans";
+  color: #555;
+  text-transform: none;
+}
+
+.styleGuide h2{
+  margin-bottom: -2rem;
+}
+
 /* ------------------- */
 /*   Header Citations  */
 /* ------------------- */
@@ -149,7 +160,8 @@
 /* ------------------- */
 
 .sections-styleGuide{ 
-  border-bottom: 0.15em dotted #AAA;
+  border-bottom: 0.1em dotted #aaa;
+  margin: 3em 0;
 }
 
 /* =============================== */
@@ -176,26 +188,38 @@
 /* ------------*/
 .headings h1{
   text-align: left;
+  font-family: "Aquino";
+  text-transform: uppercase;
 }
 
 .headings h2{
   text-align: left;
+  font-family: "Aquino";
+  text-transform: uppercase;
 }
 
 .headings h3{
   text-align: left;
+  font-family: "Aquino";
+  text-transform: uppercase;
 }
 
 .headings h4{
   text-align: left;
+  font-family: "Aquino";
+  text-transform: uppercase;
 }
 
 .headings h5{
   text-align: left;
+  font-family: "Aquino";
+  text-transform: uppercase;
 }
 
 .headings h6{
   text-align: left;
+  font-family: "Aquino";
+  text-transform: uppercase;
 }
 
 /* =================================== */
