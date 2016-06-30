@@ -23,8 +23,7 @@
 
 .header-styleGuide-wrap h1{
   color: #FFF;
-/*  font-size: 68px;
-*/  line-height: 115%;
+  line-height: 115%;
   margin-bottom: 25px;
 
 }
@@ -47,7 +46,7 @@
 }
 
 .styleGuide h2{
-  margin-bottom: -2rem;
+  margin-bottom: 0rem;
 }
 
 /* ------------------- */
@@ -249,7 +248,7 @@
 /* ---------------- */
 
 section code {
-  background-color: #EEE;
+  background-color: #f5f5f5;
   padding: 1em 2em;
   display: block;
   font-size: 12px;
