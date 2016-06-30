@@ -1895,6 +1895,11 @@ input[type=address]:focus{
 }
 */
 
+#table-myCart h3{
+  color: black;
+  margin: 1em;
+}
+
 #cart-item::after{
   content: "";
 	display: block;
