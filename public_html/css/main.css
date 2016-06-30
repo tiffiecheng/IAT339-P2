@@ -663,9 +663,13 @@ input[type=submit]:hover{
 }
 
 .button-cartItem:hover{
-  background-color: #333;
+/*  background-color: #333;
   color: #fff;
   border: 0.1em solid #ddd;
+  text-decoration: none;*/
+  background-color: #fff;
+  color: #CC7227;
+  border: 0.1em solid #CC7227;
   text-decoration: none;
 }
 
@@ -1760,6 +1764,10 @@ input[type=address]:focus{
 }
 */
 
+#table-myCart{
+  margin-bottom: 4rem;
+}
+
 #table-myCart h3{
   color: black;
   margin: 1em;
@@ -1773,7 +1781,7 @@ input[type=address]:focus{
 
 .tableHeader{
   margin-top: 6em;
-  background-color: #f5f5f5;
+  background-color: #f1f1f1;
   padding: 0.25em;
 }
 
@@ -1791,12 +1799,12 @@ input[type=address]:focus{
   /*margin-right: 2rem;*/
   padding: 1rem;
   position: relative;
-  border: 0.15rem solid #f5f5f5;
+  border: 0.15rem solid #f1f1f1;
   border-bottom: none;
 }
 
 .cart-item:last-of-type{
-  border-bottom: 0.15rem solid #f5f5f5;
+  border-bottom: 0.15rem solid #f1f1f1;
 }
 
 .cart-item img{
@@ -1831,6 +1839,12 @@ input[type=address]:focus{
   margin-top: 0.5rem;
   padding-top: 0.5rem;
   border-top: 0.1rem solid #bbb;
+  font-weight: 700;
+}
+
+.grid-1-4 .button-orange{
+  width:100%;
+  margin-top: 1.5rem;
 }
 /*#table-myCart [class^='grid-']{
   border: 0.15rem solid #f5f5f5;
