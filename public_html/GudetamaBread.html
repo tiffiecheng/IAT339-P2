@@ -38,9 +38,9 @@
         <a class="button-nav" href="Testimonials.html">Testimonials</a>
         <a class="button-nav" href="FAQ.html">FAQ</a>
         <a class="button-nav" href="Contact.html">Contact</a>
-
+        <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
         <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
-        <a id="myCart" href="MyCart.html">My Cart</a>
+          
       </nav>
     </div>
   </div>
@@ -65,14 +65,13 @@
       <div id="productDetails">
         <div class="grid-1-2">
           <div class="grid-1-6">
-            <a href="#"><img src="img/Bento-M1-1.jpg"/></a>
-            <a href="#"><img src="img/Bento-M1-2.jpg"/></a>
-            <a href="#"><img src="img/Bento-M1-3.jpg"/></a>
-
+            <a href="img/Bento-M1.jpg" class="image-swap"><img src="img/Bento-M1.jpg"/></a>
+            <a href="img/Bento-M1-1.jpg" class="image-swap"><img src="img/Bento-M1-1.jpg"/></a>
+            <a href="img/Bento-M1-2.jpg" class="image-swap"><img src="img/Bento-M1-2.jpg"/></a>
 
           </div>
           <div class="grid-3-4">
-            <img src="img/Bento-M1.jpg"/>
+            <img class="image-swap-area" src="img/Bento-M1.jpg"/>
 
           </div>
         </div>
@@ -88,7 +87,7 @@
               <option value="4">4</option>
             </select>
             </div>
-            <a class="button-addToCart" href=" ">Add to Cart</a>
+            <a class="button-addToCart" id="cartButton"href="img/icon-cart-full.png" >Add to Cart</a>    
             <p>
              The lazy egg has striked back again, and this time he's coming in bread form. Bringing along his bacon blanket, each bite will be an explosion of flavors--from the fluffy bread, to the rich egg filling and crispy, salty bacon. There is no denying that we have outdone ourselves this once again.
             </p>
@@ -159,6 +158,9 @@
 
     </section>
   
+    <script src="js/zepto.js"></script>
+    <script src="js/dynamic.js"></script>
+    
   </body>
 
 </html>
