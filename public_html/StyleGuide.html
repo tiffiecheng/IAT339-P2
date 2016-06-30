@@ -688,44 +688,50 @@
 
       <section class="sections-styleGuide">
         <h2 class="leftAlign">Form</h2>
-        <h4 class="leftAlign">.reviewForm</h4>
+        <h4 class="leftAlign">.contactForm</h4>
         <code>
-          &lt;section id="reviewForm"&gt;<br>
-            &lt;h3&gt;Tell us about your experience with BentoGo!&lt;/h3&gt;<br>
-            &lt;form method="review" action="#"&gt;<br>
-
-              &lt;label for="form-name"&gt;&lt;h4&gt;Name:&lt;/h4&gt;&lt;/label&gt;<br>
-              &lt;input type="text" id="form-name" placeholder="Jane Doe"&gt;<br> 
-              
-              &lt;label for="form-bento"&gt;&lt;h4&gt;Bento Box:&lt;/h4&gt;&lt;/label&gt;<br>
-              &lt;input type="text" id="form-bento" placeholder="Bento Box you purchased"&gt;<br> 
-
-              &lt;label for="form-review"&gt;&lt;h4&gt;Review:&lt;/h4&gt;&lt;/label&gt;<br>
-              &lt;input type="text" id="form-review" placeholder="Please write review here"&gt;<br> 
+          &lt;div id="contactForm"&gt;<br>
+            &lt;form method="contact" action="#"&gt;<br>
+            &lt;div id="grid-1-2"&gt;<br>
+              &lt;input type="text" id="contact-name" placeholder="Your Name"&gt;<br> 
+            &lt;/div&gt;<br>
+            &lt;div id="grid-1-2"&gt;<br>
+              &lt;input type="text" id="contact-title" placeholder="Title of Comment"&gt;<br> 
+            &lt;/div&gt;<br>
+            &lt;div id="grid-1-1"&gt;<br>  
+              &lt;textarea id="contact-comment" placeholder="Leave any comments, concerns, and/or confessions of love here!"&gt;&lt;/textarea&gt;<br> 
+              &lt;/div&gt;
             &lt;/form&gt;<br>
 
             &lt;div class ="rightAlign"&gt;<br>
-              &lt;input type="submit" value="Submit Review"&gt;<br>
+              &lt;input type="submit" value="Submit"&gt;<br>
             &lt;/div&gt;<br>
-          &lt;/section&gt;
 
         </code>
-        <section id="reviewForm">
-          <h3>Tell us about your experience with BentoGo!</h3>
-          <form method="post" action="#">
+        <div id="contactForm">
 
-          <input type="text" id="form-name" placeholder="Jane Doe">
+          <form method="contact" action="#">
 
-          <input type="text" id="form-bento" placeholder="Bento Box you purchased">
-          
-          <textarea id="form-review" placeholder="Please write review here"></textarea>
+            <div class="grid-1-2">
+              <input type="text" id="contact-name" placeholder="Your Name">
+            </div>
+
+            <div class="grid-1-2">
+              <input type="text" id="contact-title" placeholder="Title of Comment">
+            </div>
+
+            <div class="grid-1-1">
+              <input type="email" id="contact-email" placeholder="Email">
+            </div>
+            <div class="grid-1-1">
+              <textarea id="contact-comment" placeholder="Leave any comments, concerns, and/or confessions of love here!"></textarea>
+            </div>
           </form>
 
           <div class ="rightAlign">
-            <input type="submit" value="Submit Review">
+            <input type="submit" value="Submit">
           </div>
-        </section>
-      </section>
+      </div>
     </section> <!-- End of Combined Elements Section -->
   </section>  <!-- Wrapper closing tag -->
   
