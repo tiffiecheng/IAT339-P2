@@ -1,3 +1,18 @@
+
+.nav-toggle img{
+  height: 1rem;
+}
+
+.nav-toggle.hidden {
+  visibility: hidden;
+  position: absolute; 
+}
+
+.nav-toggle.shown {
+  visibility: visible;
+  position: relative;
+}
+
 @font-face{
 	font-family: "Aquino-demo";
 	font-weight: normal;
@@ -38,17 +53,17 @@ body {
 }
 
 #icon-cart{
-	position: absolute;
-	top: 0.4rem;
-	right: 6rem;
+	/*position: absolute;*/
+	margin-top: 0.7rem;
+	/*right: 6rem;*/
 	height: 1rem;
+  float: right;
 }
 
 #myCart{
-	position: absolute;
-	color: #999;
-	top: 0.4rem;
-	right: 2rem;
+	/*position: absolute;*/
+	/*right: 2rem;*/
+  float: right;
 }
 
 /* ---------------------- */
@@ -194,13 +209,13 @@ section p {
 /*              GRIDS              */
 /* =============================== */
 
-.grid-1-1, .grid-1-2, .grid-1-3, .grid-1-3-custom, .grid-2-3, .grid-1-4, .grid-1-4-uneven, .grid-1-4-char, .grid-1-5, .grid-1-6, .grid-1-5-custom, .grid-1-5-withButton, .grid-3-4, .grid-1-8, .grid-3-8, .grid-1-2-withHeading{
+.grid-1-1, .grid-1-2, .grid-1-3, .grid-1-3-custom, .grid-2-3, .grid-1-4, .grid-1-4-uneven, .grid-1-4-char, .grid-1-5, .grid-5-6, .grid-1-6, .grid-1-5-custom, .grid-1-5-withButton, .grid-3-4, .grid-1-8, .grid-3-8, .grid-1-2-withHeading{
   float: left;
   text-align: center;
   width: 100%;
 }
 
-.grid-1-2:last-of-type, .grid-1-3:last-of-type, .grid-1-4:last-of-type, .grid-1-4-uneven:last-of-type, .grid-3-4:last-of-type,.grid-1-6, .grid-1-5-withButton:last-of-type{
+.grid-1-2:last-of-type, .grid-1-3:last-of-type, .grid-1-4:last-of-type, .grid-1-4-uneven:last-of-type, .grid-3-4:last-of-type,.grid-1-6:last-of-type, .grid-5-6:last-of-type, .grid-1-5-withButton:last-of-type{
 	padding-right: 0;
 }
 
@@ -246,7 +261,7 @@ section p {
   clear: both;
 }
 
-@media (min-width: 38.5em) {
+@media (min-width: 40.625em) {
 	.grid-1-2 {
 		width: 50%;
 	}
@@ -262,6 +277,25 @@ section p {
 }*/
 
 /*anything above 64em will be 25%*/
+
+@media (min-width: 50em){
+  .grid-1-5{
+    width: 20%;
+  }
+}
+
+@media (min-width: 35em) and (max-width: 50em){
+  .grid-1-5 {
+    width: 33%;
+  }
+}
+
+@media (min-width: 0em) and (max-width: 35em){
+  .grid-1-5{
+    width: 50%;
+  }
+} 
+
 @media (min-width: 64em){
   .grid-1-4 {
     width: 25%;
@@ -278,12 +312,8 @@ section p {
   .grid-1-3-custom{
     width: 33%;
   }
-  .grid-1-6{
-    width: 16.66%;
-  }
 }
 
-/*anything between 35 and 64 will be 50%*/
 @media (min-width: 35em) and (max-width: 64em){
   .grid-1-4 {
     width: 50%;
@@ -316,9 +346,9 @@ section p {
 		width: 50%;
 		text-align: left;
 	}
-  .grid-1-5{
+/*  .grid-1-5{
     width: 20%;
-  }
+  }*/
   .grid-1-5-custom {
     width: 20%;
   }
@@ -343,11 +373,29 @@ section p {
 	}
 }
 
+@media(min-width: 73em){
+  .grid-5-6{
+    width: 83.33%;
+  }
+  .grid-1-6{
+    width: 16.66%;
+  }
+}
+
+@media(min-width: 0em) and (max-width: 73em){
+  .grid-5-6{
+    width: 100%;
+  }
+  .grid-1-6{
+    width: 100%;
+  }
+}
 .grid-1-2 img{
   background-color: #ddd;
   height: 20rem;
   width: 90%;
 }
+
 
 /* =============================== */
 /*       INTERACTIVE ELEMENTS      */
@@ -702,13 +750,6 @@ input[type=submit]:hover{
     outline: none;
 }
 
-#productInfo .select-style{
-  width: 3.5em;
-  float: left;
-  margin-top: 0.55rem;
-  height: 1.8rem;
-}
-
 /* =============================== */
 /*          TEXT ELEMENTS          */
 /* =============================== */
@@ -1024,13 +1065,7 @@ input[type=search]:focus{
 }
 
 #footer input{
-  display: inline-block;
-  width: 100%;
-  float: left;
-}
-
-#footer button{
-  display: block;
+  width: 25%;
 }
 
 #footer h3{
@@ -1360,19 +1395,17 @@ figcaption{
 
 #productDetails img{
   display: inline-block;
-  width: 100%;
-  height: auto;
   border: 0.15em solid #ddd;
 }
 
-#productDetails .grid-1-6{
-  text-align: right;
-  padding-right:0.1rem;
+#productDetails .grid-1-6, #productDetails .grid-5-6{
+  text-align: left;
+  /*padding-right:0.1rem;*/
 }
 
 #productDetails .grid-1-6 img{
   display: inline-block;
-  width: 100%;
+  /*width: 5rem;*/
   height: auto;
 }
 
@@ -1380,13 +1413,23 @@ figcaption{
   border: 0.15em solid #CC7227;
 }
 
-#productDetails .grid-3-4 img{
-  margin-left: 0.15rem;
+#productDetails .grid-5-6 img{
+  width: 90%;
+  height: auto;
+  /*margin-left: 0.25rem;*/
+  text-align: left;
+}
+
+#productDetails .grid-1-6 img{
+  display: inline-block;
+  width: 5rem;
+  height: auto;
+  border: 0.15em solid #ddd;
 }
 
 #productInfo{
   text-align: left;
-  /*margin-left: 6%;*/
+  margin-left: 3%;
 }
 
 #productDetails h3{
@@ -1398,8 +1441,21 @@ figcaption{
   margin-bottom: 0;
 }
 
+#productInfo .select-style select {
+  padding: 9px 14px;
+}
+
+#productInfo .select-style{
+  width: 3.5em;
+  float: left;
+  margin-top: 0.55rem;
+  margin-right: 2rem;
+  height: 2.2rem;
+  vertical-align: middle;
+}
+
 #productInfo .button-addToCart{
-  margin: 0.5rem 0 1rem 2rem;
+  margin: 0.5rem 0 1rem 0;
   width: 12rem;
 }
 
@@ -1560,16 +1616,12 @@ figcaption{
 
 #faq{
   padding: 0 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 #faq .question{
   margin: 4em 0;
 }
-
-/*#faq input[type=text] {
-  width: 90%;
-}*/
 
 /* ====================== */
 /*        CONTACT         */
@@ -1577,19 +1629,23 @@ figcaption{
 
 #contactForm{
   display: inline-block;
-  width: 80%;
+  width: 100%;
   background-color: #efefef;
   padding: 2rem;
+  padding-left: 3rem;
   margin: 2rem 0;
 }
 
-#contact-name{
-  width: 95%;
+#contactForm .grid-1-2, #contactForm .grid-1-1 {
+  float: left;
+  width: 100%;
+  padding-right: 1em;
 }
 
-#contactForm .grid-1-2 {
-  text-align: left;
+#contactForm textarea{
+  padding-right: 1em;
 }
+
 
 #headquarters{
   display: inline-block;
@@ -1638,6 +1694,10 @@ figcaption{
   margin-bottom: 0em;
 }
 
+#contactForm .rightAlign{
+  margin-right: 1rem;
+}
+
 /*#form-contact*/
 
 /* ====================== */
@@ -1658,10 +1718,10 @@ figcaption{
 }
 
 #addressSearch input[type=text] {
-  width: 30%;
+  width: 18rem;
   padding: 0.75rem 1.25rem;
   margin: 0.5rem 0;
-  border: 0.3em solid #ccc;
+  border: 0.2em solid #ccc;
   border-radius: 0.25em;
   box-sizing: border-box;
   -webkit-transition: border 0.2s ease-out;
@@ -1732,7 +1792,6 @@ input[type=address]:focus{
 #locationResults .row{
   padding-bottom: 0;
 }
-/*TEMPT STUFF DELETE AFTER*/
 
 /* ====================== */
 /*      TESTIMONIALS      */
@@ -1763,9 +1822,11 @@ input[type=address]:focus{
   margin-bottom: 1rem;
 }
 
+
+
 #reviewForm{
   padding: 1rem 2rem;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 #reviewForm h4{
@@ -1832,11 +1893,11 @@ input[type=address]:focus{
   margin-top: 4rem;
 }
 
-#table-myCart{
+#table-myCart, #table-checkOut{
   margin-bottom: 4rem;
 }
 
-#table-myCart h3{
+#table-myCart h3, #table-checkOut h3{
   color: black;
   margin: 1em;
 }
@@ -1876,15 +1937,18 @@ input[type=address]:focus{
   padding: 1.5rem 1rem;
   position: relative;
   border: 0.15rem solid #f1f1f1;
+}
+
+#table-myCart .cart-item{
   border-bottom: none;
 }
 
-.cart-item:last-of-type{
+#table-myCart .cart-item:last-of-type{
   border-bottom: 0.15rem solid #f1f1f1;
 }
 
 .cart-item img{
-  width: 15%;
+  width: 8rem;
   height: auto;
   border: 0.15rem solid #ddd;
   float: left;
@@ -1895,24 +1959,28 @@ input[type=address]:focus{
   border: 0.15rem solid #CC7227;
 }
 
-#table-myCart .grid-3-4{
+#table-myCart .grid-3-4, #table-checkOut .grid-3-4{
   text-align: left;
 }
 
 .cart-item-right{
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  width: 100%;
+  float:right;
+  /*padding-right: 1.5rem;*/
 }
 
 #summaryTable-left{
   text-align: left;
   padding-left: 1em;
+  width: 50%;
+  float: left;
 }
 
 #summaryTable-right{
   text-align: right;
   padding-right: 1em;
+  width: 50%;
+  float: left;
 }
 
 .total{
@@ -2004,6 +2072,7 @@ input[type=address]:focus{
 @media (min-width: 62em){
   .checkOut .grid-3-4{
     width: 75%;
+  }
 }
 
 /* ====================== */
@@ -2036,6 +2105,36 @@ input[type=address]:focus{
 /*.complete p{
   font-size: 1.2em;
 }*/
+
+/*@media (min-width: 46.25em){
+#testimonials .grid-1-2{
+  width: 50%;
+}*/
+
+
+@media (min-width: 47em){
+  #contactForm .grid-1-2{
+    width: 50%;
+}
+
+@media (min-width: 35.75em){
+  #reviewForm #contactForm{
+    width: 80%;
+  }
+} 
+
+/*@media (min-width: 64em){
+  #table-myCart .grid-1-4{
+    width: 25%;
+  }
+}
+
+@media (min-width: 0em) and (max-width: 64em){
+  #table-myCart .grid-1-4{
+    width: 100%;
+  }
+}
+*/
 
 /* ====================== */
 /*       GOOGLE MAPS      */
