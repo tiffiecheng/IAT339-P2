@@ -993,10 +993,8 @@ input[type=search]:focus{
 	position: absolute;
 	/*only works if body tag is relative otherwise */
 	background-color: #f5f5f5;
-  /*padding: 5rem 0;*/
 	width: 100%;
   border-top: 0.1em solid #ccc;
-	/*height: 5rem;*/
 }
 
 #footer .home-wrapper{
@@ -1010,7 +1008,8 @@ input[type=search]:focus{
 }
 
 #social-media{
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  margin-top: -1.5em;
 }
 
 #footer input{
@@ -1030,6 +1029,19 @@ input[type=search]:focus{
 #footer hr{
   border: 0.1em solid #ddd;
   margin: 2.3em 0;
+}
+
+.footerLinks{
+  margin-bottom: 2em;
+}
+
+.footerLinks p{
+  display: inline;
+  margin-right: 1em;
+}
+
+.footerLinks a{
+  margin: 0 1em;
 }
 
 /* ----------- */
@@ -1085,20 +1097,20 @@ figcaption{
   background-repeat: no-repeat, repeat;
   background-color: #E5842C;
   width: 100%;
-  padding: 8em 0;
+  padding: 5em 0;
   border-style: none;
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
 }
 
 .full-promo-wrap{
   text-align: center;
-  margin: 3em auto;
+  margin: 2em auto;
   width: 45%;
   color: #FFF;
+      -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
 }
 
 .full-promo-wrap #tako{
@@ -1221,7 +1233,7 @@ figcaption{
   width: 100%;
 }
 
-#home-section3-item {
+.home-section3-item {
   display: inline-block;
   background-color: #fff;
   border-radius: 0.5em;
@@ -1230,7 +1242,7 @@ figcaption{
   margin:0;
 }
 
-#home-section3-item:last-of-type{
+.home-section3-item:last-of-type{
   padding-right: 0;
 }
 
@@ -1644,7 +1656,7 @@ input[type=address]:focus{
 }
 
 #locationResults p{
-  text-align: center;
+  text-align: left;
   margin-bottom: 0;
 }
 
@@ -1656,7 +1668,7 @@ input[type=address]:focus{
 
 
 #locationResults .row{
-  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .resultLinks{
