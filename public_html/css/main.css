@@ -194,13 +194,13 @@ section p {
 /*              GRIDS              */
 /* =============================== */
 
-.grid-1-1, .grid-1-2, .grid-1-3, .grid-1-3-custom, .grid-2-3, .grid-1-4, .grid-1-4-uneven, .grid-1-4-char, .grid-1-5, .grid-1-5-custom, .grid-1-5-withButton, .grid-3-4, .grid-1-8, .grid-3-8, .grid-1-2-withHeading{
+.grid-1-1, .grid-1-2, .grid-1-3, .grid-1-3-custom, .grid-2-3, .grid-1-4, .grid-1-4-uneven, .grid-1-4-char, .grid-1-5, .grid-1-6, .grid-1-5-custom, .grid-1-5-withButton, .grid-3-4, .grid-1-8, .grid-3-8, .grid-1-2-withHeading{
   float: left;
   text-align: center;
   width: 100%;
 }
 
-.grid-1-2:last-of-type, .grid-1-3:last-of-type, .grid-1-4:last-of-type, .grid-1-4-uneven:last-of-type, .grid-3-4:last-of-type, .grid-1-5-withButton:last-of-type{
+.grid-1-2:last-of-type, .grid-1-3:last-of-type, .grid-1-4:last-of-type, .grid-1-4-uneven:last-of-type, .grid-3-4:last-of-type,.grid-1-6, .grid-1-5-withButton:last-of-type{
 	padding-right: 0;
 }
 
@@ -277,6 +277,9 @@ section p {
   }
   .grid-1-3-custom{
     width: 33%;
+  }
+  .grid-1-6{
+    width: 16.66%;
   }
 }
 
@@ -458,12 +461,12 @@ a.button-nav:hover, a.button-nav:focus {
   color: #E5842C;
 }
 
-#breadcrumbs-productDetail .shopTopBar{
+#breadcrumbs-productDetail .breadcrumbBar{
   display: inline-block;
   margin-top: 3rem;
 }
 
-.shopTopBar::after{
+.breadcrumbBar::after{
   content: "";
   display: block;
   clear: both; 
@@ -585,7 +588,7 @@ input[type=submit]:hover{
 }
 
 .button-white:hover{
-  /*background-color: #FFF;*/
+  background-color: #FFF;
   color: #CC7227;
   border: 0.1em solid #CC7227;
   text-decoration: none;
@@ -699,7 +702,7 @@ input[type=submit]:hover{
     outline: none;
 }
 
-#productDetails .select-style{
+#productInfo .select-style{
   width: 3.5em;
   float: left;
   margin-top: 0.55rem;
@@ -764,6 +767,14 @@ li {
 .leftAlign{
   text-align: left;
   /*margin: 0;*/
+}
+
+.font-missing{
+  font-family: "Lilita One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-align: center;
 }
 
 /* ---------------- */
@@ -1133,6 +1144,16 @@ figcaption{
   margin-top: 2em;
 }
 
+.full-promo .button-orange{
+  margin-top: 1rem;
+  width: 14rem;
+  margin-right: 2rem;
+}
+
+.button-orange:last-of-type{
+  margin-right: 0rem;
+}
+
 [id^='home-section']{
   margin-top: 3rem;
 }
@@ -1322,47 +1343,61 @@ figcaption{
 /*    PRODUCT DETAILS     */
 /* ====================== */
 
-#shop-section1 .leftAlign{
+#productDetails .leftAlign{
   margin: 0;
 }
 
-#shop-section1{
+#productDetails{
   display: inline-block;
   margin-bottom: 2rem;
 }
 
-#shop-section1 img{
+#productDetails img{
   display: inline-block;
-  width: 99%;
+  width: 100%;
+  height: auto;
+  border: 0.15em solid #ddd;
+}
+
+#productDetails .grid-1-6{
+  text-align: right;
+  padding-right:0.1rem;
+}
+
+#productDetails .grid-1-6 img{
+  display: inline-block;
+  width: 100%;
   height: auto;
 }
 
-#shop-section1 .grid-1-4-uneven img{
-  display: inline-block;
-  width: 97%;
-  height: auto;
+#productDetails .grid-1-6 img:hover{
+  border: 0.15em solid #CC7227;
 }
 
-#productDetails{
+#productDetails .grid-3-4 img{
+  margin-left: 0.15rem;
+}
+
+#productInfo{
   text-align: left;
-  margin-left: 6%;
+  /*margin-left: 6%;*/
 }
 
-#shop-section1 h3{
+#productDetails h3{
   text-align: left;
   margin: 0.5rem 0;
 }
 
-#productDetails p{
+#productInfo p{
   margin-bottom: 0;
 }
 
-#productDetails .button-addToCart{
+#productInfo .button-addToCart{
   margin: 0.5rem 0 1rem 2rem;
   width: 12rem;
 }
 
-#shop-section1 .grid-1-2{
+#productDetails .grid-1-2{
   text-align: left;
 }
 
@@ -1370,15 +1405,11 @@ figcaption{
   padding: 1rem 0;
 }
 
-.newArrivals img{
-}
-
 #similarProducts img{
   width: 100%;
   height: auto;
   padding: 1em;
   border: 0.1em solid #fff;
-
 }
 
 #similarProducts img:hover{
@@ -1538,18 +1569,20 @@ figcaption{
 /*        CONTACT         */
 /* ====================== */
 
-.contact-wrap{
-  width: 75%;
-  margin: 1rem auto;
-  text-align: left;
-}
-
 #contactForm{
   display: inline-block;
   width: 80%;
   background-color: #efefef;
   padding: 2rem;
   margin: 2rem 0;
+}
+
+#contact-name{
+  width: 95%;
+}
+
+#contactForm .grid-1-2 {
+  text-align: left;
 }
 
 #headquarters{
@@ -1559,7 +1592,7 @@ figcaption{
   margin-bottom: 6rem
 }
 
-/*#headquaters */
+/*#headquaters */a
 
 .grid-1-1 h3{
   color: black;
@@ -1785,6 +1818,10 @@ input[type=address]:focus{
 }
 */
 
+#cart .breadcrumbBar{
+  margin-top: 4rem;
+}
+
 #table-myCart{
   margin-bottom: 4rem;
 }
@@ -1801,7 +1838,7 @@ input[type=address]:focus{
 }
 
 .tableHeader{
-  margin-top: 6em;
+  margin-top: 1rem;
   background-color: #f1f1f1;
   padding: 0.25em;
 }
@@ -1826,7 +1863,7 @@ input[type=address]:focus{
   width: 100%;
   display: inline-block;
   /*margin-right: 2rem;*/
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   position: relative;
   border: 0.15rem solid #f1f1f1;
   border-bottom: none;
@@ -1844,14 +1881,18 @@ input[type=address]:focus{
   margin: 0 1rem;
 }
 
+.cart-item img:hover{
+  border: 0.15rem solid #CC7227;
+}
+
 #table-myCart .grid-3-4{
   text-align: left;
 }
 
 .cart-item-right{
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
 }
 
 #summaryTable-left{
@@ -1890,6 +1931,10 @@ input[type=address]:focus{
 /* ====================== */
 /*        CHECK OUT       */
 /* ====================== */
+
+#checkOut-top{
+  margin-top: 4rem;
+}
 
 .checkOut h4{
 	margin-bottom: 1em;
@@ -1969,9 +2014,13 @@ input[type=address]:focus{
   bottom: 0;
 }
 
-.complete #thankYouHeading{
-  font-size: 3em;
-  font-style: bold;
+.complete h2{
+  font-size: 2.25rem;
+  /*font-style: bold;*/
+}
+
+.complete p{
+  margin-bottom: 0.4em;
 }
 
 /*.complete p{
