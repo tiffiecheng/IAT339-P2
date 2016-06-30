@@ -9,25 +9,11 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/Style_guide.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Candal|Lilita+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Candal%7CLilita+One' rel='stylesheet' type='text/css'>
 
   </head>
 
   <body>
-
-    <!-- =========== -->
-    <!--   HEADER    -->
-    <!-- =========== -->
-
-<!--   <div id="header">
-    <div class="header-wrap">
-      <a href="Home.html">
-        <img id="tako" src="img/Tako.png">
-        <h2 id="logo">BentoGo</h2>
-      </a>
-        <img id="icon-cart" src="img/icon-cart.png">
-        <a id="myCart" href="MyCart.html">My Cart</a>
-    </div> -->
 
     <!-- ===================== -->
     <!--        NAV BAR        -->
@@ -37,7 +23,7 @@
       <nav class="nav-main-wrap"> 
 
       <a href="Home.html">
-        <img id="tako" src="img/Tako.png"> 
+        <img id="tako" src="img/Tako.png" alt="tako"> 
       </a>
 
       <div class="dropdown">
@@ -53,7 +39,7 @@
         <a class="button-nav" href="FAQ.html">FAQ</a>
         <a class="button-nav" href="Contact.html">Contact</a>
 
-        <img id="icon-cart" src="img/icon-cart.png">
+        <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
         <a id="myCart" href="MyCart.html">My Cart</a>
       </nav>
     </div>
@@ -67,7 +53,7 @@
 
     <section id="wrapper">
       <div id="breadcrumbs-productDetail">
-        <div class = "shopTopBar">
+        <div class = "breadcrumbBar">
           <a class="breadcrumb-item" href="Home.html">Home </a>
           <p class="breadcrumb-item">/</p>
           <a class="breadcrumb-item" href="ShopPremade.html">Premade Bentos</a>
@@ -76,31 +62,32 @@
         </div>
       </div>
 
-      <div id="shop-section1">
+      <div id="productDetails">
         <div class="grid-1-2">
-          <div class="grid-1-4-uneven">
-            <a href="#"><img src="img/Sanrio2.png"/></a>
-            <a href="#"><img src="img/Sanrio4.png"/></a>
-            <a href="#"><img src="img/Sanrio3.png"/></a>
+          <div class="grid-1-6">
+            <a href="#"><img src="img/Bento-P1-1.jpg"/></a>
+            <a href="#"><img src="img/Bento-P1-2.jpg"/></a>
+            <a href="#"><img src="img/Bento-P1-3.jpg"/></a>
 
 
           </div>
           <div class="grid-3-4">
-            <img src="img/Sanrio1.png"/>
+            <img src="img/Bento-P1.jpg"/>
 
           </div>
         </div>
         <div class="grid-1-2">
-          <div id="productDetails">
+          <div id="productInfo">
             <h2 class="leftAlign">Sanrio Sandwich Platter</h2>
             <h3>$9.95</h3>
-            
+            <div class="select-style">
             <select>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
             </select>
+            </div>
             <a class="button-addToCart" href=" ">Add to Cart</a>
             <p>
             With the Sanrio Sandwich Platter, you get to enjoy all your favourite Sanrio characters in bite sized, hand-held joy. Like how each character has its own personality, each sandwich in this platter has its own distinct flavor. Prepare your tastebuds for an adventure of fun and deliciousness!
@@ -112,29 +99,29 @@
         <div class="row"> 
           <h2>Similar Items</h2>
           <div class="grid-1-5">
-            <a href="GudetamaBread.html"><img src="img/shopPremade-5.jpg"></a>
+            <a href="GudetamaBread.html"><img src="img/Bento-P2.jpg"></a>
             <p>Pooh Bear Platter</p>
           </div>
 
           <div class="grid-1-5">
-            <a href="GudetamaBread.html"><img src="img/shopPremade-6.jpg"></a>
+            <a href="GudetamaBread.html"><img src="img/Bento-M2.jpg"></a>
+            <p>Doggie Sandwich</p>
+          </div>  
+
+          <div class="grid-1-5">
+            <a href="GudetamaBread.html"><img src="img/Bento-P3.jpg"></a>
             <p>Gudetama Platter</p>
           </div>   
 
           <div class="grid-1-5">
-            <a href="GudetamaBread.html"><img src="img/shopPremade-7.jpg"></a>
+            <a href="GudetamaBread.html"><img src="img/Bento-P4.jpg"></a>
             <p>Santa's Posse Platter</p>
           </div>    
 
           <div class="grid-1-5">
-            <a href="GudetamaBread.html"><img src="img/shopPremade-9.jpg"></a>
-            <p>Pooh Bear Curry</p>
-          </div>    
-
-          <div class="grid-1-5">
-            <a href="GudetamaBread.html"><img src="img/shopPremade-10.jpg"></a>
-            <p>Doggie Sandwich</p>
-          </div>    
+            <a href="GudetamaBread.html"><img src="img/Bento-B5.jpg"></a>
+            <p>Batman Box</p>
+          </div> 
         </div>
       </section>
     </section>  <!-- Wrapper closing tag -->
@@ -144,12 +131,11 @@
     <!-- ===================== -->
 
     <section id="footer">
-      <section class="home-wrapper">
 
       <div class="grid-1-1">
         <form id="subscribe">
           <h3>Subscribe to our mailing list</h3>
-          <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p>
+          <!-- <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p> -->
           <input type="text" placeholder="Enter your email address">
             <a class="button button-orange" href="#">Sign Up</a>
         </form>
@@ -157,15 +143,21 @@
 
       <div class="grid-1-1">
         <div id="social-media">
-          <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png"></a>
-          <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png"></a>
-          <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png"></a>
-          <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png"></a>
+          <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
+          <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
+          <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
+          <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
         </div>
       </div>
+    
+      <div class="grid-1-1 footerLinks">
+        <p>By Maurice Yu and Tiffany Cheng</p>
+        <a href="StyleGuide.html">Styleguide</a>
+        <a href="Citations.html">Citations</a>
+        <a href="https://github.com/tiffiecheng/IAT339-P2">Github Repo</a>
+      </div>
 
-      </section>
-    </section>
+  </section>
   
   </body>
 

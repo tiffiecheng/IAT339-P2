@@ -9,7 +9,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/Style_guide.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Candal|Lilita+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Candal%7CLilita+One' rel='stylesheet' type='text/css'>
 
   </head>
 
@@ -21,7 +21,7 @@
 
     <div id="header-styleGuide">
       <div class="header-styleGuide-wrap">
-          <img src="img/Tako.png" id="tako">
+          <img src="img/Tako.png" id="tako" alt="tako">
 
         <h1>The Stunnin Style Guide for BentoGo</h1>
         <p>BentoGo delivers fresh and elaborately arranged boxed lunches that fit to your taste. Our lunches come in a variety of different designs, including characters from popular cartoons, movies, and video games.  </p>
@@ -46,7 +46,7 @@
         <p>Other pages:</p>
         <ul>
           <li><span><a href="http://www.sfu.ca/~mauricey/iat339/Week3/Wireframes/#g=1&p=desktop_homepage">User-flows</a></span></li>
-          <li><span><a href="Style_guide.html">Style Guide</a></span></li>
+          <li><span><a href="StyleGuide.html">Style Guide</a></span></li>
           <li><span><a href="Citations.html">Citations</a></span></li>
         </ul>
         </div>
@@ -54,9 +54,9 @@
         <div class="grid-col">
         <p>More Links:</p>
         <ul>
-          <li><span><a href="Coming_soon.html">About</a></span></li>
-          <li><span><a href="Coming_soon.html">Menu</a></span></li>
-          <li><span><a href="Coming_soon.html">Contact</a></span></li>
+          <li><span><a href="Home.html">About</a></span></li>
+          <li><span><a href="ShopPremade.html">Menu</a></span></li>
+          <li><span><a href="Contact.html">Contact</a></span></li>
         </ul>
       </div>
 
@@ -68,16 +68,19 @@
     <!--         COLORS AND GRIDS SECTION         -->
     <!-- ======================================== -->
 
-    <section class="sections-styleGuide" id="colors">
+    <div class="styleguide">
+
+    <div class="sections-styleGuide" id="colors">
+
       <section>
-        <h2>COLORS</h2>
+        <h2 class="leftAlign">Colors</h2>
         
-        <h3>Primary Colors</h3>       
+        <h3 class="leftAlign">Primary Colors</h3>       
         <div class="color-example ketchup-red">ketchup red</div>
         <div class="color-example zesty-orange">zesty orange</div>
         <div class="color-example mustard-yellow">mustard yellow</div>
           
-        <h3>Secondary Colors </h3>  
+        <h3 class="leftAlign">Secondary Colors </h3>  
         <div class="color-example rice-white">rice white</div> 
         <div class="color-example charcoal-1">charcoal 1</div>
         <div class="color-example charcoal-2">charcoal 2</div>
@@ -85,11 +88,11 @@
         <div class="color-example charcoal-4">charcoal 4</div>
         <div class="color-example charcoal-5">charcoal 5</div>
       </section>
-    </section>
+    </div>
 
-    <section class="sections-styleGuide" id="grids">
+    <div class="sections-styleGuide" id="grids">
       <section>
-      <h2>GRIDS</h2>
+      <h2 class="leftAlign">Grids</h2>
 
       <!-- Div Begin: Grid Group 1-2 -->
         <div class="grid-group">
@@ -197,7 +200,7 @@
       <!-- End of Div -->
       </section>
 
-    </section>
+    </div>
 
 
     <!-- ======================================== -->
@@ -210,14 +213,14 @@
     <!--   Buttons  -->
     <!-- ========== -->
 
-      <section class="sections-styleGuide">
-        <h2>BUTTONS</h2>
-        <h4>button, a.button, button[type=submit], input[type=button], input[type=submit]</h4>
+      <div class="sections-styleGuide">
+        <h2 class="leftAlign">Buttons</h2>
+        <h4 class="leftAlign">button, a.button, button[type=submit], input[type=button], input[type=submit]</h4>
         <code>
-          &lt;button&gt;Button&lt;/button&gt;</br>
-          &lt;a class="button" href="#"&gt;Link button&lt;/a&gt;</br>
-          &lt;button type="submit"&gt;Submit Submit&lt;/a&gt;</br>
-          &lt;input type="button" value="Input button"&gt;</br>
+          &lt;button&gt;Button&lt;/button&gt;<br>
+          &lt;a class="button" href="#"&gt;Link button&lt;/a&gt;<br>
+          &lt;button type="submit"&gt;Submit Submit&lt;/a&gt;<br>
+          &lt;input type="button" value="Input button"&gt;<br>
           &lt;input type="submit" value="Input submit button"&gt;
         </code>
         <button>Button</button>
@@ -225,32 +228,32 @@
         <button type="submit">Submit Button</button>
         <input type="button" value="Input button">
         <input type="submit" value="Input submit button">
-      </section>
+      </div>
     
     <!-- ================== -->
     <!--   Colored Buttons  -->
     <!-- ================== -->
 
-      <section class="sections-styleGuide">
-      <h2>COLORED BUTTONS</h2>
-      <h4>.button-red, .button-orange, .button-yellow</h4>
+      <div class="sections-styleGuide">
+      <h2 class="leftAlign">Coloured Buttons</h2>
+      <h4 class="leftAlign">.button-red, .button-orange, .button-yellow</h4>
         <code>
           &lt;button class="button-red"&gt;Red Button&lt;/button&gt;<br>
           &lt;button class="button-orange"&gt;Orange Button&lt;/button&gt;<br>     
-          &lt;button class=:button-yellow"&gt;Yellow Button&lt;/button&gt;
+          &lt;button class="button-yellow"&gt;Yellow Button&lt;/button&gt;
         </code>
         <button class="button-red">Red Button</button>
         <button class="button-orange">Orange Button</button>
         <button class="button-yellow">Yellow Button</button>
-      </section>
+      </div>
 
     <!-- ===================== -->
     <!--   Navigation Buttons  -->
     <!-- ===================== -->
 
       <section class="sections-styleGuide">
-        <h2>NAVIGATION BUTTON</h2>
-        <h4>.button-nav</h4>
+        <h2 class="leftAlign">Navigation Button</h2>
+        <h4 class="leftAlign">.button-nav</h4>
         <code>&lt;a href="#" class="button"&gt;Nav Button&lt;/a&gt;</code>
         <a class="button-nav" href="#"> Nav Button</a>
       </section>
@@ -260,9 +263,8 @@
     <!-- ================== -->
 
       <section class="sections-styleGuide">
-        <h2>IN-TEXT LINK</h2>
-
-        <h4>a</h4>
+        <h2 class="leftAlign">In-text Link</h2>
+        <h4 class="leftAlign">a</h4>
         <code>&lt;a href="#"&gt;In-text link&lt;/a&gt;</code>
         <p> This is an <a href="#">In-text link</a><p>
       </section>
@@ -272,8 +274,8 @@
     <!-- ===================== -->
 
       <section class="sections-styleGuide">
-        <h2>Breadcrumb</h2>
-        <h4>.breadcrumb</h4>
+        <h2 class="leftAlign">Breadcrumb</h2>
+        <h4 class="leftAlign">.breadcrumb</h4>
 
         <code>
           &lt;div class="shopTopBar"&gt;<br>
@@ -300,12 +302,12 @@
     <!-- ==================== -->
 
       <section class="sections-styleGuide">
-        <h2>TEXT INPUT FIELD</h2>
-        <h4>input</h4>
+        <h2 class="leftAlign">Text Input Field</h2>
+        <h4 class="leftAlign">input</h4>
         <code>&lt;form&gt; COMMENT: &lt;input type="text" placeholder="Leave a comment"&gt; &lt;/form&gt;</code>
 
         <form>
-          <h5>COMMENT:</h5>
+          <h5 class="leftAlign">COMMENT:</h5>
           <input type="text" placeholder="Leave a comment">
         </form>
       </section>
@@ -315,8 +317,8 @@
     <!-- ============== -->
 
       <section class="sections-styleGuide">
-        <h2>SEARCH BAR</h2>
-        <h4>input</h4>
+        <h2 class="leftAlign">Search Bar</h2>
+        <h4 class="leftAlign">input</h4>
         <code>&lt;form&gt; &lt;input type="search" placeholder="Search"&gt; &lt;/form&gt;</code>
 
         <form>
@@ -329,24 +331,27 @@
     <!-- ===================== -->
 
       <section class="sections-styleGuide">
-        <h2>DROPDOWN LIST</h2>
-        <h4>select</h4>
+        <h2 class="leftAlign">Dropdown List</h2>
+        <h4 class="leftAlign">select</h4>
         
         <code> 
-          &lt;select&gt;</br>
-          &lt;option value="pokemon"&gt;Pokemon&lt;/option&gt;</br>
-          &lt;option value="mario"&gt;mario&lt;/option&gt;</br>
-          &lt;option value="sanrio"&gt;sanrio&lt;/option&gt;</br>
-          &lt;option value="cardcaptors"&gt;cardcaptors&lt;/option&gt;</br>
+          &lt;select&gt;<br>
+          &lt;option value="pokemon"&gt;Pokemon&lt;/option&gt;<br>
+          &lt;option value="mario"&gt;mario&lt;/option&gt;<br>
+          &lt;option value="sanrio"&gt;sanrio&lt;/option&gt;<br>
+          &lt;option value="cardcaptors"&gt;cardcaptors&lt;/option&gt;<br>
           &lt;/select&gt;      
         </code>
 
-        <select>
-          <option value="pokemon">Pokemon</option>
-          <option value="mario">Mario</option>
-          <option value="sanrio">Sanrio</option>
-          <option value="cardcaptors">Cardcaptors</option>
-        </select>  
+        <div class=" select-style">
+          <select>
+            <option value="pokemon">Pokemon</option>
+            <option value="mario">Mario</option>
+            <option value="sanrio">Sanrio</option>
+            <option value="cardcaptors">Cardcaptors</option>
+          </select>  
+        </div>
+
       </section>
 
     <!-- ===================== -->
@@ -354,8 +359,8 @@
     <!-- ===================== -->
 
       <section class="sections-styleGuide">
-        <h2>CHECKBOXES</h2>
-        <h4>.checkbox</h4>
+        <h2 class="leftAlign">Checkboxes</h2>
+        <h4 class="leftAlign">.checkbox</h4>
         
         <code>
         &lt;div class="checkbox"&gt;<br>
@@ -401,9 +406,9 @@
     <!--   Headings  -->
     <!-- =========== -->
 
-      <section class="sections-styleGuide">
-        <h2>HEADINGS</h2>
-        <h4>h1, h2, h3, h4, h5, h6</h4>
+      <div class="sections-styleGuide">
+        <h2 class="leftAlign">Headings</h2>
+        <h4 class="leftAlign">h1, h2, h3, h4, h5, h6</h4>
         <div class="headings">
         <code>
           &lt;h1&gt;Fresh and elaborately arranged lunches&lt;/h1&gt;<br>
@@ -420,15 +425,15 @@
         <h5>Fresh and elaborately arranged lunches</h5>
         <h6>Fresh and elaborately arranged lunches</h6>
         </div>
-      </section>
+      </div>
 
     <!-- ============== -->
     <!--   Paragraphs   -->
     <!-- ============== -->
 
-      <section class="sections-styleGuide">
-        <h2>PARAGRAPHS</h2>
-        <h4>p</h4>
+      <div class="sections-styleGuide">
+        <h2 class="leftAlign">Paragraphs</h2>
+        <h4 class="leftAlign">p</h4>
         <code>
           &lt;p&gt;
           BentoGo delivers fresh and elaborately arranged boxed lunches that fit to your taste.
@@ -438,20 +443,20 @@
         <p>
         BentoGo delivers fresh and elaborately arranged boxed lunches that fit to your taste. Our lunches come in a variety of different designs, including characters from popular cartoons, movies, and video games. At BentoGo, we understand the joy of preparing and receiving a homemade lunch box, and we want to recreate this with you. From cooked meals to treats of all sorts - we’ve got you covered. Our delivery folks bring your order to you, whether that’s at home, at the office, or wherever else you may want a bento box.
         </p>
-      </section>
+      </div>
 
     <!-- ================= -->
     <!--   Bulleted Lists  -->
     <!-- ================= -->
 
-      <section class="sections-styleGuide">
-        <h2>BULLETED LISTS</h2>
-        <h4>ul</h4>
+      <div class="sections-styleGuide">
+        <h2 class="leftAlign">Bulleted Lists</h2>
+        <h4 class="leftAlign">ul</h4>
         <code>
-          &lt;ul&gt;</br>
-          &lt;li&gt;Pikachu Bento&lt;/li&gt;</br>
-          &lt;li&gt;Jigglypuff Bento&lt;/li&gt;</br>
-          &lt;li&gt;Mewtwo Bento&lt;/li&gt;</br>
+          &lt;ul&gt;<br>
+          &lt;li&gt;Pikachu Bento&lt;/li&gt;<br>
+          &lt;li&gt;Jigglypuff Bento&lt;/li&gt;<br>
+          &lt;li&gt;Mewtwo Bento&lt;/li&gt;<br>
           &lt;/ul&gt;
         </code>
         <ul>
@@ -459,21 +464,21 @@
           <li>Jigglypuff Bento</li>
           <li>Mewtwo Bento</li>
         </ul>
-      </section>
+      </div>
 
     <!-- ================= -->
     <!--   Numbered Lists  -->
     <!-- ================= -->
 
-      <section class="sections-styleGuide">
-        <h2>NUMBERED LISTS</h2>
+      <div class="sections-styleGuide">
+        <h2 class="leftAlign">Numbered Lists</h2>
 
-        <h4>ol</h4>
+        <h4 class="leftAlign">ol</h4>
         <code>
-          &lt;ol&gt;</br>
-          &lt;li&gt;Pikachu Bento&lt;/li&gt;</br>
-          &lt;li&gt;Jigglypuff Bento&lt;/li&gt;</br>
-          &lt;li&gt;Mewtwo Bento&lt;/li&gt;</br>
+          &lt;ol&gt;<br>
+          &lt;li&gt;Pikachu Bento&lt;/li&gt;<br>
+          &lt;li&gt;Jigglypuff Bento&lt;/li&gt;<br>
+          &lt;li&gt;Mewtwo Bento&lt;/li&gt;<br>
           &lt;/ol&gt;
         </code>
         <ol>
@@ -481,7 +486,7 @@
           <li>Jigglypuff Bento</li>
           <li>Mewtwo Bento</li>
         </ol>
-      </section>
+      </div>
 
     </section>
 
@@ -496,10 +501,9 @@
     <!--    Slab Gray    -->
     <!-- =============== -->
 
-      <section class="sections-styleGuide">
-        <h2>SLABS</h2>
-
-        <h4>.slab-gray</h4>
+      <div class="sections-styleGuide">
+        <h2 class="leftAlign">Slabs</h2>
+        <h4 class="leftAlign">.slab-gray</h4>
         <code>&lt;div class="slab-gray"&gt;This is one sentence in a gray slab.&lt;/div&gt;</code>
 
         <div class="slab-gray">
@@ -515,7 +519,7 @@
     <!--    Slab Color    -->
     <!-- ================ -->
 
-        <h4>.slab-ketchup-red</h4>
+        <h4 class="leftAlign">.slab-ketchup-red</h4>
         <code>&lt;div class="slab-ketchup-red"&gt;This is one sentence in a ketchup red slab.&lt;/div&gt;</code>
       
         <div class="slab-ketchup-red">
@@ -526,25 +530,24 @@
             <li>We’ve got you covered.</li>
           </ul>
         </div>
-      </section>
+      </div>
 
     <!-- ===================== -->
     <!--    Main Navigation    -->
     <!-- ===================== -->
 
       <section class="sections-styleGuide">
-        <h2>MAIN NAVIGATION</h2>
-
-        <h4>nav</h4>
+        <h2 class="leftAlign">Main Navigation</h2>
+        <h4 class="leftAlign">nav</h4>
         <code>
-          &lt;nav&gt;</br>
-          &lt;a class="button-nav" href=" "&gt;Menu&lt;/a&gt;</br>
-          &lt;a class="button-nav" href=" "&gt;About&lt;/a&gt;</br>
-          &lt;a class="button-nav" href=" "&gt;Testimonials&lt;/a&gt;</br>
-          &lt;a class="button-nav" href=" "&gt;Contact&lt;/a&gt;</br>
+          &lt;nav&gt;<br>
+          &lt;a class="button-nav" href=" "&gt;Menu&lt;/a&gt;<br>
+          &lt;a class="button-nav" href=" "&gt;About&lt;/a&gt;<br>
+          &lt;a class="button-nav" href=" "&gt;Testimonials&lt;/a&gt;<br>
+          &lt;a class="button-nav" href=" "&gt;Contact&lt;/a&gt;<br>
           &lt;/nav&gt;
         </code>
-        <div class="nav-main">
+        <div class="nav-main-styleGuide">
           <a class="button-nav" href=" ">Menu</a>
           <a class="button-nav" href=" ">About</a>
           <a class="button-nav" href=" ">Testimonials</a>
@@ -557,9 +560,9 @@
     <!-- ===================== -->
 
       <section class="sections-styleGuide">
-        <h2>HORIZONTAL MENU</h2>
+        <h2 class="leftAlign">Horizontal Menu</h2>
 
-        <h4>.menu-horizontal</h4>
+        <h4 class="leftAlign">.menu-horizontal</h4>
         <code>
           &lt;div class="menu-horizontal"&gt;<br>
           &lt;ul&gt;<br>
@@ -573,16 +576,45 @@
           &lt;/div&gt;
         </code>
 
-        <div class="menu-horizontal">
-          <ul>
-            <li><a href="#Character">1. Character</a></li>
-            <li><a href="#Filling">2. Filling</a></li>
-            <li><a href="#Sides">3. Sides</a></li>
-            <li><a href="#Rice">4. Rice</a></li>
-            <li><a href="#Sauces">5. Sauces</a></li>
-            <li><a href="#Confirm">6. Confirm</a></li>
-          </ul>
+        <div class="customize">
+            <div class="horizontal-menu">
+              <div class="row">
+                <a href="Customize-Step1.html">
+                  <div class="grid-1-5-custom custom-selected">
+                  <div class="number"><p>•</p></div> 
+                  <div class="customLabel"><p>Character</p></div>
+                  </div>
+                </a>
+                <a href="Customize-Step2.html">
+                  <div class="grid-1-5-custom horizontal-item">
+                    <div class="number"><p>•</p></div> 
+                    <div class="customLabel">
+                    <p>Filling</p>
+                    </div>
+                  </div>
+                </a>
+                <div class="grid-1-5-custom horizontal-item">
+                  <div class="number"><p>•</p></div> 
+                    <div class="customLabel">
+                      <p>Sides</p>
+                    </div>                
+                  </div>
+                <div class="grid-1-5-custom complete-item">
+                  <div class="number"><p>✔</p></div> 
+                   <div class="customLabel">
+                      <p>Sauces</p>
+                    </div>
+                </div>
+                <div class="grid-1-5-custom complete-item">
+                  <div class="number"><p>✔</p></div> 
+                   <div class="customLabel">
+                      <p>Rice</p>
+                    </div>                
+                  </div>
+              </div>
+            </div>
         </div>
+
       </section>
 
     <!-- ===================== -->
@@ -590,215 +622,102 @@
     <!-- ===================== -->
 
       <section class="sections-styleGuide">
-        <h2>PRODUCT LISTING</h2>
+        <h2 class="leftAlign">Product Listing</h2>
 
-        <h4>.grid-1-3</h4>
+        <h4 class="leftAlign">.grid-1-4</h4>
         <code>
-          &lt;div class="row"&gt;</br>
-            &lt;div class="grid-1-3"&gt;</br>
-              &lt;img src=""/&gt;</br>
-              &lt;span class="caption"&gt;</br>
-                &lt;a href="#"&gt;Pikachu Box &lt;/a&gt;</br>
-                &lt;p&gt;$9.95&lt;/p&gt;</br>
-                &lt;a class="button-addToCart" href=" "&gt;Add to Cart&lt;/a&gt;</br>
-              &lt;/span&gt;</br>
-            &lt;/div&gt;</br>
+          &lt;div class="row"&gt;<br>
+            &lt;div class="grid-1-3"&gt;<br>
+              &lt;img src=""/&gt;<br>
+              &lt;span class="caption"&gt;<br>
+                &lt;a href="#"&gt;Pikachu Box &lt;/a&gt;<br>
+                &lt;p&gt;$9.95&lt;/p&gt;<br>
+                &lt;a class="button-addToCart" href=" "&gt;Add to Cart&lt;/a&gt;<br>
+              &lt;/span&gt;<br>
+            &lt;/div&gt;<br>
           &lt;/div&gt;
         </code>
 
-        <div class="row">
-          <!-- <div class="grid-1-3"> -->
-          <div class="grid-1-3">
-            <img src=""/>
-            <!-- <span class="caption"> -->
-              <a href="#">Pikachu Box</a>
-              <p>$9.95</p>
-              <a class="button-addToCart" href=" ">Add to Cart</a>
-            <!-- </span> -->
-          </div>
-          <!-- </div> -->
+    <div class='shopPremade'>
 
-        <!-- <div class="grid-1-3"> -->
-          <div class="grid-1-3">
-              <img src=""/>
-              <!-- <span class="caption"> -->
-                <a href="#">Jigglypuff Box</a>
-                <p>$9.95</p>
-                <a class="button-addToCart" href=" ">Add to Cart</a>
-              <!-- </span> -->
-          </div>
-        <!-- </div> -->
-
-        <!-- <div class="grid-1-3"> -->
-          <div class="grid-1-3">
-              <img src=""/>
-              <!-- <span class="caption"> -->
-                <a href="#">Mewtwo Box</a>
-                <p>$9.95</p>
-                <a class="button-addToCart" href=" ">Add to Cart</a>
-              <!-- </span> -->
-          </div>
-        <!-- </div> -->
-
+    <div class="row">
+      <div class="grid-1-4">
+        <img src="img/Bento-B1.jpg" alt="Rilakkuma"/>
+        <div class="caption">
+          <a href="ProductDetail.html">Rilakkuma Box</a>
+          <p>$9.95</p>
+          <a class="button-addToCart" href=" ">Add to Cart</a>
         </div>
-      </section>
+      </div>
 
-    <!-- ===================== -->
-    <!--     Product Table     -->
-    <!-- ===================== -->
-
-      <section class="sections-styleGuide">
-        
-          <h2>PRODUCT TABLE</h2>
-
-          <h4>.table</h4>
-          <code>
-          </code>
-
-          <div class="table">
-
-            <!-- Row 1 -->
-            <div class="row">
-              <div class="grid-1-2">
-                <h4>Items</h4>
-              </div>
-              <div class="grid-1-4">
-                <h4>Quantity</h4>
-              </div>
-              <div class="grid-1-4">
-                <h4>Price</h4>
-              </div>
-            </div>
-       
-            <!-- Row 2 -->
-            <div class="row">
-              <div class="grid-1-2">
-                <p>Pikachu Bento</p>
-              </div>
-              <div class="grid-1-4">
-                 <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-              </div>
-              <div class="grid-1-4">
-                <p>$9.99</p>
-              </div>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="row">
-              <div class="grid-1-2">
-                <p>Jigglypuff Bento</p>
-              </div>
-              <div class="grid-1-4">
-                  <select>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                  </select>
-              </div>
-              <div class="grid-1-4">
-                <p>$9.99</p>
-              </div>
-            </div>
-
+      <div class="grid-1-4">
+          <img src="img/Bento-B2.jpg" alt="Superman"/>
+          <div class="caption">
+            <a href="#">Superman Box</a>
+            <p>$9.95</p>
+            <a class="button-addToCart" href=" ">Add to Cart</a>
           </div>
+      </div>
 
-      </section>
-
-    <!-- =========================== -->
-    <!--     Address Search Form     -->
-    <!-- =========================== -->
-
-      <section class="sections-styleGuide">
-        <h2>ADDRESS SEARCH FORM</h2>
-        <h4>#addressSearch</h4>
-        <code>
-          &lt;div class="row"&gt;</br>
-            &lt;div class="grid-1-5-withButton"&gt;</br>
-              &lt;h4&gt;Address:&lt;/h4&gt;</br>
-              &lt;input type="address"&gt;</br>
-            &lt;/div&gt;</br> 
-            &lt;div class="grid-button"&gt;</br>
-              &lt;img src="img/icon-search.png" alt="Search Button"&gt;</br>
-            &lt;/div&gt;</br>
-          &lt;/div&gt;
-        </code>
-
-        <section id = "addressSearch">
-          <div class="row">
-
-            <div class="grid-1-5-withButton">
-              <h4>Address:</h4>
-              <input type="text">
-            </div>
-
-            <div class="grid-1-5-withButton">
-              <h4>City:</h4>
-              <input type="text">
-            </div>
-
-            <div class="grid-1-5-withButton">
-              <h4>Province:</h4>
-              <input type="text">
-            </div>
-
-            <div class="grid-1-5-withButton">
-              <h4>Postal Code:</h4>
-              <input type="text">
-            </div>
-
-            <div class="grid-button">
-              <img src="img/icon-search.png" alt="Search Button">
-            </div>
-
+      <div class="grid-1-4">
+          <img src="img/Bento-B3.jpg" alt="Yoo and Kang"/>
+          <div class="caption">
+            <a href="#">Yoo and Kang Box</a>
+            <p>$9.95</p>
+            <a class="button-addToCart" href=" ">Add to Cart</a>
           </div>
-        </section>
-      </section>
+      </div>
+
+         <div class="grid-1-4">
+          <img src="img/Bento-B4.jpg" alt="Storm Trooper"/>
+          <div class="caption">
+            <a href="#">Storm Trooper Box</a>
+            <p>$9.95</p>
+            <a class="button-addToCart" href=" ">Add to Cart</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    </section>
 
     <!-- ============ -->
     <!--     Form     -->
     <!-- ============ -->
 
       <section class="sections-styleGuide">
-        <h2>FORM</h2>
-        <h4>.reviewForm</h4>
+        <h2 class="leftAlign">Form</h2>
+        <h4 class="leftAlign">.reviewForm</h4>
         <code>
-          &lt;section id="reviewForm"&gt;</br>
-            &lt;h3&gt;Tell us about your experience with BentoGo!&lt;/h3&gt;</br>
-            &lt;form method="review" action="#"&gt;</br>
+          &lt;section id="reviewForm"&gt;<br>
+            &lt;h3&gt;Tell us about your experience with BentoGo!&lt;/h3&gt;<br>
+            &lt;form method="review" action="#"&gt;<br>
 
-              &lt;label for="form-name"&gt;&lt;h4&gt;Name:&lt;/h4&gt;&lt;/label&gt;</br>
-              &lt;input type="text" id="form-name" placeholder="Jane Doe"&gt;</br> 
+              &lt;label for="form-name"&gt;&lt;h4&gt;Name:&lt;/h4&gt;&lt;/label&gt;<br>
+              &lt;input type="text" id="form-name" placeholder="Jane Doe"&gt;<br> 
               
-              &lt;label for="form-bento"&gt;&lt;h4&gt;Bento Box:&lt;/h4&gt;&lt;/label&gt;</br>
-              &lt;input type="text" id="form-bento" placeholder="Bento Box you purchased"&gt;</br> 
+              &lt;label for="form-bento"&gt;&lt;h4&gt;Bento Box:&lt;/h4&gt;&lt;/label&gt;<br>
+              &lt;input type="text" id="form-bento" placeholder="Bento Box you purchased"&gt;<br> 
 
-              &lt;label for="form-review"&gt;&lt;h4&gt;Review:&lt;/h4&gt;&lt;/label&gt;</br>
-              &lt;input type="text" id="form-review" placeholder="Please write review here"&gt;</br> 
-            &lt;/form&gt;</br>
+              &lt;label for="form-review"&gt;&lt;h4&gt;Review:&lt;/h4&gt;&lt;/label&gt;<br>
+              &lt;input type="text" id="form-review" placeholder="Please write review here"&gt;<br> 
+            &lt;/form&gt;<br>
 
-            &lt;div class ="rightAlign"&gt;</br>
-              &lt;input type="submit" value="Submit Review"&gt;</br>
-            &lt;/div&gt;</br>
+            &lt;div class ="rightAlign"&gt;<br>
+              &lt;input type="submit" value="Submit Review"&gt;<br>
+            &lt;/div&gt;<br>
           &lt;/section&gt;
 
         </code>
         <section id="reviewForm">
           <h3>Tell us about your experience with BentoGo!</h3>
-          <form method="review" action="#">
+          <form method="post" action="#">
 
-          <label for="form-name"><h4>Name:</h4></label>
           <input type="text" id="form-name" placeholder="Jane Doe">
 
-          <label for="form-bento"><h4>Bento Box:</h4></label>
           <input type="text" id="form-bento" placeholder="Bento Box you purchased">
           
-          <label for="form-review"><h4>Review:</h4></label>
           <textarea id="form-review" placeholder="Please write review here"></textarea>
           </form>
 
@@ -809,5 +728,8 @@
       </section>
     </section> <!-- End of Combined Elements Section -->
   </section>  <!-- Wrapper closing tag -->
+  
+  </div>
+
 </body>
 </html>

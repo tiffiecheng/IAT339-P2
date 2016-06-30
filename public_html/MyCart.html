@@ -9,7 +9,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/Style_guide.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Candal|Lilita+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Candal%7CLilita+One' rel='stylesheet' type='text/css'>
 
   </head>
 
@@ -23,14 +23,14 @@
       <nav class="nav-main-wrap"> 
 
       <a href="Home.html">
-        <img id="tako" src="img/Tako.png"> 
+        <img id="tako" src="img/Tako.png" alt="icon"> 
       </a>
 
       <div class="dropdown">
         <a class="button-nav" href="#">Shop</a>
           <div class="dropdown-content">        
             <a href="ShopPremade.html">Bentos</a>
-            <a href="Customize.html">Custom</a>
+            <a href="Customize-Step1.html">Custom</a>
           </div>
       </div>  
 
@@ -39,7 +39,7 @@
         <a class="button-nav" href="FAQ.html">FAQ</a>
         <a class="button-nav" href="Contact.html">Contact</a>
 
-        <img id="icon-cart" src="img/icon-cart.png">
+        <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
         <a id="myCart" href="MyCart.html">My Cart</a>
       </nav>
     </div>
@@ -51,16 +51,75 @@
 
   <section id="wrapper">
     
-      <div class="pageTitle">
-        <h2>My Cart</h2>
+    <div id="cart">
+      <div class="breadcrumbBar">
+        <a class="breadcrumb-item" href="Home.html">Home </a>
+        <p class="breadcrumb-item">/</p>
+        <a class="breadcrumb-item-current" href="MyCart.html">Cart</a>
       </div>
 
-      <div class="myCart">
+      <div id="table-myCart">
+        <div class="row">
+          <div class="grid-3-4">
+            <div class="tableHeader">
+              <h3>My Cart</h3>
+            </div>
+            <div class="cart-item">
+              <a href="RilakkumaBox.html"><img src="img/Bento-B1.jpg"/></a>
+              <p><strong>Rilakkuma Box</strong></p>
+              <p>Quantity: 1</p>
+              <div class="cart-item-right">
+                <p><strong>$9.95</strong></p>
+              </div>
+              <button class="button-cartItem">Edit</button>
+              <button class="button-cartItem">Delete</button>
+            </div>
+            <div class="cart-item">
+              <a href="RilakkumaBox.html"><img src="img/mycart-img1.jpg"/></a>
+              <p><strong>Customized Bento</strong></p>
+              <p>Quantity: 1</p>
+              <div class="cart-item-right">
+                <p><strong>$9.95</strong></p>
+              </div>
+              <button class="button-cartItem">Edit</button>
+              <button class="button-cartItem">Delete</button>
+            </div>
+          </div> 
+          <div class="grid-1-4">
+            <div class="tableHeader">
+              <h3>Summary</h3>
+            </div>
+            <div class="cart-item">
+              <div class="grid-1-2">
+                <div id = "summaryTable-left">
+                  <p>Subtotal:</p>
+                  <p>Tax:</p>
+                  <p>Delivery:</p>
+                  <div class="total">
+                    <p>Total:</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-1-2">
+                <div id = "summaryTable-right">
+                  <p>$19.90</p>
+                  <p>$1.00</p>
+                  <p>$2.50</p>
+                  <div class="total">
+                    <p>$23.40</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="CheckOut.html">
+              <button class="button-orange" href="CheckOut.html">Checkout</button></a>
+          </div>
+        </div>
+      </div>
 
-        <div class="table">
 
           <!-- Row 1 -->
-          <div class="row row-product">
+          <!-- div class="row row-product">
           
             <div class="grid-1-8">
               <h4>Items</h4>
@@ -76,17 +135,17 @@
             <div class="grid-1-4">
               <h4>Price</h4>
             </div>
-          </div>
+          </div> -->
      
           <!-- Row 2 -->
-          <div class="row-product">
+          <!-- div class="row-product">
             
             <div class="grid-1-8">
-              <img src="img/custom-img4.jpg"/>
+              <a href="RilakkumaBox.html"><img src="img/custom-img4.jpg"/></a>
             </div>
             
             <div class="grid-3-8">
-              <p><strong>Pikachu Bento</strong></p>
+              <a href="RilakkumaBox.html"><p><strong>Pikachu Bento</strong></p></a>
               <a href="#">Delete</a>
             </div>
 
@@ -101,17 +160,17 @@
             <div class="grid-1-4">
               <p>$9.95</p>
             </div>
-          </div>
+          </div> -->
 
           <!-- Row 3 -->
-          <div class="row-product-last">
+          <!-- <div class="row-product-last">
             
             <div class="grid-1-8">
-              <img src="img/custom-img7.jpg"/>
+              <a href="RilakkumaBox.html"><img src="img/custom-img7.jpg"/></a>
             </div>
             
             <div class="grid-3-8">
-              <p><strong>Custom Jigglypuff Bento</strong></p>
+              <a href="RilakkumaBox.html"><p><strong>Custom Jigglypuff Bento</strong></p></a>
               <a href="#">Delete</a>
             </div>
 
@@ -126,10 +185,10 @@
             <div class="grid-1-4">
               <p>$9.95</p>
             </div>
-          </div>
+          </div> -->
 
           <!-- Row 4 -->
-          <div class="row">
+         <!--  <div class="row">
             
             <div class="grid-1-2">
               &nbsp;
@@ -150,10 +209,9 @@
             </div>
 
           </div>
-
-        </div> <!-- table closing tag--> 
-      </div>  
-
+ -->
+ 
+    </div>
   </section>  <!-- Wrapper closing tag -->
   
       <!-- ===================== -->
@@ -161,12 +219,11 @@
     <!-- ===================== -->
 
   <section id="footer">
-    <section class="home-wrapper">
 
     <div class="grid-1-1">
       <form id="subscribe">
         <h3>Subscribe to our mailing list</h3>
-        <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p>
+        <!-- <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p> -->
         <input type="text" placeholder="Enter your email address">
             <a class="button button-orange" href="#">Sign Up</a>
       </form>
@@ -174,14 +231,20 @@
 
     <div class="grid-1-1">
       <div id="social-media">
-        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png"></a>
-        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png"></a>
-        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png"></a>
-        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png"></a>
+        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
+        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
+        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
+        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
       </div>
     </div>
 
-    </section>
+      <div class="grid-1-1 footerLinks">
+        <p>By Maurice Yu and Tiffany Cheng</p>
+        <a href="StyleGuide.html">Styleguide</a>
+        <a href="Citations.html">Citations</a>
+        <a href="https://github.com/tiffiecheng/IAT339-P2">Github Repo</a>
+      </div>
+
   </section>
   
   </body>
