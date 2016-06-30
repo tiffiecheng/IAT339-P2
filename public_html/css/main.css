@@ -1748,7 +1748,7 @@ input[type=address]:focus{
 }
 
 #testimonials p{
-  text-align: left;
+  text-align: center;
   padding-bottom: 2rem;
   border-bottom: 0.15rem dotted #AAA;
 }
@@ -1771,6 +1771,10 @@ input[type=address]:focus{
   margin-top:0;
   padding-bottom: 0;
   display: inline;
+}
+
+#reviewForm #contactForm{
+  margin-top:1rem;
 }
 
 .rightAlign{

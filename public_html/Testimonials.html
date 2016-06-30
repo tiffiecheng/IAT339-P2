@@ -114,19 +114,25 @@
 
       <section id="reviewForm">
         <h3>Tell us about your experience with BentoGo!</h3>
-        <form method="get" action="#">
+        <div class="row">
+        <div class="grid-1-1">
+          <div id="contactForm">
 
-        <!-- <label for="form-name"><h4>Name:</h4></label> -->
-        <input type="text" id="form-name" placeholder="Your Name">
-
-        <!-- <label for="form-bento"><h4>Bento Box:</h4></label> -->
-        <input type="text" id="form-bento" placeholder="Title of Comment">
-        
-        <!-- <label for="form-review"><h4>Review:</h4></label> -->
-        <textarea id="form-review" placeholder="Your Review"></textarea>
-        </form>
-        <div class ="rightAlign">
-          <input type="submit" value="Submit Review">
+            <form method="contact" action="#">
+              <div class="grid-1-2">
+                <input type="text" id="contact-name" placeholder="Your Name">
+              </div>
+              <div class="grid-1-2">
+                <input type="text" id="contact-title" placeholder="Title of Comment">
+              </div>
+              <input type="email" id="contact-email" placeholder="Email">
+              <textarea id="contact-comment" placeholder="Leave your review here! Postive or negative, any feedback is welcomed!"></textarea>
+            </form>
+            <div class ="rightAlign">
+              <input type="submit" value="Submit">
+            </div>
+          </div>
+        </div>
         </div>
       </section>
 
@@ -151,10 +157,10 @@
 
     <div class="grid-1-1">
       <div id="social-media">
-        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.jpg"></a>
-        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.jpg"></a>
-        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.jpg"></a>
-        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.jpg"></a>
+        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
+        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
+        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
+        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
       </div>
     </div>
 
