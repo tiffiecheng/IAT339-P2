@@ -23,27 +23,20 @@
       <nav class="nav-main-wrap"> 
 
       <a href="Home.html">
-        <img id="tako" src="img/Tako.png" alt="icon"> 
+        <img id="tako" src="img/Tako.png" alt="tako"> 
       </a>
 
-      <div class="dropdown">
-        <a class="button-nav" href="#">Shop</a>
-          <div class="dropdown-content">        
-            <a href="ShopPremade.html">Bentos</a>
-            <a href="Customize-Step1.html">Custom</a>
-          </div>
-      </div>  
-
-        <a class="button-nav" href="StoreLocations.html">Locations</a>
-        <a class="button-nav" href="Testimonials.html">Testimonials</a>
-        <a class="button-nav" href="FAQ.html">FAQ</a>
-        <a class="button-nav" href="Contact.html">Contact</a>
-
-        <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
-        <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+      <a class="button-nav" href="ShopPremade.html">Bentos</a>
+      <a class="button-nav" href="Customize-Step1.html">Customize</a>
+      <a class="button-nav" href="StoreLocations.html">Locations</a>
+      <a class="button-nav" href="Testimonials.html">Testimonials</a>
+      <a class="button-nav" href="FAQ.html">FAQ</a>
+      <a class="button-nav" href="Contact.html">Contact</a>
+      <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
+      <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+          
       </nav>
     </div>
-  </div>
 
     <!-- ======================================== -->
     <!--    NSERT  CONTENT IN THE WRAPPER :)      -->
@@ -65,18 +58,17 @@
               <h3>My Cart</h3>
             </div>
             <div class="cart-item">
-              <a href="RilakkumaBox.html"><img src="img/Bento-B1.jpg"/></a>
+              <a href="RilakkumaBox.html"><img src="img/Bento-B1.jpg" alt="bento"/></a>
               <p><strong>Rilakkuma Box</strong></p>
               
-              <!-- <div class="cart-item-right"> -->
                 <p>$9.95</p>
                 <p>Quantity: 1</p>
-              <!-- </div> -->
+
               <button class="button-cartItem">Edit</button>
               <button class="button-cartItem">Delete</button>
             </div>
             <div class="cart-item">
-              <a href="RilakkumaBox.html"><img src="img/mycart-img1.jpg"/></a>
+              <a href="RilakkumaBox.html"><img src="img/mycart-img1.jpg" alt="bento"/></a>
               <p><strong>Customized Bento</strong></p>
               <p>$9.95</p>
                 <p>Quantity: 1</p>
@@ -109,105 +101,12 @@
 
               </div>
             </div>
-            <a href="CheckOut.html">
-              <button class="button-orange" href="CheckOut.html">Checkout</button></a>
+            <a class="button button-orange" id="cartButton" href="CheckOut.html" >Add to Cart</a>    
+
           </div>
         </div>
       </div>
 
-
-          <!-- Row 1 -->
-          <!-- div class="row row-product">
-          
-            <div class="grid-1-8">
-              <h4>Items</h4>
-            </div>
-
-            <div class="grid-3-8">
-              <p></p>
-            </div>   
-
-            <div class="grid-1-4">
-              <h4>Quantity</h4>
-            </div>
-            <div class="grid-1-4">
-              <h4>Price</h4>
-            </div>
-          </div> -->
-     
-          <!-- Row 2 -->
-          <!-- div class="row-product">
-            
-            <div class="grid-1-8">
-              <a href="RilakkumaBox.html"><img src="img/custom-img4.jpg"/></a>
-            </div>
-            
-            <div class="grid-3-8">
-              <a href="RilakkumaBox.html"><p><strong>Pikachu Bento</strong></p></a>
-              <a href="#">Delete</a>
-            </div>
-
-            <div class="grid-1-4">
-               <select>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-            </div>
-            <div class="grid-1-4">
-              <p>$9.95</p>
-            </div>
-          </div> -->
-
-          <!-- Row 3 -->
-          <!-- <div class="row-product-last">
-            
-            <div class="grid-1-8">
-              <a href="RilakkumaBox.html"><img src="img/custom-img7.jpg"/></a>
-            </div>
-            
-            <div class="grid-3-8">
-              <a href="RilakkumaBox.html"><p><strong>Custom Jigglypuff Bento</strong></p></a>
-              <a href="#">Delete</a>
-            </div>
-
-            <div class="grid-1-4">
-               <select>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                </select>
-            </div>
-            <div class="grid-1-4">
-              <p>$9.95</p>
-            </div>
-          </div> -->
-
-          <!-- Row 4 -->
-         <!--  <div class="row">
-            
-            <div class="grid-1-2">
-              &nbsp;
-            </div>
-            
-            <div class="grid-1-4">
-              &nbsp;
-            </div>
-
-            <div class="grid-1-4">
-              <h3>Subtotal</h3>
-              <p class="subtotal zesty-orange-text">$19.90</p>
-
-              <a href="CheckOut.html">
-              <button class="button-orange" href="CheckOut.html">Checkout</button>
-            </a>
-            
-            </div>
-
-          </div>
- -->
  
     </div>
   </section>  <!-- Wrapper closing tag -->
@@ -219,11 +118,10 @@
   <section id="footer">
 
     <div class="grid-1-1">
-      <form id="subscribe">
-        <h3>Subscribe to our mailing list</h3>
-        <!-- <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p> -->
+      <form>
+        <h3>Get BentoGo News</h3>
         <input type="text" placeholder="Enter your email address">
-            <a class="button button-orange" href="#">Sign Up</a>
+            <!-- <a class="button button-orange" href="#">Sign Up</a> -->
       </form>
     </div>
 
@@ -236,12 +134,15 @@
       </div>
     </div>
 
-      <div class="grid-1-1 footerLinks">
-        <p>By Maurice Yu and Tiffany Cheng</p>
-        <a href="StyleGuide.html">Styleguide</a>
-        <a href="Citations.html">Citations</a>
-        <a href="https://github.com/tiffiecheng/IAT339-P2">Github Repo</a>
-      </div>
+    <div class="grid-1-1 footerLinks">
+      <p>© Maurice Yu & Tiffany Cheng</p>
+      <p>|</p>
+      <a href="StyleGuide.html">Styleguide</a>
+      <p>|</p>
+      <a href="Citations.html">Citations</a>
+      <p>|</p>
+      <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
+    </div>
 
   </section>
   

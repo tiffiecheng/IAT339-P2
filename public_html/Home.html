@@ -4,6 +4,8 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>BentoGo - Home</title>
 
     <link href="css/main.css" rel="stylesheet">
@@ -14,21 +16,7 @@
   </head>
 
   <body>
-
-    <!-- =========== -->
-    <!--   HEADER    -->
-    <!-- =========== -->
-
-<!--   <div id="header">
-    <div class="header-wrap">
-      <a href="Home.html">
-        <img id="tako" src="img/Tako.png">
-        <h2 id="logo">BentoGo</h2>
-      </a>
-        <img id="icon-cart" src="img/icon-cart.png">
-        <a id="myCart" href="MyCart.html">My Cart</a>
-    </div> -->
-
+  
     <!-- ===================== -->
     <!--        NAV BAR        -->
     <!-- ===================== -->
@@ -40,68 +28,47 @@
         <img id="tako" src="img/Tako.png" alt="tako"> 
       </a>
 
-      <div class="dropdown">
-        <a class="button-nav" href="ShopPremade.html">Shop</a>
-          <div class="dropdown-content">        
-            <a href="ShopPremade.html">Bentos</a>
-            <a href="Customize-Step1.html">Custom</a>
-          </div>
-      </div>  
+      <a class="button-nav" href="ShopPremade.html">Bentos</a>
+      <a class="button-nav" href="Customize-Step1.html">Customize</a>
+      <a class="button-nav" href="StoreLocations.html">Locations</a>
+      <a class="button-nav" href="Testimonials.html">Testimonials</a>
+      <a class="button-nav" href="FAQ.html">FAQ</a>
+      <a class="button-nav" href="Contact.html">Contact</a>
 
-        <a class="button-nav" href="StoreLocations.html">Locations</a>
-        <a class="button-nav" href="Testimonials.html">Testimonials</a>
-        <a class="button-nav" href="FAQ.html">FAQ</a>
-        <a class="button-nav" href="Contact.html">Contact</a>
-<!--       <div class="dropdown">
-        <a class="button-nav" href="#">Help</a>
-          <div class="dropdown-content">        
-            <a href="FAQ.html">FAQ</a>
-            <a href="Contact.html">Contact</a>
-          </div>
-      </div>   -->
-
-        <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
-        <a id="myCart" href="MyCart.html">My Cart</a>
+      <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
+      <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+          
       </nav>
     </div>
+
 
     <!-- ======================================== -->
     <!--    INSERT CONTENT IN THE WRAPPER :)       -->
     <!-- ======================================== -->
 
     <div class="full-promo">
-        <!-- <img src=""/> -->
+      <!-- <div class="home-wrapper"> -->
         <div class="full-promo-wrap">
-          <!-- <img src="img/Tako.png" id="tako" alt="tako"> -->
-          <h1>Create and savour with BentoGo</h1>
-          <!-- <h2> 20 years to master. Yours to savour.</h2> -->
-          <p>BentoGo delivers fresh and elaborately arranged boxed lunches that fit to your taste. Our lunches come in a variety of different designs, including characters from popular cartoons, movies, and video games</p>
+        	<div class="full-promo-text">
+	          <h1>Savour with BentoGo</h1>
+	          <p>BentoGo delivers elaborately arranged boxed lunches in a variety of designs, including characters from popular cartoons, movies, and video games</p>
 
-          <a class="button-orange" href="ShopPremade.html">Shop Premade Bentos</a>
-          <a class="button-orange" href="Customize-Step1.html">Customize a Bento</a>
-        </div>
+	          <a class="button-orange" href="ShopPremade.html">Shop Premade Bentos</a>
+	          <a class="button-orange" href="Customize-Step1.html">Customize a Bento</a>
+        	</div>
+     	</div>
     </div>
-
-    <!-- wraps items within to 90% of screen -->
-<!-- 
-    <section class="home-wrapper">
-      <section id="home-section1">
-        <h2>Bestsellers</h2>
-      </section>
-    </section> -->  
 
     <div class="home-wrapper">
       <section id="home-section2">
 
         <h2>Bestsellers</h2>
 
-        <!-- <h2>So many choices</h2> -->
           <div class="row">
             <div class="grid-1-2">
                 <a href="RilakkumaBox.html">
                   <img src="img/home-section2-img1.jpg" alt="totoro"/>
                 </a>
-                <!-- <img src=""/> -->
                 <p class="imgTitle">トトロ</p>
                 <p class="imgSubtitle">Totoro</p>
             </div>
@@ -110,7 +77,6 @@
               <a href="RilakkumaBox.html">
                 <img src="img/home-section2-img4.jpg" alt="superman"/>
               </a>
-                <!-- <img src=""/> -->
                 <p class="imgTitle">スーパーマン</p>
                 <p class="imgSubtitle">Superman</p>
             </div>
@@ -121,7 +87,6 @@
               <a href="RilakkumaBox.html">
                 <img src="img/home-section2-img2.jpg" alt="hello kitty"/>
               </a>
-                <!-- <img src=""/> -->
                 <p class="imgTitle">ハローキティ</p>
                 <p class="imgSubtitle">Hello Kitty</p>
             </div>
@@ -130,7 +95,6 @@
               <a href="RilakkumaBox.html">
                 <img src="img/home-section2-img3.jpg" alt="rillakuma"/>
               </a>
-                <!-- <img src=""/> -->
                 <p class="imgTitle">リラックマ</p>
                 <p class="imgSubtitle">Rillakuma</p>
             </div>
@@ -140,7 +104,6 @@
     </div>
 
   <section class="newArrivals">
-    <!-- <div class="row">  -->
     <div class="home-wrapper">
       <div class="row"> 
         <h2>New Arrivals</h2>
@@ -177,7 +140,6 @@
 
     <section class="home-wrapper">
       <div class="row">
-        <!-- <div class="grid-1-3"> -->
         <h2>What people have to say</h2>
         <div class="grid-1-3">
           <div class="home-section3-item">
@@ -217,7 +179,6 @@
     <section class="home-wrapper" id="home-section4">
     
         <div class="about">
-        <!-- Images Row -->
         <div class="row">
         
           <h2>Why we matter</h2>
@@ -261,11 +222,10 @@
   <section id="footer">
 
     <div class="grid-1-1">
-      <form id="subscribe">
-        <h3>Subscribe to our mailing list</h3>
-        <!-- <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p> -->
+      <form>
+        <h3>Get BentoGo News</h3>
         <input type="text" placeholder="Enter your email address">
-            <a class="button button-orange" href="#">Sign Up</a>
+            <!-- <a class="button button-orange" href="#">Sign Up</a> -->
       </form>
     </div>
 
@@ -279,10 +239,13 @@
     </div>
 
     <div class="grid-1-1 footerLinks">
-      <p>By Maurice Yu and Tiffany Cheng</p>
+      <p>© Maurice Yu & Tiffany Cheng</p>
+      <p>|</p>
       <a href="StyleGuide.html">Styleguide</a>
+      <p>|</p>
       <a href="Citations.html">Citations</a>
-      <a href="https://github.com/tiffiecheng/IAT339-P2">Github Repo</a>
+      <p>|</p>
+      <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
     </div>
 
   </section>

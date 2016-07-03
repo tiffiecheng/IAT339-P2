@@ -15,9 +15,9 @@
 
   <body>
 
-      <!-- ===================== -->
-      <!--        NAV BAR        -->
-      <!-- ===================== -->
+    <!-- ===================== -->
+    <!--        NAV BAR        -->
+    <!-- ===================== -->
 
     <div class="nav-main">
       <nav class="nav-main-wrap"> 
@@ -26,21 +26,15 @@
         <img id="tako" src="img/Tako.png" alt="tako"> 
       </a>
 
-      <div class="dropdown">
-        <a class="button-nav" href="#">Shop</a>
-          <div class="dropdown-content">        
-            <a href="ShopPremade.html">Bentos</a>
-            <a href="Customize-Step1.html">Custom</a>
-          </div>
-      </div>  
-
-        <a class="button-nav" href="StoreLocations.html">Locations</a>
-        <a class="button-nav" href="Testimonials.html">Testimonials</a>
-        <a class="button-nav" href="FAQ.html">FAQ</a>
-        <a class="button-nav" href="Contact.html">Contact</a>
-
-        <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
-        <a id="myCart" href="MyCart.html">My Cart</a>
+      <a class="button-nav" href="ShopPremade.html">Bentos</a>
+      <a class="button-nav" href="Customize-Step1.html">Customize</a>
+      <a class="button-nav" href="StoreLocations.html">Locations</a>
+      <a class="button-nav" href="Testimonials.html">Testimonials</a>
+      <a class="button-nav" href="FAQ.html">FAQ</a>
+      <a class="button-nav" href="Contact.html">Contact</a>
+      <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
+      <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+          
       </nav>
     </div>
 
@@ -57,13 +51,11 @@
     </div>
 
     <div id ="locationMap">
-      <!-- <img src=""> -->
       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:390px;width:100%;'><div id='gmap_canvas' style='height:390px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy template</a></small></div>
       </div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(49.1873415,-122.85040859999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.1873415,-122.85040859999998)});infowindow = new google.maps.InfoWindow({content:'<strong>BentoGo</strong><br>250 - 13450 – 102nd Avenue, Surrey, BC V3T 0A3<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
     </div>
 
     <div id = "addressSearch">
-      <!-- <h3>Find the closest BentoGo to you!</h3> -->
       <div class="row">
 
         <div class="grid-1-1">
@@ -83,11 +75,10 @@
   <section id="footer">
 
     <div class="grid-1-1">
-      <form id="subscribe">
-        <h3>Subscribe to our mailing list</h3>
-        <!-- <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p> -->
+      <form>
+        <h3>Get BentoGo News</h3>
         <input type="text" placeholder="Enter your email address">
-            <a class="button button-orange" href="#">Sign Up</a>
+            <!-- <a class="button button-orange" href="#">Sign Up</a> -->
       </form>
     </div>
 
@@ -101,10 +92,13 @@
     </div>
 
     <div class="grid-1-1 footerLinks">
-      <p>By Maurice Yu and Tiffany Cheng</p>
+      <p>© Maurice Yu & Tiffany Cheng</p>
+      <p>|</p>
       <a href="StyleGuide.html">Styleguide</a>
+      <p>|</p>
       <a href="Citations.html">Citations</a>
-      <a href="https://github.com/tiffiecheng/IAT339-P2">Github Repo</a>
+      <p>|</p>
+      <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
     </div>
 
   </section>

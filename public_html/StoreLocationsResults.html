@@ -15,9 +15,9 @@
 
   <body>
 
-      <!-- ===================== -->
-      <!--        NAV BAR        -->
-      <!-- ===================== -->
+    <!-- ===================== -->
+    <!--        NAV BAR        -->
+    <!-- ===================== -->
 
     <div class="nav-main">
       <nav class="nav-main-wrap"> 
@@ -25,26 +25,17 @@
       <a href="Home.html">
         <img id="tako" src="img/Tako.png" alt="tako"> 
       </a>
-
-      <div class="dropdown">
-        <a class="button-nav" href="#">Shop</a>
-          <div class="dropdown-content">        
-            <a href="ShopPremade.html">Bentos</a>
-            <a href="Customize-Step1.html">Custom</a>
-          </div>
-      </div>  
-
-        <a class="button-nav" href="StoreLocations.html">Locations</a>
-        <a class="button-nav" href="Testimonials.html">Testimonials</a>
-        <a class="button-nav" href="FAQ.html">FAQ</a>
-        <a class="button-nav" href="Contact.html">Contact</a>
-
-        <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
-        <a id="myCart" href="MyCart.html">My Cart</a>
+      <a class="button-nav" href="ShopPremade.html">Bentos</a>
+      <a class="button-nav" href="Customize-Step1.html">Customize</a>
+      <a class="button-nav" href="StoreLocations.html">Locations</a>
+      <a class="button-nav" href="Testimonials.html">Testimonials</a>
+      <a class="button-nav" href="FAQ.html">FAQ</a>
+      <a class="button-nav" href="Contact.html">Contact</a>
+      <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
+      <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+          
       </nav>
     </div>
-  <!-- </div> -->
-
 
     <!-- ======================================== -->
     <!--    NSERT CONTENT IN THE WRAPPER :)       -->
@@ -58,7 +49,6 @@
     </div>
 
     <div id ="locationMap">
-      <!-- <img src=""> -->
       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:390px;width:100%;'><div id='gmap_canvas' style='height:390px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy template</a></small>
       </div>
       </div>
@@ -66,7 +56,6 @@
     </div>
 
     <div id = "addressSearch">
-      <!-- <h3>Find the closest BentoGo to you!</h3> -->
       <div class="row">
 
         <div class="grid-1-1">
@@ -84,10 +73,8 @@
     <div id="locationResults">
 
       <div class="row">
-        <div class="grid-1-4">
+        <div class="grid-1-2-loc">
           <img src="img/storeLocation-2.jpg" alt="Surrey"/>
-        </div>
-        <div class="grid-1-4">
           <p><strong>Surrey Central</strong></p>       
           <p>10153 King George Blvd</p>
           <p>Surrey, BC V5V3R1</p>
@@ -96,11 +83,9 @@
           <a href="#">Get Directions</a>
           <a href="#">Street View</a>
         </div>
-        <div class="grid-1-4">
+        <div class="grid-1-2-loc">
           <img src="img/storeLocation-3.jpg" alt="Pacific Centre"/>
-        </div>
-        <div class="grid-1-4">
-            <p><strong>Pacific Centre</strong></p>       
+          <p><strong>Pacific Centre</strong></p>       
           <p>701 W Georgia St</p>
           <p>Vancouver, BC V5V3R1</p>
           <p>(604) 339-5802</p>
@@ -111,10 +96,8 @@
       </div>
 
       <div class="row">
-        <div class="grid-1-4">
+        <div class="grid-1-2-loc">
           <img src="img/storeLocation-4.jpg" alt="Main St"/>
-        </div>
-        <div class="grid-1-4">
           <p><strong>Main Street</strong></p>       
           <p>2616 Main St</p>
           <p>Vancouver, BC V5V3R1</p>
@@ -123,10 +106,8 @@
           <a href="#">Get Directions</a>
           <a href="#">Street View</a>     
         </div>
-        <div class="grid-1-4">
+        <div class="grid-1-2-loc">
           <img src="img/storeLocation-5.jpg" alt="Guildford"/>
-        </div>
-        <div class="grid-1-4">
           <p><strong>Guildford</strong></p>       
           <p>10355 152 St</p>
           <p>Surrey, BC V5V3R1</p>
@@ -138,10 +119,8 @@
       </div>
 
       <div class="row">
-        <div class="grid-1-4">
+        <div class="grid-1-2-loc">
           <img src="img/storeLocation-6.jpg" alt="Lougheed"/>
-        </div>
-        <div class="grid-1-4">
           <p><strong>Lougheed</strong></p>       
           <p>9855 Austin Road</p>
           <p>Burnaby, BC V5V3R1</p>
@@ -150,10 +129,9 @@
           <a href="#">Get Directions</a>
           <a href="#">Street View</a>    
         </div>
-        <div class="grid-1-4">
+
+        <div class="grid-1-2-loc">
           <img src="img/storeLocation-7.jpg" alt="Metrotown"/>
-        </div>
-        <div class="grid-1-4">
            <p><strong>Metrotown</strong></p>       
           <p>4700 Kingsway </p>
           <p>Burnaby, BC V5V3R1</p>
@@ -176,11 +154,10 @@
   <section id="footer">
 
     <div class="grid-1-1">
-      <form id="subscribe">
-        <h3>Subscribe to our mailing list</h3>
-        <!-- <p>Subscribe to our newsletter and always be the first to hear about what is happening.</p> -->
+      <form>
+        <h3>Get BentoGo News</h3>
         <input type="text" placeholder="Enter your email address">
-            <a class="button button-orange" href="#">Sign Up</a>
+            <!-- <a class="button button-orange" href="#">Sign Up</a> -->
       </form>
     </div>
 
@@ -194,10 +171,13 @@
     </div>
 
     <div class="grid-1-1 footerLinks">
-      <p>By Maurice Yu and Tiffany Cheng</p>
+      <p>© Maurice Yu & Tiffany Cheng</p>
+      <p>|</p>
       <a href="StyleGuide.html">Styleguide</a>
+      <p>|</p>
       <a href="Citations.html">Citations</a>
-      <a href="https://github.com/tiffiecheng/IAT339-P2">Github Repo</a>
+      <p>|</p>
+      <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
     </div>
 
   </section>
