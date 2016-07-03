@@ -743,7 +743,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-  font-size: 4em;
+  font-size: 3em;
   margin: 1.5rem 0;
 }
 
@@ -1107,14 +1107,23 @@ figcaption{
 
 .full-promo-wrap{
   text-align: center;
+  float: none;
   margin: 2em auto;
-  width: 45%;
+  width: 100%;
+  left: 50%;
   color: #FFF;
       -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
          -o-animation: fadein 1s; /* Opera < 12.1 */
             animation: fadein 1s;
+}
+
+.full-promo-text{
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  float: none;
 }
 
 .full-promo-wrap #tako{
@@ -1131,6 +1140,9 @@ figcaption{
 
 .full-promo-wrap h1{
   margin-top: 2em;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .full-promo .button-orange{
