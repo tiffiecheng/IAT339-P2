@@ -1152,20 +1152,15 @@ figcaption{
 }
 
 .full-promo .button-orange{
-  margin-top: 1rem;
+  margin: 1.25rem 0.5rem 0.1rem 0.5rem;
   width: 14rem;
-  margin-right: 2rem;
-}
-
-.button-orange:last-of-type{
-  margin-right: 0rem;
 }
 
 [id^='home-section']{
   margin-top: 3rem;
 }
 
-#home-section1 h2, #home-section2 h2, #home-section3 h2, #home-section4 h2{
+#home-section1 h2, #bestsellers h2, #home-testimonials h2, #home-section4 h2{
   margin-bottom: 2em;
 }
 
@@ -1183,11 +1178,11 @@ figcaption{
 /*  Home Section2  */
 /* --------------- */
 
-#home-section2{
+#bestsellers{
   padding: 2rem 0;
 }
 
-#home-section2 img{
+#bestsellers img{
   border: 0.1em solid #FFF;  
   height: auto;
   width: 100%;
@@ -1197,7 +1192,7 @@ figcaption{
   padding: 0.5em;
 }
 
-#home-section2 img:hover{
+#bestsellers img:hover{
   border: 0.1em solid #555;  
 }
 
@@ -1226,7 +1221,7 @@ figcaption{
   opacity: 0.5;
 }
 
-#home-section2 .grid-1-2{
+#bestsellers .grid-1-2{
   position: relative;
 }
 
@@ -1238,7 +1233,7 @@ figcaption{
   font-size: 1.7em;
 }
 
-#home-section2 img:hover .imgDescription {
+#bestsellers img:hover .imgDescription {
   visibility: visible;
 }
 
@@ -1250,42 +1245,43 @@ figcaption{
   font-size: 1.1em;
 }
 
-/* --------------- */
-/*  Home Section3  */
-/* --------------- */
+/* ------------------  */
+/*  Home testimonials  */
+/* ------------------  */
 
-#home-section3{
+#home-testimonials{
   padding: 3rem 0;
-  background-image: url("../img/home-section3-img2.jpg");
+  background-image: url("../img/home-testimonials-img2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat, repeat;
   width: 100%;
 }
 
-.home-section3-item {
+.home-testimonials-item {
   display: inline-block;
   background-color: #fff;
   border-radius: 0.5em;
   width: 90%;
   padding-bottom: 1em;
   margin:0;
+  margin-bottom: 1rem;
 }
 
-.home-section3-item:last-of-type{
+.home-testimonials-item:last-of-type{
   padding-right: 0;
 }
 
-#home-section3 h2{
+#home-testimonials h2{
   color: #FFF;
 }
 
-#home-section3 h3{
+#home-testimonials h3{
   padding: 0 1rem;
   margin-bottom: 0;
 }
 
-#home-section3 p{
+#home-testimonials p{
   color: #333;
   margin: 0;
   margin-bottom: 1em;
@@ -1969,7 +1965,7 @@ input[type=address]:focus{
 /* ====================== */
 
 .thankYou{
-  margin: 14em 0;
+  margin: 6em 0;
 }
 
 #takoComplete{
@@ -1988,6 +1984,11 @@ input[type=address]:focus{
 
 .complete p{
   margin-bottom: 0.4em;
+}
+
+.complete .button-orange{
+  margin-top: 2rem;
+  padding: 0.8em 2.75em;
 }
 
 @media (min-width: 47em){
