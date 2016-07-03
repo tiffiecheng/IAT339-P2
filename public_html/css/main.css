@@ -1107,44 +1107,29 @@ figcaption{
   background-repeat: no-repeat, repeat;
   background-color: #E5842C;
   width: 100%;
-  padding: 5em 0;
+  padding: 5em 20%;
   border-style: none;
-}
-
-.full-promo-wrap{
-  text-align: center;
-  float: none;
-  margin: 2em auto;
-  width: 100%;
-  left: 50%;
   color: #FFF;
-      -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 1s; /* Firefox < 16 */
+      -ms-animation: fadein 1s; /* Internet Explorer */
+       -o-animation: fadein 1s; /* Opera < 12.1 */
+          animation: fadein 1s;
 }
 
-.full-promo-text{
-  width: 50%;
-  margin: 0 auto;
-  display: block;
-  float: none;
-}
-
-.full-promo-wrap #tako{
+.full-promo #tako{
   margin-top: -3rem;
 }
 
-.full-promo-wrap p{
+.full-promo p{
   font-size: 1rem;
 }
 
-.full-promo-wrap h2{
+.full-promo h2{
   margin-top: -1em;
 }
 
-.full-promo-wrap h1{
+.full-promo h1{
   margin-top: 2em;
   padding: 0;
   margin-left: auto;
