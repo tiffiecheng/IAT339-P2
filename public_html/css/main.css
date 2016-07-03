@@ -981,7 +981,7 @@ input[type=search]:focus{
 }
 
 .caption p{
-  margin-bottom: 0;
+  margin-bottom: 2em;
 }
 
 /* ---------------- */
