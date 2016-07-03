@@ -1016,7 +1016,10 @@ input[type=search]:focus{
 }
 
 #footer input{
-  width: 100%;
+  width: 20em;
+  /*width: 100%;*/
+  overflow: hidden;
+  background: #fff url("../img/icon-go.png") no-repeat 95% 50%;
 }
 
 #footer h3{
@@ -1039,11 +1042,14 @@ input[type=search]:focus{
 
 .footerLinks p{
   display: inline;
-  margin-right: 1em;
+  font-size: 0.9em;
+  margin-right: 0.8em;
 }
 
 .footerLinks a{
-  margin: 0 1em;
+  /*margin: 0 1em;*/
+  font-size: 0.9em;
+    margin-right: 0.8em;
 }
 
 /* ----------- */
@@ -2000,7 +2006,6 @@ input[type=address]:focus{
     width: 50%;
   }
 }
-
 
 /* ====================== */
 /*       GOOGLE MAPS      */
