@@ -776,19 +776,6 @@ input[type=submit]:hover{
 /*  Dropdown Select  */
 /* ----------------- */
 
-/*#productInfo .select-style select {
-  padding: 0.5625rem 0.875rem;
-}
-
-#productInfo .select-style{
-  width: 3.5em;
-  float: left;
-  margin-top: 0.55rem;
-  margin-right: 2rem;
-  height: 2.2rem;
-  vertical-align: middle;
-}*/
-
 .select-style {
   border: 1px solid #ccc;
   width: 9.5rem;
@@ -1115,7 +1102,6 @@ input[type=search]:focus{
 
 #footer input{
   width: 20em;
-  /*width: 100%;*/
   overflow: hidden;
   background: #fff url("../img/icon-go.png") no-repeat 95% 50%;
 }
@@ -1145,9 +1131,8 @@ input[type=search]:focus{
 }
 
 .footerLinks a{
-  /*margin: 0 1em;*/
   font-size: 0.9em;
-    margin-right: 0.8em;
+  margin-right: 0.8em;
 }
 
 /* ----------- */
@@ -1249,10 +1234,6 @@ figcaption{
   margin: 1rem auto;
   text-align: left;
 }
-
-/* --------------- */
-/*  Home Section1  */
-/* --------------- */
 
 /* --------------- */
 /*   Bestsellers   */
