@@ -353,6 +353,9 @@ section p {
 	.grid-3-4{
 		width: 75%;
 	}
+  .summaryTable{
+    position: relative;
+  }
 }
 
 @media(min-width: 73em){
@@ -1165,6 +1168,11 @@ figcaption{
 
 #bestsellers{
   padding: 2rem 0;
+  margin-top: 3em;
+}
+
+#bestsellers h2{
+  margin-top: 2em;
 }
 
 #bestsellers img{
@@ -1556,6 +1564,11 @@ figcaption{
 /*        CONTACT         */
 /* ====================== */
 
+.contact-wrapper{
+  width: 80%;
+  margin: 1rem auto;
+}
+
 #contactForm{
   display: inline-block;
   width: 100%;
@@ -1574,7 +1587,6 @@ figcaption{
 #contactForm textarea{
   padding-right: 1em;
 }
-
 
 #headquarters{
   display: inline-block;
@@ -1851,6 +1863,12 @@ input[type=address]:focus{
   float:right;
 }
 
+/*.summaryTable{
+  position: fixed;
+  top: 7.75em;
+  float: left;
+}*/
+
 #summaryTable-left{
   text-align: left;
   padding-left: 1em;
@@ -1891,7 +1909,7 @@ input[type=address]:focus{
 }
 
 .checkOut p{
-	margin-bottom: -0.1em;
+	/*margin-bottom: -0.1em;*/
 	text-align: left;
 }
 
