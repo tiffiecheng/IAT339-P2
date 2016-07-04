@@ -18,25 +18,29 @@
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
-    <div class="nav-main">
+    <ul class= "nav-main">
       <nav class="nav-main-wrap"> 
-
-      <a href="Home.html">
-        <img id="tako" src="img/Tako.png" alt="tako"> 
-      </a>
-
-      <a class="button-nav" href="ShopPremade.html">Bentos</a>
-      <a class="button-nav" href="Customize-Step1.html">Customize</a>
-      <a class="button-nav" href="StoreLocations.html">Locations</a>
-      <a class="button-nav" href="Testimonials.html">Testimonials</a>
-      <a class="button-nav" href="FAQ.html">FAQ</a>
-      <a class="button-nav" href="Contact.html">Contact</a>
-      <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
-      <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
-          
+        <li class="logo">
+          <a href="Home.html">
+            <img id="tako" src="img/Tako.png" alt="tako"> 
+          </a>
+        </li>
+        <li class="hamburger">
+          <a href="javascript:void(0);" onclick="toggleHamburger()"><img src="img/icon-hamburger.png" alt="hamburger icon"></a>
+        </li>
+        <li><a class="button-nav" href="ShopPremade.html">Bentos</a></li>
+        <li><a class="button-nav" href="Customize-Step1.html">Customize</a></li>
+        <li><a class="button-nav" href="StoreLocations.html">Locations</a></li>
+        <li><a class="button-nav" href="Testimonials.html">Testimonials</a></li>
+        <li><a class="button-nav" href="FAQ.html">FAQ</a></li>
+        <li><a class="button-nav" href="Contact.html">Contact</a></li>
+        <li class="cart-nav">
+          <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
+          <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+        </li>
       </nav>
-    </div>
-
+    </ul>
+        
     <!-- ======================================== -->
     <!--    INSERT CONTENT IN THE WRAPPER :)      -->
     <!-- ======================================== -->
@@ -56,9 +60,9 @@
         <div class="row">
           <div class="grid-1-2">
             <div class="grid-1-6">
-              <a href="img/Bento-B1.jpg" class="image-swap"><img src="img/Bento-B1.jpg" alt="bento"/></a>
-              <a href="img/Bento-B1-1.jpg" class="image-swap"><img src="img/Bento-B1-1.jpg" alt="bento"/></a>
-              <a href="img/Bento-B1-3.jpg" class="image-swap"><img src="img/Bento-B1-3.jpg" alt="bento"/></a>
+              <a href="img/Bento-B1.jpg" class="image-swap"><img src="img/Bento-B1.jpg" alt="bento" onclick="currentImage(1)"/></a>
+              <a href="img/Bento-B1-1.jpg" class="image-swap"><img src="img/Bento-B1-1.jpg" alt="bento" onclick="currentImage(2)"/></a>
+              <a href="img/Bento-B1-3.jpg" class="image-swap"><img src="img/Bento-B1-3.jpg" alt="bento" onclick="currentImage(3)"/></a>
             </div>
             <div class="grid-5-6">
               <img class="image-swap-area" src="img/Bento-B1.jpg" alt="bento"/>
@@ -152,8 +156,9 @@
 
     </section>
 
-    <script src="js/zepto.js"></script>
-    <script src="js/dynamic.js"></script>
+    <script src="js/hamburger.js"></script>
+    <!-- <script src="js/zepto.js"></script> -->
+    <!-- <script src="js/dynamic.js"></script> -->
 
   </body>
 

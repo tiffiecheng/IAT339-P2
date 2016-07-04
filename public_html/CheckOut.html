@@ -19,39 +19,43 @@
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
-    <div class="nav-main">
+    <ul class= "nav-main">
       <nav class="nav-main-wrap"> 
-
-      <a href="Home.html">
-        <img id="tako" src="img/Tako.png" alt="tako"> 
-      </a>
-
-      <a class="button-nav" href="ShopPremade.html">Bentos</a>
-      <a class="button-nav" href="Customize-Step1.html">Customize</a>
-      <a class="button-nav" href="StoreLocations.html">Locations</a>
-      <a class="button-nav" href="Testimonials.html">Testimonials</a>
-      <a class="button-nav" href="FAQ.html">FAQ</a>
-      <a class="button-nav" href="Contact.html">Contact</a>
-      <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
-      <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
-          
+        <li class="logo">
+          <a href="Home.html">
+            <img id="tako" src="img/Tako.png" alt="tako"> 
+          </a>
+        </li>
+        <li class="hamburger">
+          <a href="javascript:void(0);" onclick="toggleHamburger()"><img src="img/icon-hamburger.png" alt="hamburger icon"></a>
+        </li>
+        <li><a class="button-nav" href="ShopPremade.html">Bentos</a></li>
+        <li><a class="button-nav" href="Customize-Step1.html">Customize</a></li>
+        <li><a class="button-nav" href="StoreLocations.html">Locations</a></li>
+        <li><a class="button-nav" href="Testimonials.html">Testimonials</a></li>
+        <li><a class="button-nav" href="FAQ.html">FAQ</a></li>
+        <li><a class="button-nav" href="Contact.html">Contact</a></li>
+        <li class="cart-nav">
+          <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
+          <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+        </li>
       </nav>
-    </div>
+    </ul>
 
     <!-- ======================================== -->
-    <!--    NSERT  CONTENT IN THE WRAPPER :)      -->
+    <!--    INSERT CONTENT IN THE WRAPPER :)      -->
     <!-- ======================================== -->
 
-  <section id="wrapper">
-    <div id="checkOut-top">
-      <div class="breadcrumbBar">
-        <a class="breadcrumb-item" href="Home.html">Home </a>
-        <p class="breadcrumb-item">/</p>
-        <a class="breadcrumb-item" href="MyCart.html">Cart</a>
-        <p class="breadcrumb-item">/</p>
-        <a class="breadcrumb-item-current" href="CheckOut.html">Checkout</a>
+    <section id="wrapper">
+      <div id="checkOut-top">
+        <div class="breadcrumbBar">
+          <a class="breadcrumb-item" href="Home.html">Home </a>
+          <p class="breadcrumb-item">/</p>
+          <a class="breadcrumb-item" href="MyCart.html">Cart</a>
+          <p class="breadcrumb-item">/</p>
+          <a class="breadcrumb-item-current" href="CheckOut.html">Checkout</a>
+        </div>
       </div>
-    </div>
 
       <div id="table-checkOut">
         <div class="row">
@@ -107,11 +111,11 @@
 
             <div class="checkOut cart-item">
 
-            <div id="billingAddress">
-              <form>
-                <input type="radio" name="billingAddress" value="billingAddress"> My billing address is the same as my shipping address
-              </form>
-            </div>
+              <div id="billingAddress">
+                <form>
+                  <input type="radio" name="billingAddress" value="billingAddress"> My billing address is the same as my shipping address
+                </form>
+              </div>
 
               <form method="get" action="#">
                 
@@ -219,44 +223,42 @@
           </div>
         </div>
       </div>
-
-
-  </section>  
-  
-      <!-- ===================== -->
+    </section>  
+    
+    <!-- ===================== -->
     <!--        FOOTER         -->
     <!-- ===================== -->
 
-  <section id="footer">
+    <section id="footer">
 
-    <div class="grid-1-1">
-      <form>
-        <h3>Get BentoGo News</h3>
-        <input type="text" placeholder="Enter your email address">
-            <!-- <a class="button button-orange" href="#">Sign Up</a> -->
-      </form>
-    </div>
-
-    <div class="grid-1-1">
-      <div id="social-media">
-        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
-        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
-        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
-        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
+      <div class="grid-1-1">
+        <form>
+          <h3>Get BentoGo News</h3>
+          <input type="text" placeholder="Enter your email address">
+              <!-- <a class="button button-orange" href="#">Sign Up</a> -->
+        </form>
       </div>
-    </div>
 
-    <div class="grid-1-1 footerLinks">
-      <p>© Maurice Yu & Tiffany Cheng</p>
-      <p>|</p>
-      <a href="StyleGuide.html">Styleguide</a>
-      <p>|</p>
-      <a href="Citations.html">Citations</a>
-      <p>|</p>
-      <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
-    </div>
+      <div class="grid-1-1">
+        <div id="social-media">
+          <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
+          <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
+          <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
+          <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
+        </div>
+      </div>
 
-  </section>
+      <div class="grid-1-1 footerLinks">
+        <p>© Maurice Yu & Tiffany Cheng</p>
+        <p>|</p>
+        <a href="StyleGuide.html">Styleguide</a>
+        <p>|</p>
+        <a href="Citations.html">Citations</a>
+        <p>|</p>
+        <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
+      </div>
+
+    </section>
 
   </body>
   

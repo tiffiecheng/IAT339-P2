@@ -279,7 +279,7 @@
           <h4 class="leftAlign">.breadcrumb</h4>
 
           <code>
-            &lt;div class="shopTopBar"&gt;<br>
+            &lt;div class="breadcrumbBar"&gt;<br>
             &lt;a class="breadcrumb-item" href="#"&gt;Home &lt;/a&gt;<br>
             &lt;p class="breadcrumb-item"&gt;/&lt;/p&gt;<br>
             &lt;a class="breadcrumb-item" href="#"&gt;Premade Bentos &lt;/a&gt;<br>
@@ -288,7 +288,7 @@
             &lt;/div>
           </code>
 
-          <div class="shopTopBar">
+          <div class="breadcrumbBar">
             <a class="breadcrumb-item" href="#">Home </a>
             <p class="breadcrumb-item">/</p>
             <a class="breadcrumb-item" href="#">Premade Bentos </a>
@@ -321,10 +321,11 @@
           <h2 class="leftAlign">Search Bar</h2>
           <h4 class="leftAlign">input</h4>
           <code>&lt;form&gt; &lt;input type="search" placeholder="Search"&gt; &lt;/form&gt;</code>
-
-          <form>
-            <input type="search" placeholder="Search">
-          </form>
+          <div class="searchForm">
+            <form>
+              <input type="search" placeholder="Search">
+            </form>
+          </div>
         </section>
 
         <!-- ===================== -->
@@ -539,21 +540,49 @@
 
         <section class="sections-styleGuide">
           <h2 class="leftAlign">Main Navigation</h2>
-          <h4 class="leftAlign">nav</h4>
+          <h4 class="leftAlign">nav-main</h4>
           <code>
-            &lt;nav&gt;<br>
-            &lt;a class="button-nav" href=" "&gt;Menu&lt;/a&gt;<br>
-            &lt;a class="button-nav" href=" "&gt;About&lt;/a&gt;<br>
-            &lt;a class="button-nav" href=" "&gt;Testimonials&lt;/a&gt;<br>
-            &lt;a class="button-nav" href=" "&gt;Contact&lt;/a&gt;<br>
-            &lt;/nav&gt;
+            &lt;ul class="nav-main"&gt;<br>
+            &lt;nav class="nav-main-wrap"&gt;<br>
+            &lt;li class="logo"&gt;<br>
+            &lt;a href="Home.html&gt;
+            &lt;img id="tako" src="img/Tako.png" alt="Bentogo's mascot, Tako the Octopus"&gt;
+            &lt;/a&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;li class="hamburger"&gt;<br>
+            &lt;a href="javascript:void(0);" onclick="toggleHamburger()"&gt;<br>
+            &lt;img src="img/icon-hamburger.png" alt="hamburger icon"&gt;&lt;/a&gt;<br>
+            &lt;/li&gt;</br>
+            &lt;li&gt;&lt;a class="button-nav" href="ShopPremade.html"&gt;Bentos&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a class="button-nav" href="Customize-Step1.html"&gt;Customize&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li&gt;&lt;a class="button-nav" href="Contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+            &lt;li class="cart-nav"&gt;<br>
+            &lt;a class="button-nav" id="myCart" href="MyCart.html"&gt;My Cart&lt;/a&gt;<br>
+            &lt;img id="icon-cart" src="img/icon-cart.png" alt="icon cart"&gt;<br>
+            &lt;/li&gt;<br>
+            &lt;/nav&gt;<br>
+            &lt;/ul&gt;<br>
           </code>
-          <div class="nav-main-styleGuide">
-            <a class="button-nav" href=" ">Menu</a>
-            <a class="button-nav" href=" ">About</a>
-            <a class="button-nav" href=" ">Testimonials</a>
-            <a class="button-nav" href=" ">Contact</a>
-          </div>
+
+          <ul class= "nav-main">
+            <nav class="nav-main-wrap"> 
+              <li class="logo">
+                <a href="Home.html">
+                  <img id="tako" src="img/Tako.png" alt="Bentogo's mascot, Tako the Octopus"> 
+                </a>
+              </li>
+              <li class="hamburger">
+                <a href="javascript:void(0);" onclick="toggleHamburger()"><img src="img/icon-hamburger.png" alt="hamburger icon"></a>
+              </li>
+              <li><a class="button-nav" href="ShopPremade.html">Bentos</a></li>
+              <li><a class="button-nav" href="Customize-Step1.html">Customize</a></li>
+              <li><a class="button-nav" href="Contact.html">Contact</a></li>
+              <li class="cart-nav">
+                <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
+                <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
+              </li>
+            </nav>
+          </ul>
         </section>
 
         <!-- ===================== -->
