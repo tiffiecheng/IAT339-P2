@@ -19,8 +19,8 @@
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
-    <ul class= "nav-main">
-      <nav class="nav-main-wrap"> 
+    <nav class="nav-main-wrap"> 
+      <ul class= "nav-main">
         <li class="logo">
           <a href="Home.html">
             <img id="tako" src="img/Tako.png" alt="tako"> 
@@ -39,9 +39,8 @@
           <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
           <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
         </li>
-      </nav>
-    </ul>
-
+      </ul>
+    </nav>
 
     <!-- ======================================== -->
     <!--    NSERT CONTENT IN THE WRAPPER :)       -->
@@ -50,62 +49,68 @@
     
     <section id="wrapper">
 
-    <div class="pageTitle">
-      <h2>Find a store</h2>
-    </div>
-
-    <div id ="locationMap">
-      <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:390px;width:100%;'><div id='gmap_canvas' style='height:390px;width:100%;'></div><div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy template</a></small></div>
-      </div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(49.1873415,-122.85040859999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.1873415,-122.85040859999998)});infowindow = new google.maps.InfoWindow({content:'<strong>BentoGo</strong><br>250 - 13450 – 102nd Avenue, Surrey, BC V3T 0A3<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
-    </div>
-
-    <div id = "addressSearch">
-      <div class="row">
-
-        <div class="grid-1-1">
-          <input type="text" placeholder="Enter city or postal code">
-            <a class="button" href="StoreLocationsResults.html">Search</a>
-        </div>
-              
+      <div class="pageTitle">
+        <h2>Find a store</h2>
       </div>
-    </div>
+
+      <div id ="locationMap">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <div style='overflow:hidden;height:390px;width:100%;'>
+          <div id='gmap_canvas' style='height:390px;width:100%;'></div>
+          <div><small><a href="http://embedgooglemaps.com">                 embed google maps             </a></small></div>
+          <div><small><a href="https://privacypolicytemplate.net">privacy policy template</a></small></div>
+        </div>
+        <script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(49.1873415,-122.85040859999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.1873415,-122.85040859999998)});infowindow = new google.maps.InfoWindow({content:'<strong>BentoGo</strong><br>250 - 13450 – 102nd Avenue, Surrey, BC V3T 0A3<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      </div>
+
+      <div id = "addressSearch">
+        <div class="row">
+
+          <div class="grid-1-1">
+            <input type="text" placeholder="Enter city or postal code">
+              <a class="button-orange" href="StoreLocationsResults.html">Search</a>
+          </div>
+                
+        </div>
+      </div>
     </section>  
     <!-- Wrapper closing tag -->
   
-      <!-- ===================== -->
+    <!-- ===================== -->
     <!--        FOOTER         -->
     <!-- ===================== -->
 
-  <section id="footer">
+    <section id="footer">
 
-    <div class="grid-1-1">
-      <form>
-        <h3>Get BentoGo News</h3>
-        <input type="text" placeholder="Enter your email address">
-            <!-- <a class="button button-orange" href="#">Sign Up</a> -->
-      </form>
-    </div>
-
-    <div class="grid-1-1">
-      <div id="social-media">
-        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
-        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
-        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
-        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
+      <div class="grid-1-1">
+        <form>
+          <h3>Get BentoGo News</h3>
+          <input type="text" placeholder="Enter your email address">
+        </form>
       </div>
-    </div>
 
-    <div class="grid-1-1 footerLinks">
-      <p>© Maurice Yu & Tiffany Cheng</p>
-      <p>|</p>
-      <a href="StyleGuide.html">Styleguide</a>
-      <p>|</p>
-      <a href="Citations.html">Citations</a>
-      <p>|</p>
-      <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
-    </div>
+      <div class="grid-1-1">
+        <div id="social-media">
+          <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
+          <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
+          <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
+          <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
+        </div>
+      </div>
 
-  </section>
+      <div class="grid-1-1 footerLinks">
+        <p>© Maurice Yu & Tiffany Cheng</p>
+        <p>|</p>
+        <a href="StyleGuide.html">Styleguide</a>
+        <p>|</p>
+        <a href="Citations.html">Citations</a>
+        <p>|</p>
+        <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
+      </div>
+
+    </section>
+
+    <script src="js/hamburger.js"></script>
 
   </body>
 

@@ -20,8 +20,8 @@
     <!--        NAV BAR        -->
     <!-- ===================== -->
       
-    <ul class= "nav-main">
-      <nav class="nav-main-wrap"> 
+    <nav class="nav-main-wrap"> 
+      <ul class= "nav-main">
         <li class="logo">
           <a href="Home.html">
             <img id="tako" src="img/Tako.png" alt="tako"> 
@@ -40,8 +40,8 @@
           <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
           <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
         </li>
-      </nav>
-    </ul>
+      </ul>
+    </nav>
 
     <!-- ======================================== -->
     <!--    NSERT CONTENT IN THE WRAPPER :)       -->
@@ -55,7 +55,6 @@
 
       <section id="testimonials">
         
-       
         <div class="row">
           <div class="grid-1-2">
             <h3>"My boyfriend totally surprised me!"</h3>
@@ -140,35 +139,35 @@
 
 
 
-      <section id="reviewForm">
-        <h3>How<span class="font-missing">'</span>d your bento go?</h3>
+      <section id="shortForm">
+        <h3>How was your bento?</h3>
         <div class="row">
-        <div class="grid-1-1">
-          <div id="contactForm">
+          <div class="grid-1-1">
+            <div id="contactForm">
 
-            <form method="post" action="#">
+              <form method="post" action="#">
 
-              <div class="grid-1-2">
-                <input type="text" id="contact-name" placeholder="Your Name">
+                <div class="grid-1-2">
+                  <input type="text" id="contact-name" placeholder="Your Name">
+                </div>
+
+                <div class="grid-1-2">
+                  <input type="text" id="contact-title" placeholder="Title of Comment">
+                </div>
+
+                <div class="grid-1-1">
+                  <input type="email" id="contact-email" placeholder="Email">
+                </div>
+
+                <div class="grid-1-1">
+                  <textarea id="contact-comment" placeholder="Leave your review here! Postive or negative, any feedback is welcomed!"></textarea>
+                </div>
+              </form>
+              <div class ="rightAlign">
+                <input type="submit" value="Submit">
               </div>
-
-              <div class="grid-1-2">
-                <input type="text" id="contact-title" placeholder="Title of Comment">
-              </div>
-
-              <div class="grid-1-1">
-                <input type="email" id="contact-email" placeholder="Email">
-              </div>
-
-              <div class="grid-1-1">
-                <textarea id="contact-comment" placeholder="Leave your review here! Postive or negative, any feedback is welcomed!"></textarea>
-              </div>
-            </form>
-            <div class ="rightAlign">
-              <input type="submit" value="Submit">
             </div>
           </div>
-        </div>
         </div>
       </section>
 
@@ -180,36 +179,37 @@
     <!--        FOOTER         -->
     <!-- ===================== -->
 
-  <section id="footer">
+    <section id="footer">
 
-    <div class="grid-1-1">
-      <form>
-        <h3>Get BentoGo News</h3>
-        <input type="text" placeholder="Enter your email address">
-            <!-- <a class="button button-orange" href="#">Sign Up</a> -->
-      </form>
-    </div>
-
-    <div class="grid-1-1">
-      <div id="social-media">
-        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
-        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
-        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
-        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
+      <div class="grid-1-1">
+        <form>
+          <h3>Get BentoGo News</h3>
+          <input type="text" placeholder="Enter your email address">
+        </form>
       </div>
-    </div>
 
-    <div class="grid-1-1 footerLinks">
-      <p>© Maurice Yu & Tiffany Cheng</p>
-      <p>|</p>
-      <a href="StyleGuide.html">Styleguide</a>
-      <p>|</p>
-      <a href="Citations.html">Citations</a>
-      <p>|</p>
-      <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
-    </div>
+      <div class="grid-1-1">
+        <div id="social-media">
+          <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
+          <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
+          <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
+          <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
+        </div>
+      </div>
+
+      <div class="grid-1-1 footerLinks">
+        <p>© Maurice Yu & Tiffany Cheng</p>
+        <p>|</p>
+        <a href="StyleGuide.html">Styleguide</a>
+        <p>|</p>
+        <a href="Citations.html">Citations</a>
+        <p>|</p>
+        <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
+      </div>
 
     </section>
+
+    <script src="js/hamburger.js"></script>
 
   </body>
 

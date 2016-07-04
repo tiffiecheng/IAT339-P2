@@ -21,7 +21,7 @@
 
     <div id="header-styleGuide">
       <div class="header-styleGuide-wrap">
-          <img src="img/Tako.png" id="tako" alt="tako">
+        <img src="img/Tako.png" id="logo" alt="Bentogo Logo: Tako the Octopus">
 
         <h1>The Stunnin Style Guide for BentoGo</h1>
         <p>BentoGo delivers fresh and elaborately arranged boxed lunches that fit to your taste. Our lunches come in a variety of different designs, including characters from popular cartoons, movies, and video games.  </p>
@@ -72,7 +72,7 @@
 
       <div class="sections-styleGuide" id="colors">
 
-        <section>
+        <section id="style-colors">
           <h2 class="leftAlign">Colors</h2>
           
           <h3 class="leftAlign">Primary Colors</h3>       
@@ -90,8 +90,8 @@
         </section>
       </div>
 
-      <div class="sections-styleGuide" id="grids">
-        <section>
+      <div class="sections-styleGuide">
+        <section id="grids">
         <h2 class="leftAlign">Grids</h2>
 
           <!-- Div Begin: Grid Group 1-2 -->
@@ -542,8 +542,8 @@
           <h2 class="leftAlign">Main Navigation</h2>
           <h4 class="leftAlign">nav-main</h4>
           <code>
-            &lt;ul class="nav-main"&gt;<br>
             &lt;nav class="nav-main-wrap"&gt;<br>
+            &lt;ul class="nav-main"&gt;<br>
             &lt;li class="logo"&gt;<br>
             &lt;a href="Home.html&gt;
             &lt;img id="tako" src="img/Tako.png" alt="Bentogo's mascot, Tako the Octopus"&gt;
@@ -552,7 +552,7 @@
             &lt;li class="hamburger"&gt;<br>
             &lt;a href="javascript:void(0);" onclick="toggleHamburger()"&gt;<br>
             &lt;img src="img/icon-hamburger.png" alt="hamburger icon"&gt;&lt;/a&gt;<br>
-            &lt;/li&gt;</br>
+            &lt;/li&gt;<br>
             &lt;li&gt;&lt;a class="button-nav" href="ShopPremade.html"&gt;Bentos&lt;/a&gt;&lt;/li&gt;<br>
             &lt;li&gt;&lt;a class="button-nav" href="Customize-Step1.html"&gt;Customize&lt;/a&gt;&lt;/li&gt;<br>
             &lt;li&gt;&lt;a class="button-nav" href="Contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
@@ -560,15 +560,15 @@
             &lt;a class="button-nav" id="myCart" href="MyCart.html"&gt;My Cart&lt;/a&gt;<br>
             &lt;img id="icon-cart" src="img/icon-cart.png" alt="icon cart"&gt;<br>
             &lt;/li&gt;<br>
-            &lt;/nav&gt;<br>
             &lt;/ul&gt;<br>
+            &lt;/nav&gt;<br>
           </code>
 
-          <ul class= "nav-main">
-            <nav class="nav-main-wrap"> 
+          <nav class="nav-main-wrap"> 
+            <ul class= "nav-main">
               <li class="logo">
                 <a href="Home.html">
-                  <img id="tako" src="img/Tako.png" alt="Bentogo's mascot, Tako the Octopus"> 
+                  <img id="tako" src="img/Tako.png" alt="tako"> 
                 </a>
               </li>
               <li class="hamburger">
@@ -581,8 +581,8 @@
                 <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
                 <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
               </li>
-            </nav>
-          </ul>
+            </ul>
+          </nav>
         </section>
 
         <!-- ===================== -->
@@ -677,7 +677,6 @@
                 <div class="caption">
                   <a href="ProductDetail.html">Rilakkuma Box</a>
                   <p>$9.95</p>
-                  <a class="button-addToCart" href=" ">Add to Cart</a>
                 </div>
               </div>
               <div class="grid-1-4">
@@ -685,7 +684,6 @@
                 <div class="caption">
                   <a href="#">Superman Box</a>
                   <p>$9.95</p>
-                  <a class="button-addToCart" href=" ">Add to Cart</a>
                 </div>
               </div>
               <div class="grid-1-4">
@@ -693,7 +691,6 @@
                 <div class="caption">
                   <a href="#">Yoo and Kang Box</a>
                   <p>$9.95</p>
-                  <a class="button-addToCart" href=" ">Add to Cart</a>
                 </div>
               </div>
               <div class="grid-1-4">
@@ -701,7 +698,6 @@
                 <div class="caption">
                   <a href="#">Storm Trooper Box</a>
                   <p>$9.95</p>
-                  <a class="button-addToCart" href=" ">Add to Cart</a>
                 </div>
               </div>
 
@@ -718,44 +714,60 @@
           <h2 class="leftAlign">Form</h2>
           <h4 class="leftAlign">.contactForm</h4>
           <code>
+            &lt;section id="shortForm"&gt;<br>
+            &lt;div class="row"&gt;<br>
+            &lt;div class="grid-1-1"&gt;<br>
             &lt;div id="contactForm"&gt;<br>
-              &lt;form method="post" action="#"&gt;<br>
-              &lt;div id="grid-1-2"&gt;<br>
-                &lt;input type="text" id="contact-name" placeholder="Your Name"&gt;<br> 
-              &lt;/div&gt;<br>
-              &lt;div id="grid-1-2"&gt;<br>
-                &lt;input type="text" id="contact-title" placeholder="Title of Comment"&gt;<br> 
-              &lt;/div&gt;<br>
-              &lt;div id="grid-1-1"&gt;<br>  
-                &lt;textarea id="contact-comment" placeholder="Leave any comments, concerns, and/or confessions of love here!"&gt;&lt;/textarea&gt;<br> 
-                &lt;/div&gt;
-              &lt;/form&gt;<br>
-
-              &lt;div class ="rightAlign"&gt;<br>
-                &lt;input type="submit" value="Submit"&gt;<br>
-              &lt;/div&gt;<br>
+            &lt;form method="post" action="#"&gt;<br>
+            &lt;div class="grid-1-2"&gt;<br>
+            &lt;input type="text" id="contact-name" placeholder="Your Name"&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="grid-1-2"&gt;<br>
+            &lt;input type="text" id="contact-title" placeholder="Title of Comment"&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="grid-1-1"&gt;<br>
+            &lt;input type="email" id="contact-email" placeholder="Email"&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="grid-1-1"&gt;<br>
+            &lt;textarea id="contact-comment" placeholder="Leave any comments, concerns, and/or confessions of love here!"&gt;&lt;/textarea&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/form&gt;<br>
+            &lt;div class ="rightAlign">
+            &lt;input type="submit" value="Submit">
+            &lt;/div>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/section>    
           </code>
 
-          <div id="contactForm">
-            <form method="post" action="#">
-              <div class="grid-1-2">
-                <input type="text" id="contact-name" placeholder="Your Name">
-              </div>
-              <div class="grid-1-2">
-                <input type="text" id="contact-title" placeholder="Title of Comment">
-              </div>
+          <section id="shortForm">
+            <div class="row">
               <div class="grid-1-1">
-                <input type="email" id="contact-email" placeholder="Email">
+                <div id="contactForm">
+                  <form method="post" action="#">
+                    <div class="grid-1-2">
+                      <input type="text" id="contact-name" placeholder="Your Name">
+                    </div>
+                    <div class="grid-1-2">
+                      <input type="text" id="contact-title" placeholder="Title of Comment">
+                    </div>
+                    <div class="grid-1-1">
+                      <input type="email" id="contact-email" placeholder="Email">
+                    </div>
+                    <div class="grid-1-1">
+                      <textarea id="contact-comment" placeholder="Leave any comments, concerns, and/or confessions of love here!"></textarea>
+                    </div>
+                  </form>
+                  <div class ="rightAlign">
+                    <input type="submit" value="Submit">
+                  </div>
+                </div>
               </div>
-              <div class="grid-1-1">
-                <textarea id="contact-comment" placeholder="Leave any comments, concerns, and/or confessions of love here!"></textarea>
-              </div>
-            </form>
-
-            <div class ="rightAlign">
-              <input type="submit" value="Submit">
             </div>
-          </div>
+
+            
+          </section>
         </section>
 
       </section> <!-- End of Combined Elements Section -->

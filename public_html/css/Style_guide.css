@@ -253,6 +253,13 @@
   border: 0.1em solid #aaa;
 }
 
+/* --------------- */
+/*       Form      */
+/* --------------- */
+
+.sections-styleGuide #shortForm{
+  margin: 0;
+}
 /* ---------------- */
 /*       Code       */
 /* ---------------- */

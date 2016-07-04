@@ -19,8 +19,8 @@
     <!--        NAV BAR        -->
     <!-- ===================== -->
 
-    <ul class= "nav-main">
-      <nav class="nav-main-wrap"> 
+    <nav class="nav-main-wrap"> 
+      <ul class= "nav-main">
         <li class="logo">
           <a href="Home.html">
             <img id="tako" src="img/Tako.png" alt="tako"> 
@@ -39,52 +39,52 @@
           <a class="button-nav" id="myCart" href="MyCart.html">My Cart</a>
           <img id="icon-cart" src="img/icon-cart.png" alt="icon cart">
         </li>
-      </nav>
-    </ul>
+      </ul>
+    </nav>
 
     <!-- ======================================== -->
     <!--    NSERT  CONTENT IN THE WRAPPER :)      -->
     <!-- ======================================== -->
 
-  <section id="wrapper">
-    
-    <div id="cart">
-      <div class="breadcrumbBar">
-        <a class="breadcrumb-item" href="Home.html">Home </a>
-        <p class="breadcrumb-item">/</p>
-        <a class="breadcrumb-item-current" href="MyCart.html">Cart</a>
-      </div>
+    <section id="wrapper">
+      
+      <div id="cart">
+        <div class="breadcrumbBar">
+          <a class="breadcrumb-item" href="Home.html">Home </a>
+          <p class="breadcrumb-item">/</p>
+          <a class="breadcrumb-item-current" href="MyCart.html">Cart</a>
+        </div>
 
-      <div id="table-myCart">
-        <div class="row">
-          <div class="grid-3-4">
-            <div class="tableHeader">
-              <h3>My Cart</h3>
-            </div>
-            <div class="cart-item">
-              <a href="RilakkumaBox.html"><img src="img/Bento-B1.jpg" alt="bento"/></a>
-              <p><strong>Rilakkuma Box</strong></p>
-              
+        <div id="table-myCart">
+          <div class="row">
+
+            <div class="grid-3-4">
+              <div class="tableHeader">
+                <h3>My Cart</h3>
+              </div>
+              <div class="cart-item">
+                <a href="RilakkumaBox.html"><img src="img/Bento-B1.jpg" alt="bento"/></a>
+                <p><strong>Rilakkuma Box</strong></p>
+                  <p>$9.95</p>
+                  <p>Quantity: 1</p>
+                <button class="button-cartItem">Edit</button>
+                <button class="button-cartItem">Delete</button>
+              </div>
+              <div class="cart-item">
+                <a href="RilakkumaBox.html"><img src="img/mycart-img1.jpg" alt="bento"/></a>
+                <p><strong>Customized Bento</strong></p>
                 <p>$9.95</p>
-                <p>Quantity: 1</p>
+                  <p>Quantity: 1</p>
+                <button class="button-cartItem">Edit</button>
+                <button class="button-cartItem">Delete</button>
+              </div>
+            </div> 
 
-              <button class="button-cartItem">Edit</button>
-              <button class="button-cartItem">Delete</button>
-            </div>
-            <div class="cart-item">
-              <a href="RilakkumaBox.html"><img src="img/mycart-img1.jpg" alt="bento"/></a>
-              <p><strong>Customized Bento</strong></p>
-              <p>$9.95</p>
-                <p>Quantity: 1</p>
-              <button class="button-cartItem">Edit</button>
-              <button class="button-cartItem">Delete</button>
-            </div>
-          </div> 
-          <div class="grid-1-4">
-            <div class="tableHeader">
-              <h3>Summary</h3>
-            </div>
-            <div class="cart-item">
+            <div class="grid-1-4">
+              <div class="tableHeader">
+                <h3>Summary</h3>
+              </div>
+              <div class="cart-item">
                 <div id = "summaryTable-left">
                   <p>Subtotal:</p>
                   <p>Tax:</p>
@@ -92,9 +92,7 @@
                   <div class="total">
                     <p>Total:</p>
                   </div>
-
-              </div>
-
+                </div>
                 <div id = "summaryTable-right">
                   <p>$19.90</p>
                   <p>$1.00</p>
@@ -102,53 +100,52 @@
                   <div class="total">
                     <p>$23.40</p>
                   </div>
-
+                </div>
               </div>
+              <a class="button button-orange" id="cartButton" href="CheckOut.html">Checkout</a>    
             </div>
-            <a class="button button-orange" id="cartButton" href="CheckOut.html">Checkout</a>    
 
           </div>
         </div>
-      </div>
 
- 
-    </div>
-  </section>  <!-- Wrapper closing tag -->
+      </div>
+    </section>  <!-- Wrapper closing tag -->
   
-      <!-- ===================== -->
+    <!-- ===================== -->
     <!--        FOOTER         -->
     <!-- ===================== -->
 
-  <section id="footer">
+    <section id="footer">
 
-    <div class="grid-1-1">
-      <form>
-        <h3>Get BentoGo News</h3>
-        <input type="text" placeholder="Enter your email address">
-            <!-- <a class="button button-orange" href="#">Sign Up</a> -->
-      </form>
-    </div>
-
-    <div class="grid-1-1">
-      <div id="social-media">
-        <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
-        <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
-        <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
-        <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
+      <div class="grid-1-1">
+        <form>
+          <h3>Get BentoGo News</h3>
+          <input type="text" placeholder="Enter your email address">
+              <!-- <a class="button button-orange" href="#">Sign Up</a> -->
+        </form>
       </div>
-    </div>
 
-    <div class="grid-1-1 footerLinks">
-      <p>© Maurice Yu & Tiffany Cheng</p>
-      <p>|</p>
-      <a href="StyleGuide.html">Styleguide</a>
-      <p>|</p>
-      <a href="Citations.html">Citations</a>
-      <p>|</p>
-      <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
-    </div>
+      <div class="grid-1-1">
+        <div id="social-media">
+          <a href="http://www.facebook.com"><img id="facebook" src="img/icon-facebook1.png" alt="facebook"></a>
+          <a href="http://www.twitter.com"><img id="twitter" src="img/icon-twitter1.png" alt="twitter"></a>
+          <a href="http://www.instagram.com"><img id="instagram" src="img/icon-instagram1.png" alt="instagram"></a>
+          <a href="http://www.youtube.com"><img id="youtube" src="img/icon-youtube1.png" alt="youtube"></a>
+        </div>
+      </div>
 
-  </section>
+      <div class="grid-1-1 footerLinks">
+        <p>© Maurice Yu & Tiffany Cheng</p>
+        <p>|</p>
+        <a href="StyleGuide.html">Styleguide</a>
+        <p>|</p>
+        <a href="Citations.html">Citations</a>
+        <p>|</p>
+        <a href="https://github.com/tiffiecheng/IAT339-P2">Github</a>
+      </div>
+
+    </section>
+    <script src="js/hamburger.js"></script>
   
   </body>
   
